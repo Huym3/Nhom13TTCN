@@ -1,52 +1,100 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+{{-- resources/views/auth/register.blade.php                     --}}
+{{-- ============================================================ --}}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Thi Thử THPT</title>
+    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>🎓 Thi Thử THPT Quốc Gia</h2>
+            <h3>Đăng ký tài khoản</h3>
+
+            @if(session('error'))
+                <div class="alert alert-error">{{ session('error') }}</div>
+            @endif
+
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
+
+                <div class="form-group">
+                    <label for="hoTen">Họ và tên</label>
+                    <input
+                        type="text"
+                        id="hoTen"
+                        name="hoTen"
+                        value="{{ old('hoTen') }}"
+                        placeholder="Nguyễn Văn A"
+                    >
+                    @error('hoTen')
+                        <span class="error-text">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="tenDangNhap">Tên đăng nhập</label>
+                    <input
+                        type="text"
+                        id="tenDangNhap"
+                        name="tenDangNhap"
+                        value="{{ old('tenDangNhap') }}"
+                        placeholder="vidu123"
+                    >
+                    @error('tenDangNhap')
+                        <span class="error-text">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value="{{ old('email') }}"
+                        placeholder="example@gmail.com"
+                    >
+                    @error('email')
+                        <span class="error-text">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="matKhau">Mật khẩu</label>
+                    <input
+                        type="password"
+                        id="matKhau"
+                        name="matKhau"
+                        placeholder="Ít nhất 6 ký tự"
+                    >
+                    @error('matKhau')
+                        <span class="error-text">{{ $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="matKhau_confirmation">Xác nhận mật khẩu</label>
+                    <input
+                        type="password"
+                        id="matKhau_confirmation"
+                        name="matKhau_confirmation"
+                        placeholder="Nhập lại mật khẩu"
+                    >
+                </div>
+
+                <button type="submit" class="btn-primary">Đăng ký</button>
+            </form>
+
+            <p class="auth-link">
+                Đã có tài khoản?
+                <a href="{{ route('login') }}">Đăng nhập</a>
+            </p>
         </div>
-
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </div>
+</body>
+</html>
