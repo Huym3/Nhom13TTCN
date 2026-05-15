@@ -41,7 +41,13 @@
                 <span class="rq-num">Câu {{ $i + 1 }}</span>
                 <span class="rq-status">{{ $cau->DungSai ? '✅ Đúng (+' . $cau->DiemDatDuoc . 'đ)' : '❌ Sai (0đ)' }}</span>
             </div>
-            <div class="rq-content">{!! $cau->NoiDungCH !!}</div>
+            <div class="rq-content">
+    @if(isset($cau->HinhAnh) && $cau->HinhAnh)
+        <img src="{{ asset('storage/' . $cau->HinhAnh) }}" style="max-width:100%;border-radius:8px;margin-bottom:8px">
+    @else
+        {!! $cau->NoiDungCH !!}
+    @endif
+</div>
             <div class="rq-options">
                 @foreach($cau->tatCaDapAn as $da)
                 <div class="rq-option
@@ -72,16 +78,21 @@
                 <span class="rq-num">Câu {{ $i + 1 }}</span>
                 <span class="rq-status">+{{ $cau->diemDat }}đ</span>
             </div>
-            <div class="rq-content">{!! $cau->NoiDungCH !!}</div>
-            <table class="ds-result-table">
-                <thead>
-                    <tr><th>Ý</th><th>Nội dung</th><th>Đáp án đúng</th><th>Bạn chọn</th><th></th></tr>
-                </thead>
-                <tbody>
-                    @foreach($cau->cacY as $y)
-                    <tr class="{{ $y->DungSai ? 'dung' : 'sai' }}">
-                        <td><strong>{{ $y->KyHieu }}</strong></td>
-                        <td>{{ $y->NoiDungY }}</td>
+           <div class="rq-content">
+    @if(isset($cau->HinhAnh) && $cau->HinhAnh)
+        <img src="{{ asset('storage/' . $cau->HinhAnh) }}" style="max-width:100%;border-radius:8px;margin-bottom:8px">
+    @else
+        {!! $cau->NoiDungCH !!}
+    @endif
+</div>
+<table class="ds-result-table">
+    <thead>
+        <tr><th>Ý</th><th>Đáp án đúng</th><th>Bạn chọn</th><th></th></tr>
+    </thead>
+    <tbody>
+        @foreach($cau->cacY as $y)
+        <tr class="{{ $y->DungSai ? 'dung' : 'sai' }}">
+            <td><strong>{{ $y->KyHieu }}</strong></td>
                         <td>{{ $y->DapAnDung ? 'Đúng' : 'Sai' }}</td>
                         <td>
                             @if(is_null($y->LuaChonCuaHocSinh)) <em>Chưa trả lời</em>
@@ -108,7 +119,13 @@
                 <span class="rq-num">Câu {{ $i + 1 }}</span>
                 <span class="rq-status">{{ $cau->DungSai ? '✅ Đúng (+0.5đ)' : '❌ Sai (0đ)' }}</span>
             </div>
-            <div class="rq-content">{!! $cau->NoiDungCH !!}</div>
+            <div class="rq-content">
+    @if(isset($cau->HinhAnh) && $cau->HinhAnh)
+        <img src="{{ asset('storage/' . $cau->HinhAnh) }}" style="max-width:100%;border-radius:8px;margin-bottom:8px">
+    @else
+        {!! $cau->NoiDungCH !!}
+    @endif
+</div>
             <div class="tls-result">
                 <span>Bạn trả lời: <strong>{{ $cau->CauTraLoiSo ?? 'Chưa trả lời' }}</strong></span>
                 <span>Đáp án đúng: <strong>{{ $cau->DapAnSo }}</strong></span>

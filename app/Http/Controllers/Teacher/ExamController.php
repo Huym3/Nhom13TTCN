@@ -77,6 +77,7 @@ class ExamController extends Controller
             ->orderBy('ctd.Phan')
             ->orderBy('ctd.ThuTu')
             ->select('ctd.*', 'q.NoiDungCH', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')
+            ->select('ctd.*', 'q.NoiDungCH', 'q.HinhAnh', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe') // Thêm HinhAnh
             ->get();
 
         // Câu hỏi của giáo viên chưa có trong đề
@@ -115,27 +116,51 @@ class ExamController extends Controller
 
     // ── Xóa đề thi ──────────────────────────────────────────
     public function destroy($id)
-    {
-        $exam = DB::table('DeThi')->where('MaDeThi', $id)
-            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))
-            ->first();
+{
+    $exam = DB::table('DeThi')->where('MaDeThi', $id)
+        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))
+        ->first();
 
-        if (!$exam) abort(404);
+    if (!$exam) abort(404);
 
-        // Không cho xóa nếu đã có bài làm
-        $soBaiLam = DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count();
-        if ($soBaiLam > 0) {
-            return redirect()->route('teacher.exams.index')
-                ->with('error', 'Không thể xóa đề đã có học sinh làm bài.');
-        }
+    $soBaiLam = DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count();
 
-        DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->delete();
-        DB::table('DeThi')->where('MaDeThi', $id)->delete();
-
-        return redirect()->route('teacher.exams.index')
-            ->with('success', 'Xóa đề thi thành công!');
+    // Nếu có bài làm và chưa xác nhận → trả về cảnh báo
+    if ($soBaiLam > 0 && !request('confirmed')) {
+        return redirect()->back()
+            ->with('confirm_delete', $id)
+            ->with('so_bai_lam', $soBaiLam)
+            ->with('ten_de_thi', $exam->TenDeThi);
     }
 
+    // Xóa toàn bộ dữ liệu liên quan
+    $maBaiLams = DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck('MaBaiLam');
+
+    if ($maBaiLams->isNotEmpty()) {
+        // Xóa chi tiết trả lời TN
+        $maCauTiets = DB::table('ChiTietTraLoiTN')
+            ->whereIn('MaBaiLam', $maBaiLams)->pluck('MaChiTietTN');
+        DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete();
+
+        // Xóa chi tiết trả lời DS
+        DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete();
+
+        // Xóa chi tiết trả lời số
+        DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete();
+
+        // Xóa bình luận
+        DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete();
+
+        // Xóa bài làm
+        DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete();
+    }
+
+    DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->delete();
+    DB::table('DeThi')->where('MaDeThi', $id)->delete();
+
+    return redirect()->route('teacher.exams.index')
+        ->with('success', 'Đã xóa đề thi và toàn bộ dữ liệu liên quan.');
+}
     // ── Thêm câu hỏi vào đề ─────────────────────────────────
     public function addQuestion(Request $request, $id)
     {
@@ -238,7 +263,47 @@ class ExamController extends Controller
 
         return redirect()->route('teacher.exams.index')
             ->with('success', 'Đã publish đề thi thành công!');
+
     }
+
+// ── Unpublish đề (Published → Draft) ────────────────────
+public function unpublish($id)
+{
+    $exam = DB::table('DeThi')->where('MaDeThi', $id)
+        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))
+        ->first();
+
+    if (!$exam) abort(404);
+
+    $soBaiLam = DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count();
+
+    // Nếu có bài làm và chưa xác nhận
+    if ($soBaiLam > 0 && !request('confirmed')) {
+        return redirect()->back()
+            ->with('confirm_unpublish', $id)
+            ->with('so_bai_lam_unpublish', $soBaiLam)
+            ->with('ten_de_thi_unpublish', $exam->TenDeThi);
+    }
+
+    // Xóa toàn bộ dữ liệu bài làm
+    $maBaiLams = DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck('MaBaiLam');
+
+    if ($maBaiLams->isNotEmpty()) {
+        DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete();
+        DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete();
+        DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete();
+        DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete();
+        DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete();
+    }
+
+    DB::table('DeThi')->where('MaDeThi', $id)->update([
+        'TrangThaiDe' => 'Draft',
+        'NgayCapNhat' => now(),
+    ]);
+
+    return redirect()->route('teacher.exams.index')
+        ->with('success', 'Đã chuyển về nháp và xóa toàn bộ bài làm của học sinh.');
+}
 
     // ── Thống kê đề thi ──────────────────────────────────────
     public function stats($id)
@@ -289,32 +354,167 @@ class ExamController extends Controller
             ->orderByDesc('bl.TongDiem')
             ->orderBy('bl.TongThoiGianLamBai')
             ->limit(5)
-            ->select('nd.HoTen', 'bl.TongDiem', 'bl.SoCauDung', 'bl.TongThoiGianLamBai', 'bl.ThoiGianNopBai')
+            ->select('nd.HoTen', 'bl.MaBaiLam', 'bl.TongDiem', 'bl.SoCauDung', 'bl.TongThoiGianLamBai', 'bl.ThoiGianNopBai')
             ->get();
 
         // Tỉ lệ đúng từng câu hỏi (Phần I)
-        $tiLeUngCauTN = DB::table('CauHoiTrongDe as ctd')
+// Tỉ lệ đúng từng câu hỏi (Phần I)
+$tiLeUngCauTN = DB::table('CauHoiTrongDe as ctd')
+    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')
+    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {
+        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')
+             ->whereExists(function($sub) use ($id) {
+                 $sub->select(DB::raw(1))
+                     ->from('BaiLamCuaHS')
+                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')
+                     ->where('BaiLamCuaHS.MaDeThi', $id);
+             });
+    })
+    ->where('ctd.MaDeThi', $id)
+    ->where('ctd.Phan', 'I')
+    ->orderBy('ctd.ThuTu')
+    ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')
+    ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,
+        q.HinhAnh,
+        COUNT(ct.MaChiTietTN) as TongTraLoi,
+        SUM(ct.DungSai) as SoDung')
+    ->get();
+
+
+                // Tỉ lệ đúng từng ý — Phần II (Đúng/Sai)
+        $tiLeUngCauDS = DB::table('CauHoiTrongDe as ctd')
             ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')
-            ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {
-                $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')
-                     ->whereExists(function($sub) use ($id) {
-                         $sub->select(DB::raw(1))
-                             ->from('BaiLamCuaHS')
-                             ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')
-                             ->where('BaiLamCuaHS.MaDeThi', $id);
-                     });
+            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')
+            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {
+                $join->on('ct.MaY', '=', 'y.MaY')
+                    ->whereExists(function($sub) use ($id) {
+                        $sub->select(DB::raw(1))
+                            ->from('BaiLamCuaHS')
+                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')
+                            ->where('BaiLamCuaHS.MaDeThi', $id);
+                    });
             })
             ->where('ctd.MaDeThi', $id)
-            ->where('ctd.Phan', 'I')
+            ->where('ctd.Phan', 'II')
             ->orderBy('ctd.ThuTu')
-            ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'ctd.ThuTu')
-            ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,
-                COUNT(ct.MaChiTietTN) as TongTraLoi,
-                SUM(ct.DungSai) as SoDung')
+            ->orderBy('y.KyHieu')
+            ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')
+            ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
+    y.MaY, y.KyHieu, y.DapAnDung,
+    COUNT(ct.MaChiTietDS) as TongTraLoi,
+    SUM(CASE WHEN ct.LuaChonCuaHocSinh = y.DapAnDung THEN 1 ELSE 0 END) as SoDung')
             ->get();
 
+        // Tỉ lệ đúng — Phần III (Trả lời số)
+$tiLeUngCauTLS = DB::table('CauHoiTrongDe as ctd')
+    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')
+    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')
+    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {
+        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')
+             ->whereExists(function($sub) use ($id) {
+                 $sub->select(DB::raw(1))
+                     ->from('BaiLamCuaHS')
+                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')
+                     ->where('BaiLamCuaHS.MaDeThi', $id);
+             });
+    })
+    ->where('ctd.MaDeThi', $id)
+    ->where('ctd.Phan', 'III')
+    ->orderBy('ctd.ThuTu')
+    ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')
+    ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
+        da.DapAnSo, da.SaiSoChapNhan,
+        COUNT(ct.MaCauTLSo) as TongTraLoi,
+        SUM(CASE WHEN ABS(CAST(REPLACE(ct.CauTraLoiSo, ",", ".") AS DECIMAL(12,4)) - da.DapAnSo) <= da.SaiSoChapNhan THEN 1 ELSE 0 END) as SoDung')
+    ->get();
+
         return view('teacher.exams.stats', compact(
-            'exam', 'tongQuan', 'phanBoDiem', 'topHocSinh', 'tiLeUngCauTN'
+            'exam', 'tongQuan', 'phanBoDiem', 'topHocSinh',
+            'tiLeUngCauTN', 'tiLeUngCauDS', 'tiLeUngCauTLS'
         ));
     }
+
+    // ── Xem chi tiết bài làm của 1 học sinh ─────────────────
+public function xemBaiLam($id, $maBaiLam)
+{
+    $exam = DB::table('DeThi')->where('MaDeThi', $id)
+        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))
+        ->first();
+    if (!$exam) abort(404);
+
+    $baiLam = DB::table('BaiLamCuaHS as bl')
+        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')
+        ->where('bl.MaBaiLam', $maBaiLam)
+        ->select('bl.*', 'nd.HoTen', 'nd.TenDangNhap')
+        ->first();
+    if (!$baiLam) abort(404);
+
+    // Phần I
+    $ketQuaPhan1 = DB::table('ChiTietTraLoiTN as ct')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'ct.MaCauHoi')
+        ->join('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')
+        ->join('CauHoiTrongDe as chtd', function($join) use ($id) {
+            $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
+                 ->where('chtd.MaDeThi', '=', $id);
+        })
+        ->where('ct.MaBaiLam', $maBaiLam)
+        ->orderBy('chtd.ThuTu')
+        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
+                 'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
+                 'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu')
+        ->get();
+
+    foreach ($ketQuaPhan1 as $cau) {
+        $cau->dapAnDung = DB::table('DapAnTN')
+            ->where('MaCauHoi', $cau->MaCauHoi)
+            ->where('LaDapAnDung', 1)->first();
+        $cau->tatCaDapAn = DB::table('DapAnTN')
+            ->where('MaCauHoi', $cau->MaCauHoi)->get();
+    }
+
+    // Phần II
+    $ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->where('chtd.MaDeThi', $id)
+        ->where('chtd.Phan', 'II')
+        ->orderBy('chtd.ThuTu')
+        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich', 'chtd.ThuTu')
+        ->get();
+
+    foreach ($ketQuaPhan2 as $cau) {
+        $cau->cacY = DB::table('CauHoiDS_Y as y')
+            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {
+                $join->on('ct.MaY', '=', 'y.MaY')
+                     ->where('ct.MaBaiLam', '=', $maBaiLam);
+            })
+            ->where('y.MaCauHoi', $cau->MaCauHoi)
+            ->orderBy('y.KyHieu')
+            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')
+            ->get();
+
+        $soYDung = collect($cau->cacY)->where('DungSai', 1)->count();
+        $cau->diemDat = DB::table('ThangDiemDS')
+            ->where('SoYDung', $soYDung)->value('DiemDat') ?? 0;
+    }
+
+    // Phần III
+    $ketQuaPhan3 = DB::table('ChiTietCauTraLoiSo as ct')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'ct.MaCauHoi')
+        ->join('CauHoiTrongDe as chtd', function($join) use ($id) {
+            $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
+                 ->where('chtd.MaDeThi', '=', $id);
+        })
+        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'ct.MaCauHoi')
+        ->where('ct.MaBaiLam', $maBaiLam)
+        ->orderBy('chtd.ThuTu')
+        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
+                 'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
+                 'da.DapAnSo', 'chtd.ThuTu')
+        ->get();
+
+    return view('teacher.exams.xem-bai-lam', compact(
+        'exam', 'baiLam', 'ketQuaPhan1', 'ketQuaPhan2', 'ketQuaPhan3'
+    ));
+}
+    
 }

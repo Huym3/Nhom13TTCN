@@ -66,7 +66,15 @@
                     data-dokho="{{ $q->DoKho }}"
                     data-noidung="{{ strtolower($q->NoiDungCH) }}">
                     <td class="text-center">{{ $i + 1 }}</td>
-                    <td>{{ Str::limit($q->NoiDungCH, 90) }}</td>
+                         <td>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            @if($q->HinhAnh)
+                                <img src="{{ asset('storage/' . $q->HinhAnh) }}" 
+                                    style="width: 60px; height: 40px; object-fit: cover; border-radius: 4px; border: 1px solid #e2e8f0;">
+                            @endif
+                            <span>{{ Str::limit($q->NoiDungCH, 50) }}</span>
+                        </div>
+                    </td>
                     <td>{{ $q->TenChuyenDe }}</td>
                     <td>
                         <span class="badge-loai badge-loai-{{ strtolower($q->LoaiCauHoi) }}">

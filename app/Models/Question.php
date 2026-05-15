@@ -7,8 +7,13 @@ class Question extends Model {
     public $timestamps    = false;
 
     protected $fillable = [
-        'MaChuyenDe','NoiDungCH','DoKho',
-        'LoaiCauHoi','GiaiThich','MaNguoiTao'
+        'MaChuyenDe', 
+        'NoiDungCH', 
+        'HinhAnh', // Bắt buộc phải thêm cột này để lưu tên file ảnh
+        'DoKho',
+        'LoaiCauHoi', 
+        'GiaiThich', 
+        'MaNguoiTao'
     ];
 
     public function chuyenDe() {

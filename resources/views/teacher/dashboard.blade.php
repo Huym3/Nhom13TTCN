@@ -78,10 +78,17 @@
             @endphp
             @forelse($cauHoi as $q)
             <div class="exam-item">
-                <div>
-                    <strong>{{ Str::limit($q->NoiDungCH, 55) }}</strong>
-                    <span class="badge-loai badge-loai-{{ strtolower($q->LoaiCauHoi) }}">{{ $q->LoaiCauHoi }}</span>
-                </div>
+<div style="display: flex; align-items: center; gap: 10px;">
+    @if($q->HinhAnh)
+        {{-- Hiển thị icon hoặc ảnh cực nhỏ để nhận biết câu hỏi có hình ảnh --}}
+        <img src="{{ asset('storage/' . $q->HinhAnh) }}" 
+             style="width: 40px; height: 30px; object-fit: cover; border-radius: 4px; border: 1px solid #e2e8f0;">
+    @endif
+    <div>
+        <strong>{{ Str::limit($q->NoiDungCH, 45) }}</strong>
+        <span class="badge-loai badge-loai-{{ strtolower($q->LoaiCauHoi) }}">{{ $q->LoaiCauHoi }}</span>
+    </div>
+</div>
                 <span style="font-size:12px;color:#94a3b8">{{ $q->TenChuyenDe }}</span>
             </div>
             @empty

@@ -37,7 +37,7 @@ class QuestionController extends Controller
             'maChuyenDe' => 'required',
             'loaiCauHoi' => 'required|in:TN,DS,TLS',
             'doKho'      => 'required',
-            'anhCauHoi'  => 'required|image|mimes:jpg,jpeg,png,webp|max:5120',
+            'anhCauHoi'  => 'nullable|image|mimes:jpg,jpeg,png,webp|max:5120',
         ], [
             'anhCauHoi.required' => 'Vui lòng upload ảnh câu hỏi.',
             'anhCauHoi.image'    => 'File phải là ảnh.',
@@ -45,56 +45,48 @@ class QuestionController extends Controller
         ]);
 
         // Upload ảnh câu hỏi
-        $anhPath = $request->file('anhCauHoi')
-            ->store('questions', 'public');
+$anhPath = $request->hasFile('anhCauHoi')
+    ? $request->file('anhCauHoi')->store('questions', 'public')
+    : null;
         // Ảnh lưu tại: storage/app/public/questions/
         // Truy cập qua: /storage/questions/tenfile.jpg
 
         // Tạo câu hỏi — NoiDungCH lưu đường dẫn ảnh
-        $maCauHoi = DB::table('Question')->insertGetId([
-            'MaChuyenDe' => $request->maChuyenDe,
-            'NoiDungCH'  => $anhPath,   // lưu path ảnh
-            'LoaiCauHoi' => $request->loaiCauHoi,
-            'DoKho'      => $request->doKho,
-            'GiaiThich'  => $request->giaiThich,
-            'MaNguoiTao' => Session::get('maNguoiDung'),
-            'NgayTao'    => now(),
-        ]);
+ // Tạo câu hỏi
+$maCauHoi = DB::table('Question')->insertGetId([
+    'MaChuyenDe' => $request->maChuyenDe,
+    'NoiDungCH'  => $request->noiDung ?: 'Xem nội dung trong hình ảnh',
+    'HinhAnh'    => $anhPath,   // Lưu path vào đúng cột HinhAnh
+    'LoaiCauHoi' => $request->loaiCauHoi,
+    'DoKho'      => $request->doKho,
+    'GiaiThich'  => $request->giaiThich,
+    'MaNguoiTao' => Session::get('maNguoiDung'),
+    'NgayTao'    => now(),
+]);
 
-
-// ── Phần I: TN — Chỉ lưu ký hiệu và đáp án đúng ──────────────
+// Phần I: TN
 if ($request->loaiCauHoi === 'TN') {
-    $request->validate([
-        'dapAnDung' => 'required|in:A,B,C,D',
-    ]);
-
     foreach (['A','B','C','D'] as $ky) {
         DB::table('DapAnTN')->insert([
             'MaCauHoi'     => $maCauHoi,
             'KyHieu'       => $ky,
-            'NoiDungDapAn' => null, // Hoặc để trống nếu cột này cho phép null
+            'NoiDungDapAn' => "Đáp án $ky", // Tránh để null
             'LaDapAnDung'  => $request->dapAnDung === $ky ? 1 : 0,
         ]);
     }
 }
         // ── Phần II: DS — 4 ý a b c d ───────────────────────
         elseif ($request->loaiCauHoi === 'DS') {
-            $request->validate([
-                'noiDungY_a' => 'required|string',
-                'noiDungY_b' => 'required|string',
-                'noiDungY_c' => 'required|string',
-                'noiDungY_d' => 'required|string',
-            ]);
-
-            foreach (['a','b','c','d'] as $ky) {
-                DB::table('CauHoiDS_Y')->insert([
-                    'MaCauHoi'  => $maCauHoi,
-                    'KyHieu'    => $ky,
-                    'NoiDungY'  => $request->input('noiDungY_'.$ky),
-                    'DapAnDung' => $request->input('dapAnY_'.$ky) ? 1 : 0,
-                ]);
-            }
-        }
+    // Chỉ lưu ký hiệu và trạng thái đúng sai, nội dung để trống
+    foreach (['a','b','c','d'] as $ky) {
+        DB::table('CauHoiDS_Y')->insert([
+            'MaCauHoi'  => $maCauHoi,
+            'KyHieu'    => $ky,
+            'NoiDungY'  => '', // Lưu chuỗi rỗng thay vì bắt nhập text
+            'DapAnDung' => $request->input('dapAnY_'.$ky) ? 1 : 0,
+        ]);
+    }
+}
 
         // ── Phần III: TLS — đáp án số ────────────────────────
         elseif ($request->loaiCauHoi === 'TLS') {
@@ -138,47 +130,54 @@ if ($request->loaiCauHoi === 'TN') {
         $question = DB::table('Question')->where('MaCauHoi', $id)->first();
         if ($question->MaNguoiTao != Session::get('maNguoiDung')) abort(403);
 
-        $data = [
-            'MaChuyenDe' => $request->maChuyenDe,
-            'DoKho'      => $request->doKho,
-            'GiaiThich'  => $request->giaiThich,
-        ];
+$data = [
+    'MaChuyenDe' => $request->maChuyenDe,
+    'DoKho'      => $request->doKho,
+    'GiaiThich'  => $request->giaiThich,
+    'NoiDungCH'  => $request->noiDung ?: $question->NoiDungCH, // thêm dòng này
+];
 
         // Nếu upload ảnh mới thì xóa ảnh cũ
+// Nếu upload ảnh mới
         if ($request->hasFile('anhCauHoi')) {
-            $request->validate([
-                'anhCauHoi' => 'image|mimes:jpg,jpeg,png,webp|max:5120'
-            ]);
-            Storage::disk('public')->delete($question->NoiDungCH);
-            $data['NoiDungCH'] = $request->file('anhCauHoi')
-                ->store('questions', 'public');
+            $request->validate(['anhCauHoi' => 'image|mimes:jpg,jpeg,png,webp|max:5120']);
+            
+            // Lấy ảnh cũ từ cột HinhAnh để xóa
+            if ($question->HinhAnh) {
+                Storage::disk('public')->delete($question->HinhAnh);
+            }
+            
+            $data['HinhAnh'] = $request->file('anhCauHoi')->store('questions', 'public');
         }
 
         DB::table('Question')->where('MaCauHoi', $id)->update($data);
-
-
         // Cập nhật ý DS
-        if ($question->LoaiCauHoi === 'DS') {
-            foreach (['a','b','c','d'] as $ky) {
-                DB::table('CauHoiDS_Y')
-                    ->where('MaCauHoi', $id)
-                    ->where('KyHieu', $ky)
-                    ->update([
-                        'NoiDungY'  => $request->input('noiDungY_'.$ky),
-                        'DapAnDung' => $request->input('dapAnY_'.$ky) ? 1 : 0,
-                    ]);
-            }
-        }
+if ($question->LoaiCauHoi === 'DS') {
+    foreach (['a', 'b', 'c', 'd'] as $ky) {
+        DB::table('CauHoiDS_Y')
+            ->where('MaCauHoi', $id)
+            ->where('KyHieu', $ky)
+            ->update([
+                'NoiDungY'  => '', // Luôn cập nhật về rỗng hoặc giữ nguyên
+                'DapAnDung' => $request->input('dapAnY_'.$ky)   
+            ]);
+    }
+}
 
         // Cập nhật đáp án số
-        if ($question->LoaiCauHoi === 'TLS') {
-            DB::table('DapAnTLS')
-                ->where('MaCauHoi', $id)
-                ->update([
-                    'DapAnSo'       => $request->dapAnSo,
-                    'SaiSoChapNhan' => $request->saiSo ?? 0.005,
-                ]);
-        }
+if ($question->LoaiCauHoi === 'TLS') {
+    // Thêm validate để đảm bảo có dữ liệu trước khi update
+    $request->validate([
+        'dapAnSo' => 'required|numeric',
+    ]);
+
+    DB::table('DapAnTLS')
+        ->where('MaCauHoi', $id)
+        ->update([
+            'DapAnSo'       => $request->dapAnSo,
+            'SaiSoChapNhan' => $request->saiSo ?? 0.005,
+        ]);
+}
 
         return redirect()->route('teacher.questions.index')
             ->with('success', 'Cập nhật thành công!');

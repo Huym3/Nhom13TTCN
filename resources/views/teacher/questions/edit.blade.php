@@ -22,7 +22,7 @@
 @endif
 
 <div class="form-card">
-    <form method="POST" action="{{ route('teacher.questions.update', $question->MaCauHoi) }}">
+<form method="POST" action="{{ route('teacher.questions.update', $question->MaCauHoi) }}" enctype="multipart/form-data">
         @csrf @method('PUT')
 
         <h3 class="section-title">Thông tin câu hỏi</h3>
@@ -62,89 +62,79 @@
         </div>
 
         <div class="form-group">
+    <label>Hình ảnh câu hỏi</label>
+    @if($question->HinhAnh)
+        <div style="margin: 10px 0; border: 1px solid #ddd; padding: 5px; width: fit-content; border-radius: 8px;">
+            <img src="{{ asset('storage/' . $question->HinhAnh) }}" style="max-width: 250px; display: block;">
+        </div>
+    @endif
+    <input type="file" name="anhCauHoi" class="form-control" accept="image/*">
+    <small class="form-hint">Tải ảnh mới lên nếu muốn thay đổi ảnh cũ.</small>
+</div>
+
+        <div class="form-group">
             <label>Giải thích đáp án</label>
             <textarea name="giaiThich" rows="3" class="form-control">{{ old('giaiThich', $question->GiaiThich) }}</textarea>
         </div>
 
-        {{-- ── Hiển thị đáp án TN ─────────────────── --}}
-        @if($question->LoaiCauHoi === 'TN')
-        <h3 class="section-title">Đáp án — Trắc nghiệm</h3>
-        <div class="alert" style="background:#fef9c3;border:1px solid #fde68a;color:#92400e;margin-bottom:16px;font-size:13px">
-            ⚠️ Để sửa đáp án trắc nghiệm, vui lòng xóa câu hỏi này và tạo lại.
-        </div>
-        <table class="data-table" style="margin-bottom:16px">
-            <thead>
-                <tr><th width="60">Ký hiệu</th><th>Nội dung</th><th width="100">Đáp án đúng</th></tr>
-            </thead>
-            <tbody>
-                @foreach($dapAnTN as $da)
-                <tr>
-                    <td class="text-center font-bold">{{ $da->KyHieu }}</td>
-                    <td>{{ $da->NoiDungDapAn }}</td>
-                    <td class="text-center">
-                        @if($da->LaDapAnDung)
-                            <span style="color:#16a34a;font-weight:700">✅ Đúng</span>
-                        @else
-                            <span style="color:#94a3b8">—</span>
-                        @endif
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-        @endif
+{{-- ── Cập nhật đáp án TN ─────────────────── --}}
+@if($question->LoaiCauHoi === 'TN')
+<h3 class="section-title">Đáp án — Trắc nghiệm</h3>
 
-        {{-- ── Hiển thị đáp án DS ─────────────────── --}}
-        @if($question->LoaiCauHoi === 'DS')
-        <h3 class="section-title">Đáp án — Đúng/Sai</h3>
-        <div class="alert" style="background:#fef9c3;border:1px solid #fde68a;color:#92400e;margin-bottom:16px;font-size:13px">
-            ⚠️ Để sửa đáp án Đúng/Sai, vui lòng xóa câu hỏi này và tạo lại.
-        </div>
-        <table class="data-table" style="margin-bottom:16px">
-            <thead>
-                <tr><th width="60">Ý</th><th>Nội dung</th><th width="100">Đáp án đúng</th></tr>
-            </thead>
-            <tbody>
-                @foreach($cacY as $y)
-                <tr>
-                    <td class="text-center font-bold">{{ $y->KyHieu }}</td>
-                    <td>{{ $y->NoiDungY }}</td>
-                    <td class="text-center">
-                        @if($y->DapAnDung)
-                            <span style="color:#16a34a;font-weight:700">✅ Đúng</span>
-                        @else
-                            <span style="color:#dc2626;font-weight:700">❌ Sai</span>
-                        @endif
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-        @endif
+<div class="form-group" style="max-width: 250px;">
+    <label>Chọn đáp án đúng <span class="required">*</span></label>
+    <select name="dapAnDung" class="form-control">
+        @foreach($dapAnTN as $da)
+            <option value="{{ $da->KyHieu }}" {{ $da->LaDapAnDung ? 'selected' : '' }}>
+                Đáp án {{ $da->KyHieu }}
+            </option>
+        @endforeach
+    </select>
+</div>
 
+@endif
+
+{{-- resources/views/teacher/questions/edit.blade.php --}}
+
+@if($question->LoaiCauHoi === 'DS')
+<h3 class="section-title">Chỉnh sửa đáp án Đúng/Sai</h3>
+<table class="data-table">
+    <thead>
+        <tr>
+            <th width="100">Ký hiệu</th>
+            <th>Trạng thái đáp án</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($cacY as $y)
+        <tr>
+            <td class="text-center font-bold" style="font-size: 1.2rem;">{{ strtoupper($y->KyHieu) }}</td>
+            <td>
+                <select name="dapAnY_{{ $y->KyHieu }}" class="form-control">
+                    <option value="1" {{ $y->DapAnDung == 1 ? 'selected' : '' }}>✅ Đúng</option>
+                    <option value="0" {{ $y->DapAnDung == 0 ? 'selected' : '' }}>❌ Sai</option>
+                </select>
+                <input type="hidden" name="noiDungY_{{ $y->KyHieu }}" value="{{ $y->NoiDungY }}">
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+@endif
         {{-- ── Hiển thị đáp án TLS ────────────────── --}}
         @if($question->LoaiCauHoi === 'TLS' && $dapAnSo)
         <h3 class="section-title">Đáp án — Trả lời số</h3>
         <div class="form-row">
-            <div class="form-group">
-                <label>Đáp án số hiện tại</label>
-                <input type="text" class="form-control" value="{{ $dapAnSo->DapAnSo }}" disabled
-                       style="background:#f1f5f9">
-            </div>
-            <div class="form-group">
-                <label>Sai số chấp nhận</label>
-                <input type="text" class="form-control" value="{{ $dapAnSo->SaiSoChapNhan }}" disabled
-                       style="background:#f1f5f9">
-            </div>
-            <div class="form-group" style="flex:2">
-                <label>Ghi chú</label>
-                <input type="text" class="form-control" value="{{ $dapAnSo->GhiChu }}" disabled
-                       style="background:#f1f5f9">
-            </div>
-        </div>
-        <div class="alert" style="background:#fef9c3;border:1px solid #fde68a;color:#92400e;margin-bottom:16px;font-size:13px">
-            ⚠️ Để sửa đáp án số, vui lòng xóa câu hỏi này và tạo lại.
-        </div>
+<div class="form-group">
+    <label>Đáp án số</label>
+    <input type="number" step="any" name="dapAnSo" class="form-control"
+           value="{{ old('dapAnSo', $dapAnSo->DapAnSo) }}">
+</div>
+<div class="form-group">
+    <label>Sai số chấp nhận</label>
+    <input type="number" step="any" name="saiSo" class="form-control"
+           value="{{ old('saiSo', $dapAnSo->SaiSoChapNhan) }}">
+</div>
         @endif
 
         <div class="form-actions">

@@ -54,11 +54,11 @@ class ResultController extends Controller
             })
             ->where('ct.MaBaiLam', $maBaiLam)
             ->orderBy('chtd.ThuTu')
-            ->select(
-                'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich',
-                'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
-                'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'
-            )
+->select(
+    'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
+    'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
+    'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'
+)
             ->get();
 
         // Thêm đáp án đúng cho mỗi câu Phần I
@@ -74,28 +74,29 @@ class ResultController extends Controller
         }
 
         // Phần II: kết quả Đúng/Sai
-        $ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
-            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
-            ->where('chtd.MaDeThi', $baiLam->MaDeThi)
-            ->where('chtd.Phan', 'II')
-            ->orderBy('chtd.ThuTu')
-            ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'chtd.ThuTu')
-            ->get();
+$ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
+    ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+    ->where('chtd.MaDeThi', $baiLam->MaDeThi)
+    ->where('chtd.Phan', 'II')
+    ->orderBy('chtd.ThuTu')
+    ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh', 'chtd.ThuTu') // thêm q.HinhAnh
+    ->get();
 
         foreach ($ketQuaPhan2 as $cau) {
             // Các ý con + lựa chọn của HS
-            $cau->cacY = DB::table('CauHoiDS_Y as y')
-                ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {
-                    $join->on('ct.MaY', '=', 'y.MaY')
-                         ->where('ct.MaBaiLam', '=', $maBaiLam);
-                })
-                ->where('y.MaCauHoi', $cau->MaCauHoi)
-                ->orderBy('y.KyHieu')
-                ->select(
-                    'y.KyHieu', 'y.NoiDungY', 'y.DapAnDung',
-                    'ct.LuaChonCuaHocSinh', 'ct.DungSai'
-                )
-                ->get();
+$cau->cacY = DB::table('CauHoiDS_Y as y')
+    ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {
+        $join->on('ct.MaY', '=', 'y.MaY')
+             ->where('ct.MaBaiLam', '=', $maBaiLam);
+    })
+    ->where('y.MaCauHoi', $cau->MaCauHoi)
+    ->orderBy('y.KyHieu')
+    ->select(
+        'y.KyHieu', 'y.NoiDungY', 'y.DapAnDung',
+        'ct.LuaChonCuaHocSinh', 'ct.DungSai'
+    )
+    ->get();
+                
 
             // Điểm đạt được của câu này
             $soYDung = collect($cau->cacY)->where('DungSai', 1)->count();
@@ -114,11 +115,11 @@ class ResultController extends Controller
             ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'ct.MaCauHoi')
             ->where('ct.MaBaiLam', $maBaiLam)
             ->orderBy('chtd.ThuTu')
-            ->select(
-                'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich',
-                'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
-                'da.DapAnSo', 'chtd.ThuTu'
-            )
+->select(
+    'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
+    'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
+    'da.DapAnSo', 'chtd.ThuTu'
+)
             ->get();
 
         return view('student.results.show', compact(

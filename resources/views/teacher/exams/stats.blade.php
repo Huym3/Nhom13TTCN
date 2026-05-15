@@ -74,6 +74,7 @@
                 <th width="100">Câu đúng</th>
                 <th width="120">Thời gian làm</th>
                 <th width="130">Nộp lúc</th>
+                <th width="100">Chi tiết</th>
             </tr>
         </thead>
         <tbody>
@@ -91,6 +92,10 @@
                 <td class="text-center">{{ $hs->SoCauDung }}</td>
                 <td class="text-center">{{ gmdate('i:s', $hs->TongThoiGianLamBai) }}</td>
                 <td class="text-center">{{ \Carbon\Carbon::parse($hs->ThoiGianNopBai)->format('d/m H:i') }}</td>
+                <td class="text-center">
+                    <a href="{{ route('exams.xemBaiLam', [$exam->MaDeThi, $hs->MaBaiLam]) }}"
+                       class="btn-outline" style="padding:4px 10px;font-size:13px">👁 Xem</a>
+                </td>
             </tr>
             @endforeach
         </tbody>
@@ -119,7 +124,128 @@
             @endphp
             <tr>
                 <td class="text-center font-bold">{{ $r->ThuTu }}</td>
-                <td>{{ $r->NoiDung }}…</td>
+                                {{-- Tìm dòng <td>{{ $r->NoiDung }}…</td> và sửa thành: --}}
+                <td>
+                    @if(isset($r->HinhAnh) && $r->HinhAnh)
+                        <img src="{{ asset('storage/' . $r->HinhAnh) }}" style="width: 80px; height: auto; border-radius: 4px;">
+                    @else
+                        {{ $r->NoiDung ?? '' }}…
+                    @endif
+                </td>
+                <td class="text-center">{{ $r->TongTraLoi }}</td>
+                <td class="text-center">{{ $r->SoDung }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:8px">
+                        <div style="flex:1;height:8px;background:#e2e8f0;border-radius:4px;overflow:hidden">
+                            <div style="width:{{ $tiLe }}%;height:100%;background:{{ $color }};border-radius:4px"></div>
+                        </div>
+                        <span style="font-weight:700;color:{{ $color }};min-width:36px">{{ $tiLe }}%</span>
+                    </div>
+                </td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+@endif
+
+
+{{-- ── Tỉ lệ đúng từng ý DS ─────────────────────────── --}}
+@if($tiLeUngCauDS->isNotEmpty())
+<div class="form-card" style="margin-bottom:24px">
+    <h3 class="section-title">Tỉ lệ trả lời đúng — Phần II (Đúng/Sai)</h3>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th width="60">Câu</th>
+                <th width="120">Nội dung</th>
+                <th width="40">Ý</th>
+                <th width="80">Đáp án</th>
+                <th width="100">Số trả lời</th>
+                <th width="100">Số đúng</th>
+                <th width="120">Tỉ lệ đúng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @php $prevCau = null; @endphp
+            @foreach($tiLeUngCauDS as $r)
+            @php
+                $tiLe = $r->TongTraLoi > 0 ? round($r->SoDung / $r->TongTraLoi * 100) : 0;
+                $color = $tiLe >= 70 ? '#16a34a' : ($tiLe >= 40 ? '#d97706' : '#dc2626');
+                $isFirstRow = $r->ThuTu != $prevCau;
+                $soY = $tiLeUngCauDS->where('ThuTu', $r->ThuTu)->count();
+            @endphp
+            <tr>
+                @if($isFirstRow)
+                    <td class="text-center font-bold" rowspan="{{ $soY }}" style="vertical-align:middle">
+                        {{ $r->ThuTu }}
+                    </td>
+                    <td rowspan="{{ $soY }}" style="vertical-align:middle">
+                        @if(isset($r->HinhAnh) && $r->HinhAnh)
+                            <img src="{{ asset('storage/' . $r->HinhAnh) }}" style="width:80px;height:auto;border-radius:4px">
+                        @else
+                            {{ $r->NoiDung ?? '' }}…
+                        @endif
+                    </td>
+                @endif
+                <td class="text-center font-bold">{{ strtoupper($r->KyHieu) }}</td>
+                <td class="text-center">
+                    <span style="color:{{ $r->DapAnDung ? '#16a34a' : '#dc2626' }};font-weight:700">
+                        {{ $r->DapAnDung ? 'Đúng' : 'Sai' }}
+                    </span>
+                </td>
+                <td class="text-center">{{ $r->TongTraLoi }}</td>
+                <td class="text-center">{{ $r->SoDung }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:8px">
+                        <div style="flex:1;height:8px;background:#e2e8f0;border-radius:4px;overflow:hidden">
+                            <div style="width:{{ $tiLe }}%;height:100%;background:{{ $color }};border-radius:4px"></div>
+                        </div>
+                        <span style="font-weight:700;color:{{ $color }};min-width:36px">{{ $tiLe }}%</span>
+                    </div>
+                </td>
+            </tr>
+            @php $prevCau = $r->ThuTu; @endphp
+            @endforeach
+        </tbody>
+    </table>
+</div>
+@endif
+
+{{-- ── Tỉ lệ đúng câu TLS ──────────────────────────── --}}
+@if($tiLeUngCauTLS->isNotEmpty())
+<div class="form-card">
+    <h3 class="section-title">Tỉ lệ trả lời đúng — Phần III (Trả lời số)</h3>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th width="60">Câu</th>
+                <th>Nội dung</th>
+                <th width="100">Đáp án</th>
+                <th width="100">Số trả lời</th>
+                <th width="100">Số đúng</th>
+                <th width="120">Tỉ lệ đúng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($tiLeUngCauTLS as $r)
+            @php
+                $tiLe = $r->TongTraLoi > 0 ? round($r->SoDung / $r->TongTraLoi * 100) : 0;
+                $color = $tiLe >= 70 ? '#16a34a' : ($tiLe >= 40 ? '#d97706' : '#dc2626');
+            @endphp
+            <tr>
+                <td class="text-center font-bold">{{ $r->ThuTu }}</td>
+                <td>
+                    @if(isset($r->HinhAnh) && $r->HinhAnh)
+                        <img src="{{ asset('storage/' . $r->HinhAnh) }}" style="width:80px;height:auto;border-radius:4px">
+                    @else
+                        {{ $r->NoiDung ?? '' }}…
+                    @endif
+                </td>
+                <td class="text-center font-bold">
+                    {{ $r->DapAnSo }}
+                    <small style="color:#64748b">(±{{ $r->SaiSoChapNhan }})</small>
+                </td>
                 <td class="text-center">{{ $r->TongTraLoi }}</td>
                 <td class="text-center">{{ $r->SoDung }}</td>
                 <td>

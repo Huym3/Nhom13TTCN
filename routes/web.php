@@ -120,10 +120,17 @@ Route::middleware(['checklogin', 'checkrole:Teacher'])
         Route::put('/exams/{id}/publish', [TeacherExam::class, 'publish'])
             ->name('exams.publish');
 
+        Route::put('/exams/{id}/unpublish', [TeacherExam::class, 'unpublish'])
+    ->name('exams.unpublish');
+
         // Xem thống kê 1 đề
         Route::get('/exams/{id}/stats', [TeacherExam::class, 'stats'])
             ->name('exams.stats');
     });
+
+        // Xem chi tiết bài làm của học sinh (thêm dòng này)
+Route::get('/exams/{id}/bai-lam/{maBaiLam}', [TeacherExam::class, 'xemBaiLam'])
+    ->name('exams.xemBaiLam');
 
 // ──────────────────────────────────────────────────────────
 // ADMIN

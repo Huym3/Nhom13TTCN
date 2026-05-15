@@ -34,19 +34,33 @@ function callAPI(url, data) {
     });
 }
 
-// ── Lưu đáp án TN ──────────────────────────────────────────
+// ── Lưu đáp án TN (Cập nhật hiệu ứng cho nút bấm) ────────────────
 function luuTN(maCauHoi, maDATN, el) {
-    document.querySelectorAll(`[name="phan1_${maCauHoi}"]`)
-        .forEach(r => r.closest('.option').classList.remove('selected'));
+    // Tìm tất cả các nút hoặc label trong cùng một câu hỏi để xóa class 'selected'
+    const parent = el.closest('.question-card');
+    parent.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+    
+    // Thêm class 'selected' cho lựa chọn vừa bấm
     el.closest('.option').classList.add('selected');
-    callAPI(URL_TN, { maBaiLam: MA_BAI_LAM, maCauHoi, maDATN });
+
+    // Gọi API lưu vào Database (gọi Procedure sp_LuuTraLoiTN)
+    callAPI(URL_TN, { 
+        maBaiLam: MA_BAI_LAM, 
+        maCauHoi: maCauHoi, 
+        maDATN: maDATN 
+    });
 }
 
-// ── Lưu đáp án Đúng/Sai ────────────────────────────────────
+// ── Lưu đáp án Đúng/Sai (Giữ nguyên hoặc thêm feedback) ──────────
 function luuDS(maCauHoi, maY, luaChon) {
-    callAPI(URL_DS, { maBaiLam: MA_BAI_LAM, maCauHoi, maY, luaChon });
+    // Có thể thêm hiệu ứng màu sắc cho hàng vừa chọn để học sinh dễ theo dõi
+    callAPI(URL_DS, { 
+        maBaiLam: MA_BAI_LAM, 
+        maCauHoi: maCauHoi, 
+        maY: maY, 
+        luaChon: luaChon 
+    });
 }
-
 // ── Lưu đáp án số ──────────────────────────────────────────
 function luuSo(maCauHoi, soHocSinh) {
     if (soHocSinh === '') return;
