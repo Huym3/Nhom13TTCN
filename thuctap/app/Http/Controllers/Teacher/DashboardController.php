@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Http\Controllers\Teacher;
+
+use App\Http\Controllers\Controller; // Đừng quên import base Controller
+use Illuminate\Http\Request;
+class DashboardController extends Controller
+{
+    public function index() {
+        return view('Teacher.Dashboard');
+    }
+}
