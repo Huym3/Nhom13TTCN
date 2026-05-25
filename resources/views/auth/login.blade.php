@@ -1,47 +1,80 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+{{-- ============================================================ --}}
+{{-- resources/views/auth/login.blade.php                       --}}
+{{-- Glassmorphism · Light White-Gray · Frosted Glass           --}}
+{{-- ============================================================ --}}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập — Thi Thử THPT</title>
+    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+</head>
+<body>
+<div class="auth-page">
+    <div class="auth-box">
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        {{-- Header --}}
+        <div class="auth-header">
+            <div class="auth-icon-wrap">🎓</div>
+            <h1>Thi Thử THPT Quốc Gia</h1>
+            <p>Đăng nhập để tiếp tục học tập</p>
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+        {{-- Alerts --}}
+        @if(session('error'))
+            <div class="alert alert-error">⚠️ {{ session('error') }}</div>
+        @endif
+        @if(session('success'))
+            <div class="alert alert-success">✅ {{ session('success') }}</div>
+        @endif
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+        {{-- Form --}}
+        <form class="auth-form" method="POST" action="{{ route('login') }}">
+            @csrf
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+            <div class="auth-field">
+                <label for="tenDangNhap">Tên đăng nhập</label>
+                <input
+                    type="text"
+                    id="tenDangNhap"
+                    name="tenDangNhap"
+                    value="{{ old('tenDangNhap') }}"
+                    placeholder="Nhập tên đăng nhập của bạn"
+                    autocomplete="username"
+                    autofocus
+                >
+                @error('tenDangNhap')
+                    <span class="error-text">{{ $message }}</span>
+                @enderror
+            </div>
+
+            <div class="auth-field">
+                <label for="matKhau">Mật khẩu</label>
+                <input
+                    type="password"
+                    id="matKhau"
+                    name="matKhau"
+                    placeholder="Nhập mật khẩu"
+                    autocomplete="current-password"
+                >
+                @error('matKhau')
+                    <span class="error-text">{{ $message }}</span>
+                @enderror
+            </div>
+
+            <button type="submit" class="auth-submit">
+                Đăng nhập →
+            </button>
+        </form>
+
+        {{-- Links --}}
+        <div class="auth-links">
+            <p>Chưa có tài khoản? <a href="{{ route('register') }}">Đăng ký ngay</a></p>
+            <p><a href="{{ route('password.request') }}">Quên mật khẩu?</a></p>
         </div>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </div>
+</div>
+</body>
+</html>

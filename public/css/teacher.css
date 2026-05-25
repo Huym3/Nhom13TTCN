@@ -1,0 +1,397 @@
+/* ============================================================
+   public/css/teacher.css
+   Dùng cho tất cả trang Teacher
+   ============================================================ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* ── Navbar ─────────────────────────────────────────────── */
+.navbar {
+    background: #1e3a8a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-brand { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+
+.nav-menu { display: flex; gap: 4px; }
+
+.nav-menu a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+.nav-user { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+
+.btn-logout {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+.btn-logout:hover { background: rgba(255,255,255,0.25); }
+
+/* ── Main content ───────────────────────────────────────── */
+.main-content {
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+/* ── Alerts ─────────────────────────────────────────────── */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.alert-success { background: #dcfce7; color: #16a34a; border: 1px solid #86efac; }
+.alert-error   { background: #fee2e2; color: #dc2626; border: 1px solid #fca5a5; }
+
+/* ── Page header ────────────────────────────────────────── */
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+.page-header-left h2 { font-size: 22px; color: #1e3a8a; }
+.page-header-left p  { font-size: 14px; color: #64748b; margin-top: 4px; }
+
+/* ── Buttons ────────────────────────────────────────────── */
+.btn-primary {
+    background: #1e3a8a;
+    color: #fff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+.btn-primary:hover { background: #1d4ed8; }
+
+.btn-sm { padding: 5px 12px; font-size: 13px; }
+
+.btn-outline {
+    background: transparent;
+    color: #1e3a8a;
+    border: 1.5px solid #1e3a8a;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.btn-outline:hover { background: #1e3a8a; color: #fff; }
+
+.btn-success {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+.btn-success:hover { background: #15803d; }
+
+.btn-danger {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+.btn-danger:hover { background: #b91c1c; }
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: background 0.15s;
+}
+.btn-danger-sm:hover { background: #fee2e2; }
+
+/* ── Form card ──────────────────────────────────────────── */
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group { margin-bottom: 18px; }
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 9px 13px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    outline: none;
+    background: #fff;
+}
+.form-control:focus { border-color: #1e3a8a; box-shadow: 0 0 0 3px rgba(30,58,138,0.08); }
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+.form-row .form-group { flex: 1; }
+
+.form-hint { font-size: 12px; color: #94a3b8; margin-top: 4px; display: block; }
+
+.required { color: #ef4444; }
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* ── Data table ─────────────────────────────────────────── */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.data-table th, .data-table td {
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    vertical-align: middle;
+}
+.data-table th {
+    background: #f8fafc;
+    font-weight: 700;
+    color: #475569;
+    font-size: 13px;
+}
+.data-table tbody tr:hover td { background: #f8fafc; }
+.text-center { text-align: center !important; }
+.font-bold   { font-weight: 700; }
+.text-green  { color: #16a34a; }
+.text-red    { color: #dc2626; }
+
+/* ── Badges ─────────────────────────────────────────────── */
+.badge-count {
+    font-size: 12px;
+    font-weight: 600;
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.badge-published { background: #dcfce7; color: #16a34a; }
+.badge-draft     { background: #f1f5f9; color: #64748b; }
+
+.badge-loai {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.badge-loai-tn  { background: #dbeafe; color: #1d4ed8; }
+.badge-loai-ds  { background: #fef9c3; color: #854d0e; }
+.badge-loai-tls { background: #fce7f3; color: #be185d; }
+
+.badge-dokho {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.badge-de        { background: #dcfce7; color: #166534; }
+.badge-trungbinh { background: #fef9c3; color: #854d0e; }
+.badge-nangcao   { background: #fee2e2; color: #991b1b; }
+
+/* ── Exam list cards ─────────────────────────────────────── */
+.exam-list { display: flex; flex-direction: column; gap: 16px; }
+
+.exam-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #1e3a8a;
+}
+.exam-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.exam-card-header h3 { font-size: 16px; }
+
+.exam-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: #64748b;
+    flex-wrap: wrap;
+}
+
+.exam-card-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* ── Empty state ─────────────────────────────────────────── */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.empty-icon { font-size: 48px; margin-bottom: 16px; }
+.empty-state p { color: #94a3b8; margin-bottom: 20px; font-size: 15px; }
+
+/* ── Stats ──────────────────────────────────────────────── */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 16px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-top: 4px solid #1e3a8a;
+}
+.stat-number { font-size: 32px; font-weight: 700; color: #1e3a8a; }
+.stat-label  { font-size: 12px; color: #64748b; margin-top: 4px; }
+
+/* ── Chart bars ─────────────────────────────────────────── */
+.chart-wrap { display: flex; flex-direction: column; gap: 10px; }
+
+.chart-bar-row { display: flex; align-items: center; gap: 12px; }
+.chart-label   { width: 70px; font-size: 13px; color: #475569; text-align: right; flex-shrink: 0; }
+.chart-bar-bg  { flex: 1; height: 20px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+.chart-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+.chart-val { width: 60px; font-size: 13px; font-weight: 600; color: #1e3a8a; flex-shrink: 0; }
+
+/* ── Phần header inside edit ─────────────────────────────── */
+.phan-header {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+}
+
+/* ── Điểm summary ───────────────────────────────────────── */
+.diem-summary {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.diem-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 160px;
+}
+.diem-tong .diem-label,
+.diem-tong .diem-val { color: #1e3a8a; font-weight: 700; }
+.diem-label { font-size: 12px; color: #64748b; }
+.diem-val   { font-size: 14px; font-weight: 600; }
