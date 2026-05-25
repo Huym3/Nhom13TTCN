@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\UserController      as AdminUser;
 
+<<<<<<< Updated upstream
 // ──────────────────────────────────────────────────────────
 // TRANG CHỦ
 // ──────────────────────────────────────────────────────────
@@ -174,3 +175,61 @@ Route::middleware(['checklogin', 'checkrole:Admin'])
         Route::delete('/users/{id}', [AdminController::class, 'deleteUser'])
             ->name('users.delete');
     });
+=======
+require __DIR__.'/auth.php';
+
+Route::get('/phong-thi', function () {
+    return view('student.room');
+});
+
+Route::get('/dashboard', function () {
+    return view('student.dashboard');
+});
+
+Route::get('/giao-vien/tao-cau-hoi', function () {
+    return view('teacher.teacher-question');
+});
+
+Route::get('/giao-vien/ghep-de', function () {
+    return view('teacher.teacher-exam');
+});
+
+Route::get('/ket-qua', function () {
+    return view('student.result'); // hoặc return view('student-result'); tùy ông lưu tên file là gì
+});
+
+// 1. Gắn thêm ->name('register') để sửa lỗi hiển thị giao diện
+Route::get('/register', function () {
+    return view('auth.register'); 
+})->name('register');
+
+// 2. T khai báo thêm tạm cái cục POST này để lót ổ sẵn. 
+// Nếu ông test bấm nút "Tạo tài khoản" nó sẽ không bị lỗi màn hình đỏ nữa, mà sẽ hiện ra dòng chữ này chờ Đạt vào xử lý Backend.
+Route::post('/register', function () {
+    return "Phần xử lý lưu dữ liệu Đăng ký vào Database sẽ do Đạt làm nhé!";
+});
+
+Route::get('/admin/quan-ly-tai-khoan', function () {
+    return view('admin.admin-users'); // Tùy đường dẫn file ông lưu
+});
+
+Route::get('/danh-sach-de', function () {
+    return view('student.student-exams'); 
+});
+
+Route::get('/giao-vien/quan-ly-cau-hoi', function () {
+    return view('teacher.questions');
+});
+
+Route::get('/giao-vien/quan-ly-de-thi', function () {
+    return view('teacher.exams');
+});
+
+Route::get('/giao-vien/dashboard', function () {
+    return view('teacher.dashboard');
+});
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard'); // Nhớ trỏ đúng tên file ông vừa lưu nhé
+});
+>>>>>>> Stashed changes

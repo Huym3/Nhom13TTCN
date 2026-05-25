@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title') - Ôn Thi Toán</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    @yield('css')
+</head>
+<body class="bg-light">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="/dashboard">Hệ Thống Ôn Thi Toán</a>
+        
+        <div>
+            @auth
+                @if(Auth::user()->Role == 'Admin')
+                    <a href="/admin/dashboard" class="btn btn-sm btn-danger me-2"><i class="bi bi-shield-lock"></i> Admin Panel</a>
+                    <a href="/admin/quan-ly-tai-khoan" class="btn btn-sm btn-outline-light me-2"><i class="bi bi-people"></i> Quản lý User</a>
+                @endif
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+                @if(Auth::user()->Role == 'Teacher' || Auth::user()->Role == 'Admin')
+                    <a href="/giao-vien/tao-cau-hoi" class="btn btn-sm btn-outline-light me-2">Ngân hàng câu hỏi</a>
+                    <a href="/giao-vien/ghep-de" class="btn btn-sm btn-outline-light me-2">Ghép Đề Thi</a>
+                    <a href="/giao-vien/quan-ly-de-thi" class="btn btn-sm btn-outline-light me-2">Quản lý Đề Thi</a>
+                    <a href="/giao-vien/quan-ly-cau-hoi" class="btn btn-sm btn-outline-light me-2">Quản lý Câu hỏi</a>
+                    <a href="/giao-vien/dashboard" class="btn btn-sm btn-info me-2">Bảng điều khiển</a>
+                @endif
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+                @if(Auth::user()->Role == 'Student')
+                    <a href="/dashboard" class="btn btn-sm btn-info me-2">Bảng điều khiển</a>
+                    <a href="/danh-sach-de" class="btn btn-sm btn-outline-light me-2">Luyện đề</a>
+                    <a href="/ket-qua-thi" class="btn btn-sm btn-outline-light me-2">Kết quả thi</a>
+                    <a href="/phong-thi" class="btn btn-sm btn-outline-light me-2">Phòng thi</a>
+                @endif
+                
+                <button class="btn btn-sm btn-danger ms-2">Đăng xuất</button>
+            
+            @else
+                @if(!request()->is('login') && !request()->is('register'))
+                    <a href="/login" class="btn btn-sm btn-light">Đăng nhập</a>
+                    <a href="/register" class="btn btn-sm btn-outline-light ms-2">Đăng ký</a>
+                @endif
+            @endauth
         </div>
-    </body>
+    </div>
+    </nav>
+
+    <div class="container">
+        @yield('content')
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    @yield('scripts')
+</body>
 </html>
