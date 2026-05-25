@@ -18,7 +18,7 @@
     </div>
 @endif
 
-<div class="form-card">
+<div class="form-card glass">
     <form method="POST" action="{{ route('teacher.exams.store') }}">
         @csrf
 

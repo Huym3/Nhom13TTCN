@@ -20,7 +20,7 @@
 @endif
 
 {{-- ── Thông tin đề ──────────────────────────────────── --}}
-<div class="form-card" style="margin-bottom:24px">
+<div class="form-card glass" style="margin-bottom:24px">
     <h3 class="section-title">Thông tin đề thi</h3>
     <form method="POST" action="{{ route('teacher.exams.update', $exam->MaDeThi) }}">
         @csrf @method('PUT')
@@ -56,7 +56,7 @@
 </div>
 
 {{-- ── Câu hỏi hiện trong đề ─────────────────────────── --}}
-<div class="form-card" style="margin-bottom:24px">
+<div class="form-card glass" style="margin-bottom:24px">
     <h3 class="section-title">
         Câu hỏi trong đề
         <span class="badge-count">{{ $cauHoiTrongDe->count() }} câu</span>
@@ -90,7 +90,7 @@
     </div>
 
     @if($cauHoiTrongDe->isEmpty())
-        <div class="empty" style="padding:20px;text-align:center;color:#94a3b8">
+        <div class="empty" style="padding:20px;text-align:center;color:var(--text-muted)">
             Chưa có câu hỏi nào trong đề. Thêm câu hỏi từ danh sách bên dưới.
         </div>
     @else
@@ -141,7 +141,7 @@
 </div>
 
 {{-- ── Thêm câu hỏi vào đề ──────────────────────────── --}}
-<div class="form-card">
+<div class="form-card glass">
     <h3 class="section-title">
         Thêm câu hỏi vào đề
         <span class="badge-count">{{ $cauHoiCoThe->count() }} câu chưa thêm</span>
@@ -160,7 +160,7 @@
     </div>
 
     @if($cauHoiCoThe->isEmpty())
-        <div class="empty" style="padding:20px;text-align:center;color:#94a3b8">
+        <div class="empty" style="padding:20px;text-align:center;color:var(--text-muted)">
             Tất cả câu hỏi của bạn đã được thêm vào đề, hoặc bạn chưa tạo câu hỏi nào.
         </div>
     @else
@@ -190,17 +190,18 @@
                         </span>
                     </td>
                     <td>
-                        <form action="{{ route('teacher.exams.addQuestion', $exam->MaDeThi) }}"
-                              method="POST" style="display:flex;gap:6px;align-items:center">
-                            @csrf
-                            <input type="hidden" name="maCauHoi" value="{{ $q->MaCauHoi }}">
-                            <select name="phan" class="form-control" style="width:70px;padding:4px 6px;font-size:13px">
-                                @if($q->LoaiCauHoi === 'TN')  <option value="I">I</option> @endif
-                                @if($q->LoaiCauHoi === 'DS')  <option value="II">II</option> @endif
-                                @if($q->LoaiCauHoi === 'TLS') <option value="III">III</option> @endif
-                            </select>
-                            <button type="submit" class="btn-primary btn-sm">+ Thêm</button>
-                        </form>
+                        <div style="display:flex;gap:6px;align-items:center">
+                        <select class="form-control phan-select" style="width:70px;padding:4px 6px;font-size:13px">
+                            @if($q->LoaiCauHoi === 'TN')  <option value="I">I</option> @endif
+                            @if($q->LoaiCauHoi === 'DS')  <option value="II">II</option> @endif
+                            @if($q->LoaiCauHoi === 'TLS') <option value="III">III</option> @endif
+                        </select>
+                        <button class="btn-primary btn-sm btn-them-cau"
+                                data-id="{{ $q->MaCauHoi }}"
+                                data-url="{{ route('teacher.exams.addQuestion', $exam->MaDeThi) }}">
+                            + Thêm
+                        </button>
+                    </div>
                     </td>
                 </tr>
                 @endforeach
@@ -227,4 +228,55 @@ function applyFilter() {
 filterLoai?.addEventListener('change', applyFilter);
 filterText?.addEventListener('input', applyFilter);
 </script>
+
+<script>
+document.querySelectorAll('.btn-them-cau').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const maCauHoi = this.dataset.id;
+        const url = this.dataset.url;
+        const phan = this.previousElementSibling.value;
+        const row = this.closest('tr');
+        const btnEl = this;
+
+        btnEl.disabled = true;
+        btnEl.textContent = '...';
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]')?.content
+                    || '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({ maCauHoi, phan })
+        })
+        .then(res => {
+            if (res.ok || res.redirected) {
+                // Ẩn dòng câu hỏi vừa thêm
+                row.style.opacity = '0.4';
+                row.style.pointerEvents = 'none';
+                btnEl.textContent = '✓ Đã thêm';
+                btnEl.style.background = 'var(--green)'; // Đã sửa màu chuẩn theo glass.css
+
+                // Cập nhật số câu chưa thêm
+                const badge = document.querySelector('.badge-count:last-of-type');
+                if (badge) {
+                    const cur = parseInt(badge.textContent);
+                    badge.textContent = (cur - 1) + ' câu chưa thêm';
+                }
+            } else {
+                btnEl.disabled = false;
+                btnEl.textContent = '+ Thêm';
+                alert('Có lỗi xảy ra, vui lòng thử lại.');
+            }
+        })
+        .catch(() => {
+            btnEl.disabled = false;
+            btnEl.textContent = '+ Thêm';
+            alert('Có lỗi xảy ra, vui lòng thử lại.');
+        });
+    });
+});
+</script>
+
 @endsection

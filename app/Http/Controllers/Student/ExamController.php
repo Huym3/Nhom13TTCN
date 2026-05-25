@@ -10,16 +10,24 @@ use Illuminate\Support\Facades\Session;
 class ExamController extends Controller
 {
     // Danh sách đề thi đã Published
-    public function index()
-    {
-        $deThi = DB::table('DeThi')
-            ->where('TrangThaiDe', 'Published')
-            ->orderBy('NgayTao', 'desc')
-            ->get();
+ public function index()
+{
+    $maNguoiDung = Session::get('maNguoiDung');
 
-        return view('student.exams.index', compact('deThi'));
-    }
+    // Lấy danh sách đề đã làm xong
+    $daDamIds = DB::table('BaiLamCuaHS')
+        ->where('MaNguoiDung', $maNguoiDung)
+        ->whereNotNull('ThoiGianNopBai')
+        ->pluck('MaDeThi');
 
+    $deThi = DB::table('DeThi')
+        ->where('TrangThaiDe', 'Published')
+        ->whereNotIn('MaDeThi', $daDamIds) // ẩn đề đã làm xong
+        ->orderBy('NgayTao', 'desc')
+        ->get();
+
+    return view('student.exams.index', compact('deThi'));
+}
     // Bắt đầu làm bài → gọi SP tạo bài làm
     public function start($id)
 {

@@ -358,8 +358,10 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     border-left: 4px solid #cbd5e1;
 }
-.result-question.dung { border-left-color: #16a34a; }
-.result-question.sai  { border-left-color: #dc2626; }
+.result-question.dung    { border-left-color: #16a34a; }
+.result-question.sai     { border-left-color: #dc2626; }
+.result-question.chua-lam { border-left-color: #94a3b8; background: #f8fafc; }
+
 
 .rq-header {
     display: flex;

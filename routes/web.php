@@ -14,9 +14,11 @@ use App\Http\Controllers\Teacher\QuestionController   as TeacherQuestion;
 use App\Http\Controllers\Teacher\ExamController       as TeacherExam;
 
 // Controllers Admin
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\UserController      as AdminUser;
 
+<<<<<<< Updated upstream
 // ──────────────────────────────────────────────────────────
 // TRANG CHỦ
 // ──────────────────────────────────────────────────────────
@@ -29,6 +31,12 @@ Route::get ('/login',    [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login',    [AuthController::class, 'login']);
 Route::get ('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
+Route::get ('/forgot-password', [AuthController::class, 'showForgotPassword'])->name('password.request');
+Route::post('/forgot-password', [AuthController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get ('/verify-otp', [AuthController::class, 'showVerifyOtp'])->name('password.verify-otp');
+Route::post('/verify-otp', [AuthController::class, 'verifyOtp'])->name('password.verify-otp.post');
+Route::get ('/reset-password/{token}', [AuthController::class, 'showResetPassword'])->name('password.reset');
+Route::post('/reset-password', [AuthController::class, 'resetPassword'])->name('password.store');
 Route::post('/logout',   [AuthController::class, 'logout'])->name('logout');
 
 // ──────────────────────────────────────────────────────────
@@ -116,21 +124,24 @@ Route::middleware(['checklogin', 'checkrole:Teacher'])
         Route::delete('/exams/{id}/remove-question', [TeacherExam::class, 'removeQuestion'])
             ->name('exams.removeQuestion');
 
+            // Xem thống kê 1 đề
+    Route::get('/exams/{id}/stats', [TeacherExam::class, 'stats'])
+        ->name('exams.stats');
+
+    // Thêm dòng này:
+    Route::get('/exams/{id}/bai-lam/{maBaiLam}', [TeacherExam::class, 'xemBaiLam'])
+        ->name('exams.xemBaiLam');
+
         // Publish đề (Draft → Published)
         Route::put('/exams/{id}/publish', [TeacherExam::class, 'publish'])
             ->name('exams.publish');
-
         Route::put('/exams/{id}/unpublish', [TeacherExam::class, 'unpublish'])
-    ->name('exams.unpublish');
+            ->name('exams.unpublish');
 
         // Xem thống kê 1 đề
         Route::get('/exams/{id}/stats', [TeacherExam::class, 'stats'])
             ->name('exams.stats');
     });
-
-        // Xem chi tiết bài làm của học sinh (thêm dòng này)
-Route::get('/exams/{id}/bai-lam/{maBaiLam}', [TeacherExam::class, 'xemBaiLam'])
-    ->name('exams.xemBaiLam');
 
 // ──────────────────────────────────────────────────────────
 // ADMIN
@@ -141,13 +152,84 @@ Route::middleware(['checklogin', 'checkrole:Admin'])
     ->group(function () {
 
         // Dashboard
-        Route::get('/dashboard', [AdminDashboard::class, 'index'])
+        Route::get('/dashboard', [AdminController::class, 'dashboard'])
             ->name('dashboard');
 
+        // Duyệt giáo viên
+        Route::get('/teachers/pending', [AdminController::class, 'pendingTeachers'])
+            ->name('teachers.pending');
+        Route::put('/teachers/{id}/approve', [AdminController::class, 'approveTeacher'])
+            ->name('teachers.approve');
+        Route::put('/teachers/{id}/reject', [AdminController::class, 'rejectTeacher'])
+            ->name('teachers.reject');
+
         // Quản lý người dùng
-        Route::get   ('/users',           [AdminUser::class, 'index'])  ->name('users.index');
-        Route::get   ('/users/{id}',      [AdminUser::class, 'show'])   ->name('users.show');
-        Route::put   ('/users/{id}/ban',  [AdminUser::class, 'ban'])    ->name('users.ban');
-        Route::put   ('/users/{id}/unban',[AdminUser::class, 'unban'])  ->name('users.unban');
-        Route::delete('/users/{id}',      [AdminUser::class, 'destroy'])->name('users.destroy');
+        Route::get('/users', [AdminController::class, 'users'])
+            ->name('users.index');
+        Route::get('/users/{id}', [AdminController::class, 'userDetail'])
+            ->name('users.detail');
+        Route::put('/users/{id}/block', [AdminController::class, 'blockUser'])
+            ->name('users.block');
+        Route::put('/users/{id}/unblock', [AdminController::class, 'unblockUser'])
+            ->name('users.unblock');
+        Route::delete('/users/{id}', [AdminController::class, 'deleteUser'])
+            ->name('users.delete');
     });
+=======
+require __DIR__.'/auth.php';
+
+Route::get('/phong-thi', function () {
+    return view('student.room');
+});
+
+Route::get('/dashboard', function () {
+    return view('student.dashboard');
+});
+
+Route::get('/giao-vien/tao-cau-hoi', function () {
+    return view('teacher.teacher-question');
+});
+
+Route::get('/giao-vien/ghep-de', function () {
+    return view('teacher.teacher-exam');
+});
+
+Route::get('/ket-qua', function () {
+    return view('student.result'); // hoặc return view('student-result'); tùy ông lưu tên file là gì
+});
+
+// 1. Gắn thêm ->name('register') để sửa lỗi hiển thị giao diện
+Route::get('/register', function () {
+    return view('auth.register'); 
+})->name('register');
+
+// 2. T khai báo thêm tạm cái cục POST này để lót ổ sẵn. 
+// Nếu ông test bấm nút "Tạo tài khoản" nó sẽ không bị lỗi màn hình đỏ nữa, mà sẽ hiện ra dòng chữ này chờ Đạt vào xử lý Backend.
+Route::post('/register', function () {
+    return "Phần xử lý lưu dữ liệu Đăng ký vào Database sẽ do Đạt làm nhé!";
+});
+
+Route::get('/admin/quan-ly-tai-khoan', function () {
+    return view('admin.admin-users'); // Tùy đường dẫn file ông lưu
+});
+
+Route::get('/danh-sach-de', function () {
+    return view('student.student-exams'); 
+});
+
+Route::get('/giao-vien/quan-ly-cau-hoi', function () {
+    return view('teacher.questions');
+});
+
+Route::get('/giao-vien/quan-ly-de-thi', function () {
+    return view('teacher.exams');
+});
+
+Route::get('/giao-vien/dashboard', function () {
+    return view('teacher.dashboard');
+});
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard'); // Nhớ trỏ đúng tên file ông vừa lưu nhé
+});
+>>>>>>> Stashed changes

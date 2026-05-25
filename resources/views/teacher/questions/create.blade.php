@@ -1,13 +1,12 @@
 {{-- resources/views/teacher/questions/create.blade.php --}}
 @extends('layouts.teacher')
-
 @section('title', 'Tạo câu hỏi mới')
 
 @section('content')
 <div class="page-header">
     <div class="page-header-left">
-        <h2>➕ Tạo câu hỏi mới</h2>
-        <p>Chọn loại câu hỏi để hiển thị form nhập đáp án phù hợp</p>
+        <div class="page-title">Tạo câu hỏi mới</div>
+        <div class="page-sub">Chọn loại câu hỏi để hiển thị form nhập đáp án phù hợp</div>
     </div>
     <a href="{{ route('teacher.questions.index') }}" class="btn-outline">← Quay lại</a>
 </div>
@@ -18,16 +17,14 @@
     </div>
 @endif
 
-<div class="form-card">
-    {{-- Thêm enctype="multipart/form-data" --}}
-<form method="POST" action="{{ route('teacher.questions.store') }}" id="formCauHoi" enctype="multipart/form-data">
+<div class="form-card glass">
+    <form method="POST" action="{{ route('teacher.questions.store') }}" id="formCauHoi" enctype="multipart/form-data">
         @csrf
 
-        {{-- Thông tin chung --}}
         <h3 class="section-title">Thông tin câu hỏi</h3>
 
         <div class="form-row">
-            <div class="form-group" style="flex:2">
+            <div class="form-group" style="flex: 2;">
                 <label>Chuyên đề <span class="required">*</span></label>
                 <select name="maChuyenDe" class="form-control">
                     <option value="">-- Chọn chuyên đề --</option>
@@ -58,6 +55,7 @@
                 </select>
             </div>
         </div>
+
         <div class="form-group">
             <label>Nội dung câu hỏi <span class="required">*</span></label>
             <textarea name="noiDung" rows="4" class="form-control"
@@ -65,9 +63,9 @@
         </div>
 
         <div class="form-group">
-            <label>Ảnh câu hỏi (Chứa đề bài và đáp án) <span class="required">*</span></label>
+            <label>Ảnh câu hỏi (Chứa đề bài và đáp án)</label>
             <input type="file" name="anhCauHoi" class="form-control" accept="image/*">
-            <small class="form-hint">Hệ thống sẽ ưu tiên hiển thị ảnh này thay cho nội dung chữ.</small>
+            <span class="form-hint">Hệ thống sẽ ưu tiên hiển thị ảnh này thay cho nội dung chữ.</span>
         </div>
 
         <div class="form-group">
@@ -76,42 +74,43 @@
                       placeholder="Giải thích tại sao đáp án đúng (học sinh xem sau khi nộp bài)">{{ old('giaiThich') }}</textarea>
         </div>
 
-        {{-- ── Phần TN ─────────────────────────────── --}}
-        <div id="block-TN" class="dap-an-block" style="display:none">
-            <h3 class="section-title">Đáp án — Trắc nghiệm (chọn 1 đáp án đúng)</h3>
-            <div class="form-group">
+        {{-- ── Phần TN ── --}}
+        <div id="block-TN" class="dap-an-block" style="display: none;">
+            <h3 class="section-title">Đáp án — Trắc nghiệm</h3>
+            <div class="form-group" style="max-width: 200px;">
                 <label>Đáp án đúng <span class="required">*</span></label>
-                <select name="dapAnDung" class="form-control" style="width:160px">
+                <select name="dapAnDung" class="form-control">
                     <option value="">-- Chọn --</option>
                     @foreach(['A','B','C','D'] as $k)
-                        <option value="{{ $k }}" {{ old('dapAnDung') === $k ? 'selected' : '' }}>{{ $k }}</option>
+                        <option value="{{ $k }}" {{ old('dapAnDung') === $k ? 'selected' : '' }}>
+                            Đáp án {{ $k }}
+                        </option>
                     @endforeach
                 </select>
             </div>
         </div>
 
-        {{-- ── Phần DS ─────────────────────────────── --}}
-<div id="block-DS" class="dap-an-block" style="display:none">
-    <h3 class="section-title">Đáp án — Đúng/Sai (Chọn trạng thái cho 4 ý)</h3>
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-        @foreach(['a','b','c','d'] as $k)
-        <div class="form-row" style="align-items: center; background: #f8fafc; padding: 10px; border-radius: 8px;">
-            <div style="width: 50px; font-weight: bold; font-size: 1.1rem;">Ý {{ strtoupper($k) }}</div>
-            <div class="form-group" style="margin-bottom: 0; flex: 1;">
-                <select name="dapAnY_{{ $k }}" class="form-control">
-                    <option value="1">✅ Đúng</option>
-                    <option value="0">❌ Sai</option>
-                </select>
+        {{-- ── Phần DS ── --}}
+        <div id="block-DS" class="dap-an-block" style="display: none;">
+            <h3 class="section-title">Đáp án — Đúng/Sai (chọn trạng thái cho 4 ý)</h3>
+            <div class="ds-grid">
+                @foreach(['a','b','c','d'] as $k)
+                <div class="ds-item">
+                    <div class="ds-label">{{ strtoupper($k) }}</div>
+                    <div class="form-group" style="margin-bottom: 0; flex: 1;">
+                        <select name="dapAnY_{{ $k }}" class="form-control">
+                            <option value="1">✅ Đúng</option>
+                            <option value="0">❌ Sai</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="noiDungY_{{ $k }}" value="Nội dung trong ảnh">
+                </div>
+                @endforeach
             </div>
-            {{-- Input ẩn để tránh lỗi backend nếu Controller vẫn yêu cầu field này --}}
-            <input type="hidden" name="noiDungY_{{ $k }}" value="Nội dung trong ảnh">
         </div>
-        @endforeach
-    </div>
-</div>
 
-        {{-- ── Phần TLS ────────────────────────────── --}}
-        <div id="block-TLS" class="dap-an-block" style="display:none">
+        {{-- ── Phần TLS ── --}}
+        <div id="block-TLS" class="dap-an-block" style="display: none;">
             <h3 class="section-title">Đáp án — Trả lời số</h3>
             <div class="form-row">
                 <div class="form-group">
@@ -123,9 +122,9 @@
                     <label>Sai số chấp nhận</label>
                     <input type="number" name="saiSo" step="any" class="form-control"
                            value="{{ old('saiSo', '0.005') }}" placeholder="0.005">
-                    <small class="form-hint">Câu trả lời trong khoảng ± sai số sẽ được tính đúng</small>
+                    <span class="form-hint">Câu trả lời trong khoảng ± sai số sẽ được tính đúng</span>
                 </div>
-                <div class="form-group" style="flex:2">
+                <div class="form-group" style="flex: 2;">
                     <label>Ghi chú đơn vị</label>
                     <input type="text" name="ghiChu" class="form-control"
                            value="{{ old('ghiChu') }}" placeholder="VD: triệu đồng, km/h...">
@@ -153,8 +152,6 @@ function showBlock(loai) {
 }
 
 loaiSelect.addEventListener('change', () => showBlock(loaiSelect.value));
-
-// Giữ block khi có old input (validation fail)
 showBlock('{{ old("loaiCauHoi") }}');
 </script>
 @endsection

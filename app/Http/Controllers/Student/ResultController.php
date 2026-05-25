@@ -30,100 +30,86 @@ class ResultController extends Controller
     }
 
     // Chi tiết kết quả 1 bài làm
-    public function show($maBaiLam)
-    {
-        $maNguoiDung = Session::get('maNguoiDung');
+ public function show($maBaiLam)
+{
+    $maNguoiDung = Session::get('maNguoiDung');
 
-        // Kiểm tra bài làm thuộc về học sinh này
-        $baiLam = DB::table('BaiLamCuaHS as bl')
-            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')
-            ->where('bl.MaBaiLam', $maBaiLam)
-            ->where('bl.MaNguoiDung', $maNguoiDung)
-            ->select('bl.*', 'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi')
-            ->first();
+    $baiLam = DB::table('BaiLamCuaHS as bl')
+        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')
+        ->where('bl.MaBaiLam', $maBaiLam)
+        ->where('bl.MaNguoiDung', $maNguoiDung)
+        ->select('bl.*', 'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi')
+        ->first();
 
-        if (!$baiLam) abort(403, 'Bạn không có quyền xem bài làm này.');
+    if (!$baiLam) abort(403, 'Bạn không có quyền xem bài làm này.');
 
-        // Phần I: kết quả TN
-        $ketQuaPhan1 = DB::table('ChiTietTraLoiTN as ct')
-            ->join('Question as q',  'q.MaCauHoi', '=', 'ct.MaCauHoi')
-            ->join('DapAnTN as da',  'da.MaDATN',  '=', 'ct.MaDATN')
-            ->join('CauHoiTrongDe as chtd', function($join) use ($baiLam) {
-                $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
-                     ->where('chtd.MaDeThi', '=', $baiLam->MaDeThi);
-            })
-            ->where('ct.MaBaiLam', $maBaiLam)
-            ->orderBy('chtd.ThuTu')
-->select(
-    'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
-    'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
-    'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'
-)
-            ->get();
+    // ── Phần I ──────────────────────────────────────────────
+    $ketQuaPhan1 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {
+            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')
+                 ->where('ct.MaBaiLam', '=', $maBaiLam);
+        })
+        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')
+        ->where('chtd.MaDeThi', $baiLam->MaDeThi)
+        ->where('chtd.Phan', 'I')
+        ->orderBy('chtd.ThuTu')
+        ->select(
+            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
+            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
+            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'
+        )
+        ->get();
 
-        // Thêm đáp án đúng cho mỗi câu Phần I
-        foreach ($ketQuaPhan1 as $cau) {
-            $cau->dapAnDung = DB::table('DapAnTN')
-                ->where('MaCauHoi', $cau->MaCauHoi)
-                ->where('LaDapAnDung', 1)
-                ->first();
-            // Tất cả đáp án để hiển thị
-            $cau->tatCaDapAn = DB::table('DapAnTN')
-                ->where('MaCauHoi', $cau->MaCauHoi)
-                ->get();
-        }
-
-        // Phần II: kết quả Đúng/Sai
-$ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
-    ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
-    ->where('chtd.MaDeThi', $baiLam->MaDeThi)
-    ->where('chtd.Phan', 'II')
-    ->orderBy('chtd.ThuTu')
-    ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh', 'chtd.ThuTu') // thêm q.HinhAnh
-    ->get();
-
-        foreach ($ketQuaPhan2 as $cau) {
-            // Các ý con + lựa chọn của HS
-$cau->cacY = DB::table('CauHoiDS_Y as y')
-    ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {
-        $join->on('ct.MaY', '=', 'y.MaY')
-             ->where('ct.MaBaiLam', '=', $maBaiLam);
-    })
-    ->where('y.MaCauHoi', $cau->MaCauHoi)
-    ->orderBy('y.KyHieu')
-    ->select(
-        'y.KyHieu', 'y.NoiDungY', 'y.DapAnDung',
-        'ct.LuaChonCuaHocSinh', 'ct.DungSai'
-    )
-    ->get();
-                
-
-            // Điểm đạt được của câu này
-            $soYDung = collect($cau->cacY)->where('DungSai', 1)->count();
-            $cau->diemDat = DB::table('ThangDiemDS')
-                ->where('SoYDung', $soYDung)
-                ->value('DiemDat') ?? 0;
-        }
-
-        // Phần III: kết quả số
-        $ketQuaPhan3 = DB::table('ChiTietCauTraLoiSo as ct')
-            ->join('Question as q', 'q.MaCauHoi', '=', 'ct.MaCauHoi')
-            ->join('CauHoiTrongDe as chtd', function($join) use ($baiLam) {
-                $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
-                     ->where('chtd.MaDeThi', '=', $baiLam->MaDeThi);
-            })
-            ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'ct.MaCauHoi')
-            ->where('ct.MaBaiLam', $maBaiLam)
-            ->orderBy('chtd.ThuTu')
-->select(
-    'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
-    'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
-    'da.DapAnSo', 'chtd.ThuTu'
-)
-            ->get();
-
-        return view('student.results.show', compact(
-            'baiLam', 'ketQuaPhan1', 'ketQuaPhan2', 'ketQuaPhan3'
-        ));
+    foreach ($ketQuaPhan1 as $cau) {
+        $cau->dapAnDung  = DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first();
+        $cau->tatCaDapAn = DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get();
     }
+
+    // ── Phần II ─────────────────────────────────────────────
+    $ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->where('chtd.MaDeThi', $baiLam->MaDeThi)
+        ->where('chtd.Phan', 'II')
+        ->orderBy('chtd.ThuTu')
+        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh', 'chtd.ThuTu')
+        ->get();
+
+    foreach ($ketQuaPhan2 as $cau) {
+        $cau->cacY = DB::table('CauHoiDS_Y as y')
+            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {
+                $join->on('ct.MaY', '=', 'y.MaY')
+                     ->where('ct.MaBaiLam', '=', $maBaiLam);
+            })
+            ->where('y.MaCauHoi', $cau->MaCauHoi)
+            ->orderBy('y.KyHieu')
+            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')
+            ->get();
+
+        $soYDung = collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count();
+        $cau->diemDat = DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value('DiemDat') ?? 0;
+    }
+
+    // ── Phần III ────────────────────────────────────────────
+    $ketQuaPhan3 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {
+            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')
+                 ->where('ct.MaBaiLam', '=', $maBaiLam);
+        })
+        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->where('chtd.MaDeThi', $baiLam->MaDeThi)
+        ->where('chtd.Phan', 'III')
+        ->orderBy('chtd.ThuTu')
+        ->select(
+            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',
+            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
+            'da.DapAnSo', 'chtd.ThuTu'
+        )
+        ->get();
+
+    return view('student.results.show', compact(
+        'baiLam', 'ketQuaPhan1', 'ketQuaPhan2', 'ketQuaPhan3'
+    ));
+}
 }

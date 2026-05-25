@@ -151,6 +151,19 @@ $data = [
         }
 
         DB::table('Question')->where('MaCauHoi', $id)->update($data);
+
+        if ($question->LoaiCauHoi === 'TN') {
+    $dapAnDung = $request->dapAnDung;
+    foreach (['A','B','C','D'] as $ky) {
+        DB::table('DapAnTN')
+            ->where('MaCauHoi', $id)
+            ->where('KyHieu', $ky)
+            ->update([
+                'LaDapAnDung' => $dapAnDung === $ky ? 1 : 0,
+            ]);
+    }
+}
+
         // Cập nhật ý DS
 if ($question->LoaiCauHoi === 'DS') {
     foreach (['a', 'b', 'c', 'd'] as $ky) {

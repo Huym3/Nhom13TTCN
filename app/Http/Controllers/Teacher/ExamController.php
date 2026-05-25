@@ -163,66 +163,60 @@ class ExamController extends Controller
 }
     // ── Thêm câu hỏi vào đề ─────────────────────────────────
     public function addQuestion(Request $request, $id)
-    {
-        $request->validate([
-            'maCauHoi' => 'required|integer',
-            'phan'     => 'required|in:I,II,III',
-        ]);
+{
+    // Thêm 2 dòng này vào đầu hàm
+    $maCauHoi = $request->input('maCauHoi');
+    $phan     = $request->input('phan');
 
-        $exam = DB::table('DeThi')->where('MaDeThi', $id)->first();
-        if (!$exam) abort(404);
-
-        // Kiểm tra loại câu hỏi có khớp với phần không
-        $question = DB::table('Question')->where('MaCauHoi', $request->maCauHoi)->first();
-        if (!$question) abort(404);
-
-        $loaiHopLe = [
-            'I'   => 'TN',
-            'II'  => 'DS',
-            'III' => 'TLS',
-        ];
-
-        if ($loaiHopLe[$request->phan] !== $question->LoaiCauHoi) {
-            return back()->with('error', 'Loại câu hỏi không khớp với phần đã chọn (Phần I: TN, Phần II: DS, Phần III: TLS).');
-        }
-
-        // Kiểm tra đã có chưa
-        $daCoTrongDe = DB::table('CauHoiTrongDe')
-            ->where('MaCauHoi', $request->maCauHoi)
-            ->where('MaDeThi', $id)
-            ->exists();
-
-        if ($daCoTrongDe) {
-            return back()->with('error', 'Câu hỏi này đã có trong đề.');
-        }
-
-        // Điểm theo phần
-        $diemTheoPhan = ['I' => 0.25, 'II' => 1.00, 'III' => 0.50];
-
-        // Số thứ tự tiếp theo trong phần
-        $thuTu = DB::table('CauHoiTrongDe')
-            ->where('MaDeThi', $id)
-            ->where('Phan', $request->phan)
-            ->max('ThuTu') + 1;
-
-        DB::table('CauHoiTrongDe')->insert([
-            'MaCauHoi'   => $request->maCauHoi,
-            'MaDeThi'    => $id,
-            'Phan'       => $request->phan,
-            'ThuTu'      => $thuTu,
-            'DiemCauHoi' => $diemTheoPhan[$request->phan],
-        ]);
-
-        // Cập nhật SoCauHoi
-        $tong = DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count();
-        DB::table('DeThi')->where('MaDeThi', $id)->update([
-            'SoCauHoi'   => $tong,
-            'NgayCapNhat'=> now(),
-        ]);
-
-        return back()->with('success', 'Đã thêm câu hỏi vào đề.');
+    // Sửa validate dùng biến thay vì $request trực tiếp
+    if (!$maCauHoi || !$phan) {
+        return response()->json(['error' => 'Thiếu dữ liệu'], 400);
     }
 
+    $exam = DB::table('DeThi')->where('MaDeThi', $id)->first();
+    if (!$exam) abort(404);
+
+    $question = DB::table('Question')->where('MaCauHoi', $maCauHoi)->first();
+    if (!$question) abort(404);
+
+    $loaiHopLe = ['I' => 'TN', 'II' => 'DS', 'III' => 'TLS'];
+
+    if ($loaiHopLe[$phan] !== $question->LoaiCauHoi) {
+        return response()->json(['error' => 'Loại câu hỏi không khớp'], 422);
+    }
+
+    $daCoTrongDe = DB::table('CauHoiTrongDe')
+        ->where('MaCauHoi', $maCauHoi)
+        ->where('MaDeThi', $id)
+        ->exists();
+
+    if ($daCoTrongDe) {
+        return response()->json(['error' => 'Câu hỏi đã có trong đề'], 422);
+    }
+
+    $diemTheoPhan = ['I' => 0.25, 'II' => 1.00, 'III' => 0.50];
+
+    $thuTu = DB::table('CauHoiTrongDe')
+        ->where('MaDeThi', $id)
+        ->where('Phan', $phan)
+        ->max('ThuTu') + 1;
+
+    DB::table('CauHoiTrongDe')->insert([
+        'MaCauHoi'   => $maCauHoi,
+        'MaDeThi'    => $id,
+        'Phan'       => $phan,
+        'ThuTu'      => $thuTu,
+        'DiemCauHoi' => $diemTheoPhan[$phan],
+    ]);
+
+    $tong = DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count();
+    DB::table('DeThi')->where('MaDeThi', $id)->update([
+        'SoCauHoi'    => $tong,
+        'NgayCapNhat' => now(),
+    ]);
+
+    return response()->json(['ok' => true]);
+}
     // ── Xóa câu hỏi khỏi đề ─────────────────────────────────
     public function removeQuestion(Request $request, $id)
     {
@@ -328,23 +322,30 @@ public function unpublish($id)
             ->first();
 
         // Phân bố điểm
-        $phanBoDiem = DB::table('BaiLamCuaHS')
-            ->where('MaDeThi', $id)
-            ->whereNotNull('ThoiGianNopBai')
-            ->selectRaw("
-                CASE
-                    WHEN TongDiem < 2  THEN '0 - 2'
-                    WHEN TongDiem < 4  THEN '2 - 4'
-                    WHEN TongDiem < 5  THEN '4 - 5'
-                    WHEN TongDiem < 6.5 THEN '5 - 6.5'
-                    WHEN TongDiem < 8  THEN '6.5 - 8'
-                    ELSE '8 - 10'
-                END as KhoangDiem,
-                COUNT(*) as SoLuong
-            ")
-            ->groupByRaw("KhoangDiem")
-            ->orderByRaw("MIN(TongDiem)")
-            ->get();
+       // Thay vì query từ BaiLamCuaHS, tạo đủ 6 khoảng điểm cố định
+$phanBoRaw = DB::table('BaiLamCuaHS')
+    ->where('MaDeThi', $id)
+    ->whereNotNull('ThoiGianNopBai')
+    ->selectRaw("
+        CASE
+            WHEN TongDiem < 2   THEN '0 - 2'
+            WHEN TongDiem < 4   THEN '2 - 4'
+            WHEN TongDiem < 5   THEN '4 - 5'
+            WHEN TongDiem < 6.5 THEN '5 - 6.5'
+            WHEN TongDiem < 8   THEN '6.5 - 8'
+            ELSE '8 - 10'
+        END as KhoangDiem,
+        COUNT(*) as SoLuong
+    ")
+    ->groupByRaw("KhoangDiem")
+    ->pluck('SoLuong', 'KhoangDiem');
+
+// Đảm bảo đủ 6 khoảng, khoảng không có thì = 0
+$tatCaKhoang = ['0 - 2', '2 - 4', '4 - 5', '5 - 6.5', '6.5 - 8', '8 - 10'];
+$phanBoDiem = collect($tatCaKhoang)->map(fn($k) => (object)[
+    'KhoangDiem' => $k,
+    'SoLuong'    => $phanBoRaw[$k] ?? 0,
+]);
 
         // Top 5 học sinh điểm cao
         $topHocSinh = DB::table('BaiLamCuaHS as bl')
@@ -374,10 +375,10 @@ $tiLeUngCauTN = DB::table('CauHoiTrongDe as ctd')
     ->where('ctd.Phan', 'I')
     ->orderBy('ctd.ThuTu')
     ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')
-    ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,
-        q.HinhAnh,
-        COUNT(ct.MaChiTietTN) as TongTraLoi,
-        SUM(ct.DungSai) as SoDung')
+   ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,
+    q.HinhAnh,
+    COUNT(ct.MaBaiLam) as TongTraLoi,
+    SUM(ct.DungSai) as SoDung')
     ->get();
 
 
@@ -399,9 +400,9 @@ $tiLeUngCauTN = DB::table('CauHoiTrongDe as ctd')
             ->orderBy('ctd.ThuTu')
             ->orderBy('y.KyHieu')
             ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')
-            ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
+           ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
     y.MaY, y.KyHieu, y.DapAnDung,
-    COUNT(ct.MaChiTietDS) as TongTraLoi,
+    COUNT(ct.MaBaiLam) as TongTraLoi,
     SUM(CASE WHEN ct.LuaChonCuaHocSinh = y.DapAnDung THEN 1 ELSE 0 END) as SoDung')
             ->get();
 
@@ -422,10 +423,10 @@ $tiLeUngCauTLS = DB::table('CauHoiTrongDe as ctd')
     ->where('ctd.Phan', 'III')
     ->orderBy('ctd.ThuTu')
     ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')
-    ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
-        da.DapAnSo, da.SaiSoChapNhan,
-        COUNT(ct.MaCauTLSo) as TongTraLoi,
-        SUM(CASE WHEN ABS(CAST(REPLACE(ct.CauTraLoiSo, ",", ".") AS DECIMAL(12,4)) - da.DapAnSo) <= da.SaiSoChapNhan THEN 1 ELSE 0 END) as SoDung')
+   ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,
+    da.DapAnSo, da.SaiSoChapNhan,
+    COUNT(ct.MaBaiLam) as TongTraLoi,
+    SUM(CASE WHEN ABS(CAST(REPLACE(ct.CauTraLoiSo, ",", ".") AS DECIMAL(12,4)) - da.DapAnSo) <= da.SaiSoChapNhan THEN 1 ELSE 0 END) as SoDung')
     ->get();
 
         return view('teacher.exams.stats', compact(
@@ -449,30 +450,30 @@ public function xemBaiLam($id, $maBaiLam)
         ->first();
     if (!$baiLam) abort(404);
 
-    // Phần I
-    $ketQuaPhan1 = DB::table('ChiTietTraLoiTN as ct')
-        ->join('Question as q', 'q.MaCauHoi', '=', 'ct.MaCauHoi')
-        ->join('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')
-        ->join('CauHoiTrongDe as chtd', function($join) use ($id) {
-            $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
-                 ->where('chtd.MaDeThi', '=', $id);
+    // ── Phần I ──────────────────────────────────────────────
+    $ketQuaPhan1 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {
+            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')
+                 ->where('ct.MaBaiLam', '=', $maBaiLam);
         })
-        ->where('ct.MaBaiLam', $maBaiLam)
+        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')
+        ->where('chtd.MaDeThi', $id)
+        ->where('chtd.Phan', 'I')
         ->orderBy('chtd.ThuTu')
-        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
-                 'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
-                 'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu')
+        ->select(
+            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
+            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',
+            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'
+        )
         ->get();
 
     foreach ($ketQuaPhan1 as $cau) {
-        $cau->dapAnDung = DB::table('DapAnTN')
-            ->where('MaCauHoi', $cau->MaCauHoi)
-            ->where('LaDapAnDung', 1)->first();
-        $cau->tatCaDapAn = DB::table('DapAnTN')
-            ->where('MaCauHoi', $cau->MaCauHoi)->get();
+        $cau->dapAnDung  = DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first();
+        $cau->tatCaDapAn = DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get();
     }
 
-    // Phần II
+    // ── Phần II ─────────────────────────────────────────────
     $ketQuaPhan2 = DB::table('CauHoiTrongDe as chtd')
         ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
         ->where('chtd.MaDeThi', $id)
@@ -492,24 +493,26 @@ public function xemBaiLam($id, $maBaiLam)
             ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')
             ->get();
 
-        $soYDung = collect($cau->cacY)->where('DungSai', 1)->count();
-        $cau->diemDat = DB::table('ThangDiemDS')
-            ->where('SoYDung', $soYDung)->value('DiemDat') ?? 0;
+        $soYDung = collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count();
+        $cau->diemDat = DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value('DiemDat') ?? 0;
     }
 
-    // Phần III
-    $ketQuaPhan3 = DB::table('ChiTietCauTraLoiSo as ct')
-        ->join('Question as q', 'q.MaCauHoi', '=', 'ct.MaCauHoi')
-        ->join('CauHoiTrongDe as chtd', function($join) use ($id) {
-            $join->on('chtd.MaCauHoi', '=', 'ct.MaCauHoi')
-                 ->where('chtd.MaDeThi', '=', $id);
+    // ── Phần III ────────────────────────────────────────────
+    $ketQuaPhan3 = DB::table('CauHoiTrongDe as chtd')
+        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {
+            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')
+                 ->where('ct.MaBaiLam', '=', $maBaiLam);
         })
-        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'ct.MaCauHoi')
-        ->where('ct.MaBaiLam', $maBaiLam)
+        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')
+        ->where('chtd.MaDeThi', $id)
+        ->where('chtd.Phan', 'III')
         ->orderBy('chtd.ThuTu')
-        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
-                 'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
-                 'da.DapAnSo', 'chtd.ThuTu')
+        ->select(
+            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',
+            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',
+            'da.DapAnSo', 'chtd.ThuTu'
+        )
         ->get();
 
     return view('teacher.exams.xem-bai-lam', compact(

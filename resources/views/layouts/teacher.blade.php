@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <link rel="stylesheet" href="{{ asset('css/glass.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Teacher') — Thi Thử THPT</title>
-    <link rel="stylesheet" href="{{ asset('css/teacher.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
