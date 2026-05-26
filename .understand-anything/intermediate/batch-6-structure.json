@@ -1,0 +1,1261 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "bootstrap/providers.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 36,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/factories/UserFactory.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "definition",
+          "startLine": 25,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "unverified",
+          "startLine": 39,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserFactory",
+          "startLine": 13,
+          "endLine": 45,
+          "methods": [
+            "definition",
+            "unverified"
+          ],
+          "properties": [
+            "password"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserFactory",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "definition",
+          "callee": "fake()->name",
+          "lineNumber": 28
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 28
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->unique()->safeEmail",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "fake()->unique",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "fake",
+          "lineNumber": 29
+        },
+        {
+          "caller": "definition",
+          "callee": "now",
+          "lineNumber": 30
+        },
+        {
+          "caller": "definition",
+          "callee": "Hash::make",
+          "lineNumber": 31
+        },
+        {
+          "caller": "definition",
+          "callee": "Str::random",
+          "lineNumber": 32
+        },
+        {
+          "caller": "unverified",
+          "callee": "$this->state",
+          "lineNumber": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 44,
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 14
+        },
+        {
+          "caller": "up",
+          "callee": "$table->id",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email')->unique",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('email_verified_at')->nullable",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->rememberToken",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamps",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('email')->primary",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('created_at')->nullable",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('id')->primary",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreignId('user_id')->nullable()->index",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreignId('user_id')->nullable",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->foreignId",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('ip_address', 45)->nullable",
+          "lineNumber": 33
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 33
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text('user_agent')->nullable",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->longText",
+          "lineNumber": 35
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('last_activity')->index",
+          "lineNumber": 36
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 36
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 45
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 46
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 14
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('key')->primary",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->mediumText",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('expiration')->index",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('key')->primary",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('expiration')->index",
+          "lineNumber": 23
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 23
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 32
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 52,
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 14
+        },
+        {
+          "caller": "up",
+          "callee": "$table->id",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('queue')->index",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->longText",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedTinyInteger",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger('reserved_at')->nullable",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->unsignedInteger",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 24
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('id')->primary",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 28
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->longText",
+          "lineNumber": 30
+        },
+        {
+          "caller": "up",
+          "callee": "$table->mediumText('options')->nullable",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->mediumText",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('cancelled_at')->nullable",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 33
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer('finished_at')->nullable",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "$table->integer",
+          "lineNumber": 34
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->id",
+          "lineNumber": 38
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('uuid')->unique",
+          "lineNumber": 39
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 39
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 40
+        },
+        {
+          "caller": "up",
+          "callee": "$table->text",
+          "lineNumber": 41
+        },
+        {
+          "caller": "up",
+          "callee": "$table->longText",
+          "lineNumber": 42
+        },
+        {
+          "caller": "up",
+          "callee": "$table->longText",
+          "lineNumber": 43
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('failed_at')->useCurrent",
+          "lineNumber": 44
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp",
+          "lineNumber": 44
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 53
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 54
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::dropIfExists",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 60,
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::hasTable",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::create",
+          "lineNumber": 16
+        },
+        {
+          "caller": "up",
+          "callee": "$table->increments",
+          "lineNumber": 17
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('TenDangNhap')->unique",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 18
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 19
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string('Email')->unique",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 20
+        },
+        {
+          "caller": "up",
+          "callee": "$table->string",
+          "lineNumber": 21
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date('NgaySinh')->nullable",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->date",
+          "lineNumber": 22
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('Role', ['Student', 'Teacher', 'Admin'])->default",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 25
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TrangThai', ['Active', 'Banned'])->default",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 26
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TeacherStatus', ['Pending', 'Approved', 'Rejected'])->nullable()->default",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TeacherStatus', ['Pending', 'Approved', 'Rejected'])->nullable",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 29
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('created_at')->useCurrent",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp",
+          "lineNumber": 31
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp('updated_at')->useCurrent",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "$table->timestamp",
+          "lineNumber": 32
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 36
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 37
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('Role', ['Student', 'Teacher', 'Admin'])->default('Student')->after",
+          "lineNumber": 38
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('Role', ['Student', 'Teacher', 'Admin'])->default",
+          "lineNumber": 38
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 38
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 40
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TrangThai', ['Active', 'Banned'])->default('Active')->after",
+          "lineNumber": 41
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TrangThai', ['Active', 'Banned'])->default",
+          "lineNumber": 41
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 41
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 43
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TeacherStatus', ['Pending', 'Approved', 'Rejected'])->nullable()->default('Pending')->after",
+          "lineNumber": 44
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TeacherStatus', ['Pending', 'Approved', 'Rejected'])->nullable()->default",
+          "lineNumber": 44
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum('TeacherStatus', ['Pending', 'Approved', 'Rejected'])->nullable",
+          "lineNumber": 44
+        },
+        {
+          "caller": "up",
+          "callee": "$table->enum",
+          "lineNumber": 44
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::hasTable",
+          "lineNumber": 55
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 56
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 57
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropColumn",
+          "lineNumber": 58
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 60
+        },
+        {
+          "caller": "down",
+          "callee": "$table->dropColumn",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 29,
+      "callGraph": [
+        {
+          "caller": "up",
+          "callee": "Schema::hasTable",
+          "lineNumber": 14
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 14
+        },
+        {
+          "caller": "up",
+          "callee": "Schema::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "up",
+          "callee": "$table->dropColumn",
+          "lineNumber": 16
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::hasTable",
+          "lineNumber": 26
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::hasColumn",
+          "lineNumber": 26
+        },
+        {
+          "caller": "down",
+          "callee": "Schema::table",
+          "lineNumber": 27
+        },
+        {
+          "caller": "down",
+          "callee": "$table->timestamp('NgayCapNhat')->nullable()->useCurrent",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->timestamp('NgayCapNhat')->nullable",
+          "lineNumber": 28
+        },
+        {
+          "caller": "down",
+          "callee": "$table->timestamp",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 16,
+          "endLine": 27,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "startLine": 9,
+          "endLine": 28,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DatabaseSeeder",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "$this->call",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "postcss.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/.htaccess",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/js/exam.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "callAPI",
+          "startLine": 26,
+          "endLine": 35,
+          "params": [
+            "url",
+            "data"
+          ]
+        },
+        {
+          "name": "luuTN",
+          "startLine": 38,
+          "endLine": 52,
+          "params": [
+            "maCauHoi",
+            "maDATN",
+            "el"
+          ]
+        },
+        {
+          "name": "luuDS",
+          "startLine": 55,
+          "endLine": 63,
+          "params": [
+            "maCauHoi",
+            "maY",
+            "luaChon"
+          ]
+        },
+        {
+          "name": "luuSo",
+          "startLine": 65,
+          "endLine": 68,
+          "params": [
+            "maCauHoi",
+            "soHocSinh"
+          ]
+        },
+        {
+          "name": "xacNhanNopBai",
+          "startLine": 71,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "nopBai",
+          "startLine": 78,
+          "endLine": 80,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "callAPI",
+          "callee": "fetch",
+          "lineNumber": 27
+        },
+        {
+          "caller": "callAPI",
+          "callee": "JSON.stringify",
+          "lineNumber": 33
+        },
+        {
+          "caller": "luuTN",
+          "callee": "el.closest",
+          "lineNumber": 40
+        },
+        {
+          "caller": "luuTN",
+          "callee": "parent.querySelectorAll('.option').forEach",
+          "lineNumber": 41
+        },
+        {
+          "caller": "luuTN",
+          "callee": "parent.querySelectorAll",
+          "lineNumber": 41
+        },
+        {
+          "caller": "luuTN",
+          "callee": "opt.classList.remove",
+          "lineNumber": 41
+        },
+        {
+          "caller": "luuTN",
+          "callee": "el.closest('.option').classList.add",
+          "lineNumber": 44
+        },
+        {
+          "caller": "luuTN",
+          "callee": "el.closest",
+          "lineNumber": 44
+        },
+        {
+          "caller": "luuTN",
+          "callee": "callAPI",
+          "lineNumber": 47
+        },
+        {
+          "caller": "luuDS",
+          "callee": "callAPI",
+          "lineNumber": 57
+        },
+        {
+          "caller": "luuSo",
+          "callee": "callAPI",
+          "lineNumber": 67
+        },
+        {
+          "caller": "xacNhanNopBai",
+          "callee": "confirm",
+          "lineNumber": 72
+        },
+        {
+          "caller": "xacNhanNopBai",
+          "callee": "clearInterval",
+          "lineNumber": 73
+        },
+        {
+          "caller": "xacNhanNopBai",
+          "callee": "nopBai",
+          "lineNumber": 74
+        },
+        {
+          "caller": "nopBai",
+          "callee": "document.getElementById('formNopBai').submit",
+          "lineNumber": 79
+        },
+        {
+          "caller": "nopBai",
+          "callee": "document.getElementById",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/robots.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "resources/css/app.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": "resources/js/app.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/js/bootstrap.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/admin/dashboard.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 346,
+      "nonEmptyLines": 297,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/admin/exams/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 214,
+      "nonEmptyLines": 209,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/admin/teachers/pending.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 328,
+      "nonEmptyLines": 288,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/admin/users/detail.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 387,
+      "nonEmptyLines": 336,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/admin/users/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 442,
+      "nonEmptyLines": 389,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/auth/confirm-password.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/auth/forgot-password.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 44,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/auth/login.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 72,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

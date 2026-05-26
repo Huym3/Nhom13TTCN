@@ -1,0 +1,73 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "app/Http/Controllers/Admin/AdminController.php",
+      "language": "php",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "language": "php",
+      "sizeLines": 313,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/NguoiDung.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/seeders/AdminSeeder.php",
+      "language": "php",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/Http/Controllers/Admin/AdminController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/NguoiDung.php"
+    ],
+    "app/Http/Controllers/Auth/AuthController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/NguoiDung.php"
+    ],
+    "app/Models/NguoiDung.php": [],
+    "database/seeders/AdminSeeder.php": [
+      "app/Models/NguoiDung.php"
+    ]
+  },
+  "neighborMap": {
+    "app/Http/Controllers/Admin/AdminController.php": [
+      {
+        "path": "app/Http/Controllers/Controller.php",
+        "batchIndex": 1,
+        "symbols": [
+          "Controller"
+        ]
+      },
+      {
+        "path": "routes/web.php",
+        "batchIndex": 1,
+        "symbols": []
+      }
+    ],
+    "app/Http/Controllers/Auth/AuthController.php": [
+      {
+        "path": "app/Http/Controllers/Controller.php",
+        "batchIndex": 1,
+        "symbols": [
+          "Controller"
+        ]
+      },
+      {
+        "path": "routes/web.php",
+        "batchIndex": 1,
+        "symbols": []
+      }
+    ]
+  }
+}

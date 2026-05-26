@@ -1,0 +1,372 @@
+{
+  "nodes": [
+    {
+      "id": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "label": "update-profile-information-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/profile/partials/update-profile-information-form.blade.php",
+        "language": "php",
+        "totalLines": 64,
+        "nonEmptyLines": 54
+      }
+    },
+    {
+      "id": "resources/views/student/dashboard.blade.php",
+      "label": "dashboard.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/dashboard.blade.php",
+        "language": "php",
+        "totalLines": 79,
+        "nonEmptyLines": 74
+      }
+    },
+    {
+      "id": "resources/views/student/exams/do.blade.php",
+      "label": "do.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/exams/do.blade.php",
+        "language": "php",
+        "totalLines": 506,
+        "nonEmptyLines": 467
+      }
+    },
+    {
+      "id": "resources/views/student/exams/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/exams/index.blade.php",
+        "language": "php",
+        "totalLines": 39,
+        "nonEmptyLines": 37
+      }
+    },
+    {
+      "id": "resources/views/student/results/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/results/index.blade.php",
+        "language": "php",
+        "totalLines": 46,
+        "nonEmptyLines": 44
+      }
+    },
+    {
+      "id": "resources/views/student/results/show.blade.php",
+      "label": "show.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/results/show.blade.php",
+        "language": "php",
+        "totalLines": 176,
+        "nonEmptyLines": 170
+      }
+    },
+    {
+      "id": "resources/views/teacher/dashboard.blade.php",
+      "label": "dashboard.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/dashboard.blade.php",
+        "language": "php",
+        "totalLines": 93,
+        "nonEmptyLines": 88
+      }
+    },
+    {
+      "id": "resources/views/teacher/exams/create.blade.php",
+      "label": "create.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/create.blade.php",
+        "language": "php",
+        "totalLines": 69,
+        "nonEmptyLines": 60
+      }
+    },
+    {
+      "id": "resources/views/teacher/exams/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/edit.blade.php",
+        "language": "php",
+        "totalLines": 282,
+        "nonEmptyLines": 260
+      }
+    },
+    {
+      "id": "resources/views/teacher/exams/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/index.blade.php",
+        "language": "php",
+        "totalLines": 149,
+        "nonEmptyLines": 140
+      }
+    },
+    {
+      "id": "resources/views/teacher/exams/stats.blade.php",
+      "label": "stats.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/stats.blade.php",
+        "language": "php",
+        "totalLines": 295,
+        "nonEmptyLines": 283
+      }
+    },
+    {
+      "id": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "label": "xem-bai-lam.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+        "language": "php",
+        "totalLines": 159,
+        "nonEmptyLines": 154
+      }
+    },
+    {
+      "id": "resources/views/teacher/questions/create.blade.php",
+      "label": "create.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/create.blade.php",
+        "language": "php",
+        "totalLines": 157,
+        "nonEmptyLines": 142
+      }
+    },
+    {
+      "id": "resources/views/teacher/questions/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/edit.blade.php",
+        "language": "php",
+        "totalLines": 142,
+        "nonEmptyLines": 129
+      }
+    },
+    {
+      "id": "resources/views/teacher/questions/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/index.blade.php",
+        "language": "php",
+        "totalLines": 139,
+        "nonEmptyLines": 130
+      }
+    },
+    {
+      "id": "routes/auth.php",
+      "label": "auth.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "path": "routes/auth.php",
+        "language": "php",
+        "totalLines": 59,
+        "nonEmptyLines": 43
+      }
+    },
+    {
+      "id": "routes/console.php",
+      "label": "console.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "path": "routes/console.php",
+        "language": "php",
+        "totalLines": 8,
+        "nonEmptyLines": 6
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "resources/views/student/dashboard.blade.php",
+      "to": "layouts.student",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/student/dashboard.blade.php",
+      "to": "resources/views/student/exams/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/student/dashboard.blade.php",
+      "to": "resources/views/student/results/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/student/dashboard.blade.php",
+      "to": "resources/views/student/results/show.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/student/exams/index.blade.php",
+      "to": "layouts.student",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/student/exams/index.blade.php",
+      "to": "resources/views/student/exams/do.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/student/results/index.blade.php",
+      "to": "layouts.student",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/student/results/index.blade.php",
+      "to": "resources/views/student/results/show.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/student/results/show.blade.php",
+      "to": "layouts.student",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/student/results/show.blade.php",
+      "to": "resources/views/student/results/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/dashboard.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/dashboard.blade.php",
+      "to": "resources/views/teacher/exams/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/dashboard.blade.php",
+      "to": "resources/views/teacher/questions/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/exams/index.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/exams/index.blade.php",
+      "to": "resources/views/teacher/exams/create.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/exams/index.blade.php",
+      "to": "resources/views/teacher/exams/edit.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/exams/index.blade.php",
+      "to": "resources/views/teacher/exams/stats.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/exams/edit.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/exams/edit.blade.php",
+      "to": "resources/views/teacher/exams/index.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/questions/index.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/questions/index.blade.php",
+      "to": "resources/views/teacher/questions/create.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/questions/index.blade.php",
+      "to": "resources/views/teacher/questions/edit.blade.php",
+      "label": "links to",
+      "type": "ui-link"
+    },
+    {
+      "from": "resources/views/teacher/questions/create.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/questions/edit.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/exams/create.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/exams/stats.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    },
+    {
+      "from": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "to": "layouts.teacher",
+      "label": "extends",
+      "type": "reference"
+    }
+  ]
+}

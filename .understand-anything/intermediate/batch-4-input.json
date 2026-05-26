@@ -1,0 +1,43 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "public/css/auth.css",
+      "language": "css",
+      "sizeLines": 451,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/exam.css",
+      "language": "css",
+      "sizeLines": 221,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/glass.css",
+      "language": "css",
+      "sizeLines": 585,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/student.css",
+      "language": "css",
+      "sizeLines": 435,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/teacher.css",
+      "language": "css",
+      "sizeLines": 396,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "public/css/auth.css": [],
+    "public/css/exam.css": [],
+    "public/css/glass.css": [],
+    "public/css/student.css": [],
+    "public/css/teacher.css": []
+  },
+  "neighborMap": {}
+}

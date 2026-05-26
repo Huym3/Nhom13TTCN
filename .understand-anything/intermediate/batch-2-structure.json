@@ -1,0 +1,1308 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Http/Controllers/Admin/AdminController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 178,
+      "nonEmptyLines": 141,
+      "functions": [
+        {
+          "name": "dashboard",
+          "startLine": 14,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "pendingTeachers",
+          "startLine": 37,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "approveTeacher",
+          "startLine": 51,
+          "endLine": 64,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "rejectTeacher",
+          "startLine": 69,
+          "endLine": 86,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "users",
+          "startLine": 91,
+          "endLine": 121,
+          "params": []
+        },
+        {
+          "name": "blockUser",
+          "startLine": 123,
+          "endLine": 135,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "unblockUser",
+          "startLine": 140,
+          "endLine": 148,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "startLine": 153,
+          "endLine": 165,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "userDetail",
+          "startLine": 170,
+          "endLine": 177,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminController",
+          "startLine": 9,
+          "endLine": 178,
+          "methods": [
+            "dashboard",
+            "pendingTeachers",
+            "approveTeacher",
+            "rejectTeacher",
+            "users",
+            "blockUser",
+            "unblockUser",
+            "deleteUser",
+            "userDetail"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::count",
+          "lineNumber": 17
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where('Role', 'Student')->count",
+          "lineNumber": 18
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where",
+          "lineNumber": 18
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where('Role', 'Teacher')->count",
+          "lineNumber": 19
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where",
+          "lineNumber": 19
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where('Role', 'Teacher')\n                                    ->where('TeacherStatus', 'Pending')->count",
+          "lineNumber": 20
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where('Role', 'Teacher')->where",
+          "lineNumber": 20
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where",
+          "lineNumber": 20
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where('TrangThai', 'Banned')->count",
+          "lineNumber": 23
+        },
+        {
+          "caller": "dashboard",
+          "callee": "NguoiDung::where",
+          "lineNumber": 23
+        },
+        {
+          "caller": "dashboard",
+          "callee": "view",
+          "lineNumber": 25
+        },
+        {
+          "caller": "pendingTeachers",
+          "callee": "NguoiDung::where('Role', 'Teacher')\n                            ->where('TeacherStatus', 'Pending')->paginate",
+          "lineNumber": 39
+        },
+        {
+          "caller": "pendingTeachers",
+          "callee": "NguoiDung::where('Role', 'Teacher')->where",
+          "lineNumber": 39
+        },
+        {
+          "caller": "pendingTeachers",
+          "callee": "NguoiDung::where",
+          "lineNumber": 39
+        },
+        {
+          "caller": "pendingTeachers",
+          "callee": "view",
+          "lineNumber": 43
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 53
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "back()->with",
+          "lineNumber": 56
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "back",
+          "lineNumber": 56
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "$teacher->save",
+          "lineNumber": 60
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "back()->with",
+          "lineNumber": 62
+        },
+        {
+          "caller": "approveTeacher",
+          "callee": "back",
+          "lineNumber": 62
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 71
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back()->with",
+          "lineNumber": 74
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back",
+          "lineNumber": 74
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back()->with",
+          "lineNumber": 78
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back",
+          "lineNumber": 78
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "$teacher->delete",
+          "lineNumber": 82
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back()->with",
+          "lineNumber": 84
+        },
+        {
+          "caller": "rejectTeacher",
+          "callee": "back",
+          "lineNumber": 84
+        },
+        {
+          "caller": "users",
+          "callee": "request",
+          "lineNumber": 93
+        },
+        {
+          "caller": "users",
+          "callee": "request",
+          "lineNumber": 94
+        },
+        {
+          "caller": "users",
+          "callee": "request",
+          "lineNumber": 95
+        },
+        {
+          "caller": "users",
+          "callee": "NguoiDung::query",
+          "lineNumber": 97
+        },
+        {
+          "caller": "users",
+          "callee": "$query->where('HoTen', 'like', \"%{$search}%\")\n                  ->orWhere('TenDangNhap', 'like', \"%{$search}%\")->orWhere",
+          "lineNumber": 100
+        },
+        {
+          "caller": "users",
+          "callee": "$query->where('HoTen', 'like', \"%{$search}%\")->orWhere",
+          "lineNumber": 100
+        },
+        {
+          "caller": "users",
+          "callee": "$query->where",
+          "lineNumber": 100
+        },
+        {
+          "caller": "users",
+          "callee": "$query->where",
+          "lineNumber": 106
+        },
+        {
+          "caller": "users",
+          "callee": "$query->where",
+          "lineNumber": 110
+        },
+        {
+          "caller": "users",
+          "callee": "$query->paginate",
+          "lineNumber": 113
+        },
+        {
+          "caller": "users",
+          "callee": "view",
+          "lineNumber": 115
+        },
+        {
+          "caller": "blockUser",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 125
+        },
+        {
+          "caller": "blockUser",
+          "callee": "back()->with",
+          "lineNumber": 128
+        },
+        {
+          "caller": "blockUser",
+          "callee": "back",
+          "lineNumber": 128
+        },
+        {
+          "caller": "blockUser",
+          "callee": "$user->save",
+          "lineNumber": 132
+        },
+        {
+          "caller": "blockUser",
+          "callee": "back()->with",
+          "lineNumber": 134
+        },
+        {
+          "caller": "blockUser",
+          "callee": "back",
+          "lineNumber": 134
+        },
+        {
+          "caller": "unblockUser",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 142
+        },
+        {
+          "caller": "unblockUser",
+          "callee": "$user->save",
+          "lineNumber": 145
+        },
+        {
+          "caller": "unblockUser",
+          "callee": "back()->with",
+          "lineNumber": 147
+        },
+        {
+          "caller": "unblockUser",
+          "callee": "back",
+          "lineNumber": 147
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 155
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "back()->with",
+          "lineNumber": 158
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "back",
+          "lineNumber": 158
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "$user->delete",
+          "lineNumber": 162
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "back()->with",
+          "lineNumber": 164
+        },
+        {
+          "caller": "deleteUser",
+          "callee": "back",
+          "lineNumber": 164
+        },
+        {
+          "caller": "userDetail",
+          "callee": "NguoiDung::findOrFail",
+          "lineNumber": 172
+        },
+        {
+          "caller": "userDetail",
+          "callee": "view",
+          "lineNumber": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 313,
+      "nonEmptyLines": 268,
+      "functions": [
+        {
+          "name": "showLogin",
+          "startLine": 16,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "login",
+          "startLine": 26,
+          "endLine": 64,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "showRegister",
+          "startLine": 67,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "showForgotPassword",
+          "startLine": 73,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "sendResetLinkEmail",
+          "startLine": 79,
+          "endLine": 103,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "showVerifyOtp",
+          "startLine": 106,
+          "endLine": 123,
+          "params": []
+        },
+        {
+          "name": "verifyOtp",
+          "startLine": 126,
+          "endLine": 167,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "showResetPassword",
+          "startLine": 170,
+          "endLine": 190,
+          "params": [
+            "$request",
+            "$token"
+          ]
+        },
+        {
+          "name": "resetPassword",
+          "startLine": 193,
+          "endLine": 233,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "register",
+          "startLine": 236,
+          "endLine": 293,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 296,
+          "endLine": 301,
+          "params": []
+        },
+        {
+          "name": "redirectByRole",
+          "startLine": 304,
+          "endLine": 312,
+          "params": [
+            "$role"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 13,
+          "endLine": 313,
+          "methods": [
+            "showLogin",
+            "login",
+            "showRegister",
+            "showForgotPassword",
+            "sendResetLinkEmail",
+            "showVerifyOtp",
+            "verifyOtp",
+            "showResetPassword",
+            "resetPassword",
+            "register",
+            "logout",
+            "redirectByRole"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "showLogin",
+          "callee": "Session::has",
+          "lineNumber": 19
+        },
+        {
+          "caller": "showLogin",
+          "callee": "$this->redirectByRole",
+          "lineNumber": 20
+        },
+        {
+          "caller": "showLogin",
+          "callee": "Session::get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "showLogin",
+          "callee": "view",
+          "lineNumber": 22
+        },
+        {
+          "caller": "login",
+          "callee": "$request->validate",
+          "lineNumber": 29
+        },
+        {
+          "caller": "login",
+          "callee": "NguoiDung::where('TenDangNhap', $request->tenDangNhap)->first",
+          "lineNumber": 38
+        },
+        {
+          "caller": "login",
+          "callee": "NguoiDung::where",
+          "lineNumber": 38
+        },
+        {
+          "caller": "login",
+          "callee": "Hash::check",
+          "lineNumber": 41
+        },
+        {
+          "caller": "login",
+          "callee": "back()\n                ->withInput($request->only('tenDangNhap'))->with",
+          "lineNumber": 42
+        },
+        {
+          "caller": "login",
+          "callee": "back()->withInput",
+          "lineNumber": 42
+        },
+        {
+          "caller": "login",
+          "callee": "back",
+          "lineNumber": 42
+        },
+        {
+          "caller": "login",
+          "callee": "$request->only",
+          "lineNumber": 43
+        },
+        {
+          "caller": "login",
+          "callee": "back()->with",
+          "lineNumber": 49
+        },
+        {
+          "caller": "login",
+          "callee": "back",
+          "lineNumber": 49
+        },
+        {
+          "caller": "login",
+          "callee": "back()->with",
+          "lineNumber": 54
+        },
+        {
+          "caller": "login",
+          "callee": "back",
+          "lineNumber": 54
+        },
+        {
+          "caller": "login",
+          "callee": "Session::put",
+          "lineNumber": 58
+        },
+        {
+          "caller": "login",
+          "callee": "Session::put",
+          "lineNumber": 59
+        },
+        {
+          "caller": "login",
+          "callee": "Session::put",
+          "lineNumber": 60
+        },
+        {
+          "caller": "login",
+          "callee": "Session::put",
+          "lineNumber": 61
+        },
+        {
+          "caller": "login",
+          "callee": "$this->redirectByRole",
+          "lineNumber": 63
+        },
+        {
+          "caller": "showRegister",
+          "callee": "view",
+          "lineNumber": 69
+        },
+        {
+          "caller": "showForgotPassword",
+          "callee": "view",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "$request->validate",
+          "lineNumber": 81
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "Session::put",
+          "lineNumber": 93
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "now()->addMinutes",
+          "lineNumber": 96
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "now",
+          "lineNumber": 96
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "redirect()->route('password.verify-otp')->with",
+          "lineNumber": 101
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "redirect()->route",
+          "lineNumber": 101
+        },
+        {
+          "caller": "sendResetLinkEmail",
+          "callee": "redirect",
+          "lineNumber": 101
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "Session::has",
+          "lineNumber": 109
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 110
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect()->route",
+          "lineNumber": 110
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect",
+          "lineNumber": 110
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "Session::get",
+          "lineNumber": 115
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "now()->greaterThan",
+          "lineNumber": 116
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "now",
+          "lineNumber": 116
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "Session::forget",
+          "lineNumber": 117
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 118
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect()->route",
+          "lineNumber": 118
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "redirect",
+          "lineNumber": 118
+        },
+        {
+          "caller": "showVerifyOtp",
+          "callee": "view",
+          "lineNumber": 122
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "$request->validate",
+          "lineNumber": 128
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "Session::has",
+          "lineNumber": 136
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 137
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect()->route",
+          "lineNumber": 137
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect",
+          "lineNumber": 137
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "Session::get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "now()->greaterThan",
+          "lineNumber": 144
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "now",
+          "lineNumber": 144
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "Session::forget",
+          "lineNumber": 145
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 146
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect()->route",
+          "lineNumber": 146
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect",
+          "lineNumber": 146
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "back()->with",
+          "lineNumber": 152
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "back",
+          "lineNumber": 152
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "bin2hex",
+          "lineNumber": 156
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "random_bytes",
+          "lineNumber": 156
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "Session::put",
+          "lineNumber": 157
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "now()->addMinutes",
+          "lineNumber": 160
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "now",
+          "lineNumber": 160
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "Session::forget",
+          "lineNumber": 164
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect()->route",
+          "lineNumber": 166
+        },
+        {
+          "caller": "verifyOtp",
+          "callee": "redirect",
+          "lineNumber": 166
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "Session::has",
+          "lineNumber": 173
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 174
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect()->route",
+          "lineNumber": 174
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect",
+          "lineNumber": 174
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "Session::get",
+          "lineNumber": 178
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "now()->greaterThan",
+          "lineNumber": 180
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "now",
+          "lineNumber": 180
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "Session::forget",
+          "lineNumber": 181
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 182
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect()->route",
+          "lineNumber": 182
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "redirect",
+          "lineNumber": 182
+        },
+        {
+          "caller": "showResetPassword",
+          "callee": "view",
+          "lineNumber": 186
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "$request->validate",
+          "lineNumber": 195
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "Session::has",
+          "lineNumber": 207
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 208
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route",
+          "lineNumber": 208
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect",
+          "lineNumber": 208
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "Session::get",
+          "lineNumber": 212
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "now()->greaterThan",
+          "lineNumber": 217
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "now",
+          "lineNumber": 217
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "Session::forget",
+          "lineNumber": 218
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route('password.request')->with",
+          "lineNumber": 219
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route",
+          "lineNumber": 219
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect",
+          "lineNumber": 219
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "NguoiDung::where('Email', $request->email)->first",
+          "lineNumber": 224
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "NguoiDung::where",
+          "lineNumber": 224
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "Hash::make",
+          "lineNumber": 225
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "$user->save",
+          "lineNumber": 226
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "Session::forget",
+          "lineNumber": 229
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 231
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect()->route",
+          "lineNumber": 231
+        },
+        {
+          "caller": "resetPassword",
+          "callee": "redirect",
+          "lineNumber": 231
+        },
+        {
+          "caller": "register",
+          "callee": "$request->validate",
+          "lineNumber": 238
+        },
+        {
+          "caller": "register",
+          "callee": "NguoiDung::create",
+          "lineNumber": 265
+        },
+        {
+          "caller": "register",
+          "callee": "Hash::make",
+          "lineNumber": 270
+        },
+        {
+          "caller": "register",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 276
+        },
+        {
+          "caller": "register",
+          "callee": "redirect()->route",
+          "lineNumber": 276
+        },
+        {
+          "caller": "register",
+          "callee": "redirect",
+          "lineNumber": 276
+        },
+        {
+          "caller": "register",
+          "callee": "NguoiDung::create",
+          "lineNumber": 280
+        },
+        {
+          "caller": "register",
+          "callee": "Hash::make",
+          "lineNumber": 285
+        },
+        {
+          "caller": "register",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 290
+        },
+        {
+          "caller": "register",
+          "callee": "redirect()->route",
+          "lineNumber": 290
+        },
+        {
+          "caller": "register",
+          "callee": "redirect",
+          "lineNumber": 290
+        },
+        {
+          "caller": "logout",
+          "callee": "Session::flush",
+          "lineNumber": 298
+        },
+        {
+          "caller": "logout",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 299
+        },
+        {
+          "caller": "logout",
+          "callee": "redirect()->route",
+          "lineNumber": 299
+        },
+        {
+          "caller": "logout",
+          "callee": "redirect",
+          "lineNumber": 299
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect()->route",
+          "lineNumber": 307
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect",
+          "lineNumber": 307
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect()->route",
+          "lineNumber": 308
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect",
+          "lineNumber": 308
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect()->route",
+          "lineNumber": 309
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect",
+          "lineNumber": 309
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect()->route",
+          "lineNumber": 310
+        },
+        {
+          "caller": "redirectByRole",
+          "callee": "redirect",
+          "lineNumber": 310
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/NguoiDung.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "baiLam",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "questions",
+          "startLine": 26,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "isStudent",
+          "startLine": 31,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "isTeacher",
+          "startLine": 35,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "isAdmin",
+          "startLine": 39,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "isTeacherApproved",
+          "startLine": 43,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "isTeacherPending",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "isActive",
+          "startLine": 51,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "isBlocked",
+          "startLine": 55,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NguoiDung",
+          "startLine": 5,
+          "endLine": 58,
+          "methods": [
+            "baiLam",
+            "questions",
+            "isStudent",
+            "isTeacher",
+            "isAdmin",
+            "isTeacherApproved",
+            "isTeacherPending",
+            "isActive",
+            "isBlocked"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable",
+            "casts"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NguoiDung",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "baiLam",
+          "callee": "$this->hasMany",
+          "lineNumber": 23
+        },
+        {
+          "caller": "questions",
+          "callee": "$this->hasMany",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "database/seeders/AdminSeeder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 15,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminSeeder",
+          "startLine": 10,
+          "endLine": 39,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminSeeder",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "NguoiDung::where('TenDangNhap', 'admin')->first",
+          "lineNumber": 18
+        },
+        {
+          "caller": "run",
+          "callee": "NguoiDung::where",
+          "lineNumber": 18
+        },
+        {
+          "caller": "run",
+          "callee": "NguoiDung::create",
+          "lineNumber": 21
+        },
+        {
+          "caller": "run",
+          "callee": "Hash::make",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

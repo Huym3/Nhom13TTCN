@@ -1,0 +1,176 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php",
+      "language": "php",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/cc5193565f110e059c08893c2222d53c.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/e9773b5d20d9521a598e53936a407a98.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php",
+      "language": "php",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f770fdf84114360ddd9c682721069c1a.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php",
+      "language": "php",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/fb858329e0dcb506b14a2095393ee987.php",
+      "language": "php",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php",
+      "language": "php",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tailwind.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/AuthenticationTest.php",
+      "language": "php",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/EmailVerificationTest.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordResetTest.php",
+      "language": "php",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "language": "php",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/RegistrationTest.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/ProfileTest.php",
+      "language": "php",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/TestCase.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Unit/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php": [],
+    "storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php": [],
+    "storage/framework/views/cc5193565f110e059c08893c2222d53c.php": [],
+    "storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php": [],
+    "storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php": [],
+    "storage/framework/views/e9773b5d20d9521a598e53936a407a98.php": [],
+    "storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php": [],
+    "storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php": [],
+    "storage/framework/views/f770fdf84114360ddd9c682721069c1a.php": [],
+    "storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php": [],
+    "storage/framework/views/fb858329e0dcb506b14a2095393ee987.php": [],
+    "storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php": [],
+    "tailwind.config.js": [],
+    "tests/Feature/Auth/AuthenticationTest.php": [],
+    "tests/Feature/Auth/EmailVerificationTest.php": [],
+    "tests/Feature/Auth/PasswordConfirmationTest.php": [],
+    "tests/Feature/Auth/PasswordResetTest.php": [],
+    "tests/Feature/Auth/PasswordUpdateTest.php": [],
+    "tests/Feature/Auth/RegistrationTest.php": [],
+    "tests/Feature/ExampleTest.php": [],
+    "tests/Feature/ProfileTest.php": [],
+    "tests/TestCase.php": [],
+    "tests/Unit/ExampleTest.php": [],
+    "vite.config.js": []
+  },
+  "neighborMap": {}
+}

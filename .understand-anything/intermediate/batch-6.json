@@ -1,0 +1,388 @@
+{
+  "nodes": [
+    {
+      "id": "bootstrap/providers.php",
+      "label": "providers.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 7
+      }
+    },
+    {
+      "id": "config/database.php",
+      "label": "database.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 45
+      }
+    },
+    {
+      "id": "database/factories/UserFactory.php",
+      "label": "UserFactory",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 45
+      }
+    },
+    {
+      "id": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "label": "create_users_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 49
+      }
+    },
+    {
+      "id": "table:users",
+      "label": "users",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      }
+    },
+    {
+      "id": "table:password_reset_tokens",
+      "label": "password_reset_tokens",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      }
+    },
+    {
+      "id": "table:sessions",
+      "label": "sessions",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      }
+    },
+    {
+      "id": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "label": "create_cache_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 35
+      }
+    },
+    {
+      "id": "table:cache",
+      "label": "cache",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000001_create_cache_table.php"
+      }
+    },
+    {
+      "id": "table:cache_locks",
+      "label": "cache_locks",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000001_create_cache_table.php"
+      }
+    },
+    {
+      "id": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "label": "create_jobs_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 57
+      }
+    },
+    {
+      "id": "table:jobs",
+      "label": "jobs",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      }
+    },
+    {
+      "id": "table:job_batches",
+      "label": "job_batches",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      }
+    },
+    {
+      "id": "table:failed_jobs",
+      "label": "failed_jobs",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      }
+    },
+    {
+      "id": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "label": "update_nguoi_dung_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 66
+      }
+    },
+    {
+      "id": "table:nguoidung",
+      "label": "nguoidung",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php"
+      }
+    },
+    {
+      "id": "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php",
+      "label": "drop_ngaycapnhat_from_dethi",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 32
+      }
+    },
+    {
+      "id": "database/seeders/DatabaseSeeder.php",
+      "label": "DatabaseSeeder",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 28
+      }
+    },
+    {
+      "id": "postcss.config.js",
+      "label": "postcss.config.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 6
+      }
+    },
+    {
+      "id": "public/.htaccess",
+      "label": ".htaccess",
+      "category": "file",
+      "metadata": {
+        "language": "unknown",
+        "fileCategory": "code",
+        "totalLines": 25
+      }
+    },
+    {
+      "id": "public/index.php",
+      "label": "index.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 20
+      }
+    },
+    {
+      "id": "public/js/exam.js",
+      "label": "exam.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 80
+      }
+    },
+    {
+      "id": "public/robots.txt",
+      "label": "robots.txt",
+      "category": "file",
+      "metadata": {
+        "language": "txt",
+        "fileCategory": "docs",
+        "totalLines": 2
+      }
+    },
+    {
+      "id": "resources/css/app.css",
+      "label": "app.css",
+      "category": "file",
+      "metadata": {
+        "language": "css",
+        "fileCategory": "markup",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/js/app.js",
+      "label": "app.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 7
+      }
+    },
+    {
+      "id": "resources/js/bootstrap.js",
+      "label": "bootstrap.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 4
+      }
+    },
+    {
+      "id": "resources/views/admin/dashboard.blade.php",
+      "label": "admin/dashboard",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 346
+      }
+    },
+    {
+      "id": "resources/views/admin/exams/index.blade.php",
+      "label": "admin/exams/index",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 214
+      }
+    },
+    {
+      "id": "resources/views/admin/teachers/pending.blade.php",
+      "label": "admin/teachers/pending",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 328
+      }
+    },
+    {
+      "id": "resources/views/admin/users/detail.blade.php",
+      "label": "admin/users/detail",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 387
+      }
+    },
+    {
+      "id": "resources/views/admin/users/index.blade.php",
+      "label": "admin/users/index",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 442
+      }
+    },
+    {
+      "id": "resources/views/auth/confirm-password.blade.php",
+      "label": "auth/confirm-password",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 27
+      }
+    },
+    {
+      "id": "resources/views/auth/forgot-password.blade.php",
+      "label": "auth/forgot-password",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 50
+      }
+    },
+    {
+      "id": "resources/views/auth/login.blade.php",
+      "label": "auth/login",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 80
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:users",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:password_reset_tokens",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:sessions",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:cache",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:cache_locks",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:jobs",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:job_batches",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:failed_jobs",
+      "type": "creates"
+    },
+    {
+      "source": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "target": "table:nguoidung",
+      "type": "creates"
+    },
+    {
+      "source": "database/factories/UserFactory.php",
+      "target": "table:users",
+      "type": "populates"
+    },
+    {
+      "source": "resources/js/app.js",
+      "target": "resources/js/bootstrap.js",
+      "type": "imports"
+    },
+    {
+      "source": "database/seeders/DatabaseSeeder.php",
+      "target": "database/seeders/AdminSeeder.php",
+      "type": "calls"
+    }
+  ]
+}

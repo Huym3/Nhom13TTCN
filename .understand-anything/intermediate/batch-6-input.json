@@ -1,0 +1,197 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "bootstrap/providers.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/factories/UserFactory.php",
+      "language": "php",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "language": "php",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "language": "php",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "language": "php",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php",
+      "language": "php",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "language": "php",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "postcss.config.js",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/.htaccess",
+      "language": "unknown",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/exam.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/robots.txt",
+      "language": "txt",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/css/app.css",
+      "language": "css",
+      "sizeLines": 3,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "resources/js/app.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/js/bootstrap.js",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/teachers/pending.blade.php",
+      "language": "php",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/users/detail.blade.php",
+      "language": "php",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/users/index.blade.php",
+      "language": "php",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/confirm-password.blade.php",
+      "language": "php",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/forgot-password.blade.php",
+      "language": "php",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/login.blade.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "bootstrap/providers.php": [
+      "app/Providers/AppServiceProvider.php"
+    ],
+    "config/database.php": [],
+    "database/factories/UserFactory.php": [],
+    "database/migrations/0001_01_01_000000_create_users_table.php": [],
+    "database/migrations/0001_01_01_000001_create_cache_table.php": [],
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": [],
+    "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php": [],
+    "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php": [],
+    "database/seeders/DatabaseSeeder.php": [],
+    "postcss.config.js": [],
+    "public/.htaccess": [],
+    "public/index.php": [],
+    "public/js/exam.js": [],
+    "public/robots.txt": [],
+    "resources/css/app.css": [],
+    "resources/js/app.js": [
+      "resources/js/bootstrap.js"
+    ],
+    "resources/js/bootstrap.js": [],
+    "resources/views/admin/dashboard.blade.php": [],
+    "resources/views/admin/exams/index.blade.php": [],
+    "resources/views/admin/teachers/pending.blade.php": [],
+    "resources/views/admin/users/detail.blade.php": [],
+    "resources/views/admin/users/index.blade.php": [],
+    "resources/views/auth/confirm-password.blade.php": [],
+    "resources/views/auth/forgot-password.blade.php": [],
+    "resources/views/auth/login.blade.php": []
+  },
+  "neighborMap": {
+    "bootstrap/providers.php": [
+      {
+        "path": "app/Providers/AppServiceProvider.php",
+        "batchIndex": 5,
+        "symbols": [
+          "AppServiceProvider"
+        ]
+      }
+    ]
+  }
+}

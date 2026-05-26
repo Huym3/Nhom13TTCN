@@ -1,0 +1,64 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": ".env",
+      "language": "config",
+      "sizeLines": 65,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 54,
+      "fileCategory": "config"
+    },
+    {
+      "path": "ADMIN_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "sizeLines": 87,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "phpunit.xml",
+      "language": "xml",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".env": [],
+    ".env.example": [],
+    "ADMIN_GUIDE.md": [],
+    "IMPLEMENTATION_SUMMARY.md": [],
+    "README.md": [],
+    "composer.json": [],
+    "package.json": [],
+    "phpunit.xml": []
+  },
+  "neighborMap": {}
+}

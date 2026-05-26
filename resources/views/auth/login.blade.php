@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {{-- ============================================================ --}}
 {{-- resources/views/auth/login.blade.php                       --}}
 {{-- Glassmorphism · Light White-Gray · Frosted Glass           --}}
@@ -79,56 +78,3 @@
 </div>
 </body>
 </html>
-=======
-@extends('layouts.app')
-
-@section('title', 'Đăng nhập')
-
-@section('content')
-<div class="row justify-content-center">
-    <div class="col-md-5">
-        <div class="card shadow border-0 mt-5">
-            <div class="card-header bg-primary text-white text-center py-3">
-                <h4 class="mb-0 fw-bold">ĐĂNG NHẬP</h4>
-            </div>
-            <div class="card-body p-4">
-                
-                @if ($errors->any())
-                    <div class="alert alert-danger px-3 py-2">
-                        <ul class="mb-0" style="padding-left: 15px;">
-                            @foreach ($errors->all() as $error)
-                                <li class="text-sm">{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Tên đăng nhập (hoặc Email)</label>
-                        <input type="text" name="email" class="form-control" placeholder="Nhập email..." required autofocus>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Mật khẩu</label>
-                        <input type="password" name="password" class="form-control" placeholder="Nhập mật khẩu..." required>
-                    </div>
-
-                    <div class="text-end mb-3">
-                        <a href="/forgot-password" class="text-decoration-none text-muted small">Quên mật khẩu?</a>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100 fw-bold py-2 mb-3 shadow-sm">VÀO THI NGAY</button>
-                    
-                    <div class="text-center mt-3 border-top pt-3">
-                        <span class="text-muted">Chưa có tài khoản?</span>
-                        <a href="/register" class="text-decoration-none fw-bold text-primary">Đăng ký ngay</a>
-                    </div>
-                </form>
-                
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
->>>>>>> Stashed changes

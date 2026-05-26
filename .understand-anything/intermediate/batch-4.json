@@ -1,0 +1,60 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/css/auth.css",
+      "category": "markup",
+      "name": "auth.css",
+      "path": "public/css/auth.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 452,
+        "nonEmptyLines": 416
+      }
+    },
+    {
+      "id": "file:public/css/exam.css",
+      "category": "markup",
+      "name": "exam.css",
+      "path": "public/css/exam.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 222,
+        "nonEmptyLines": 192
+      }
+    },
+    {
+      "id": "file:public/css/glass.css",
+      "category": "markup",
+      "name": "glass.css",
+      "path": "public/css/glass.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 586,
+        "nonEmptyLines": 525
+      }
+    },
+    {
+      "id": "file:public/css/student.css",
+      "category": "markup",
+      "name": "student.css",
+      "path": "public/css/student.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 436,
+        "nonEmptyLines": 377
+      }
+    },
+    {
+      "id": "file:public/css/teacher.css",
+      "category": "markup",
+      "name": "teacher.css",
+      "path": "public/css/teacher.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 397,
+        "nonEmptyLines": 355
+      }
+    }
+  ],
+  "edges": []
+}

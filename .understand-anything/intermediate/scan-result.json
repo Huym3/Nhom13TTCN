@@ -1,0 +1,1472 @@
+{
+  "projectName": "thuctap",
+  "projectDescription": "A Laravel-based web application.",
+  "languages": [
+    "db",
+    "config",
+    "unknown",
+    "markdown",
+    "php",
+    "json",
+    "xml",
+    "javascript",
+    "css",
+    "txt"
+  ],
+  "frameworks": [
+    "Laravel"
+  ],
+  "files": [
+    {
+      "path": ".codegraph/codegraph.db",
+      "language": "db",
+      "sizeLines": 7527,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".env",
+      "language": "config",
+      "sizeLines": 65,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 54,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "ADMIN_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "app/Http/Controllers/Admin/AdminController.php",
+      "language": "php",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "language": "php",
+      "sizeLines": 313,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "language": "php",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "language": "php",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "language": "php",
+      "sizeLines": 522,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "language": "php",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Middleware/CheckAdmin.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Middleware/CheckLogin.php",
+      "language": "php",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Middleware/CheckRole.php",
+      "language": "php",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Requests/Auth/LoginRequest.php",
+      "language": "php",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Requests/ProfileUpdateRequest.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/BaiLamCuaHS.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/BinhLuan.php",
+      "language": "php",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/CauHoiDS_Y.php",
+      "language": "php",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/CauHoiTrongDe.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/ChiTietCauTraLoiSo.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/ChiTietTraLoiDS.php",
+      "language": "php",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/ChiTietTraLoiTN.php",
+      "language": "php",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/ChuyenDe.php",
+      "language": "php",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/DapAnTLS.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/DapAnTN.php",
+      "language": "php",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/DeThi.php",
+      "language": "php",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/NguoiDung.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Models/Question.php",
+      "language": "php",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "language": "php",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "artisan",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/app.php",
+      "language": "php",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/cache/packages.php",
+      "language": "php",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/cache/services.php",
+      "language": "php",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "bootstrap/providers.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "sizeLines": 87,
+      "fileCategory": "config"
+    },
+    {
+      "path": "config/database.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/factories/UserFactory.php",
+      "language": "php",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "language": "php",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "language": "php",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "language": "php",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php",
+      "language": "php",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/seeders/AdminSeeder.php",
+      "language": "php",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "language": "php",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "phpunit.xml",
+      "language": "xml",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "postcss.config.js",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/.htaccess",
+      "language": "unknown",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/css/auth.css",
+      "language": "css",
+      "sizeLines": 451,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/exam.css",
+      "language": "css",
+      "sizeLines": 221,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/glass.css",
+      "language": "css",
+      "sizeLines": 585,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/student.css",
+      "language": "css",
+      "sizeLines": 435,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/css/teacher.css",
+      "language": "css",
+      "sizeLines": 396,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/exam.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/robots.txt",
+      "language": "txt",
+      "sizeLines": 2,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "resources/css/app.css",
+      "language": "css",
+      "sizeLines": 3,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "resources/js/app.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/js/bootstrap.js",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/teachers/pending.blade.php",
+      "language": "php",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/users/detail.blade.php",
+      "language": "php",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/admin/users/index.blade.php",
+      "language": "php",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/confirm-password.blade.php",
+      "language": "php",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/forgot-password.blade.php",
+      "language": "php",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/login.blade.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/register.blade.php",
+      "language": "php",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/reset-password.blade.php",
+      "language": "php",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/verify-email.blade.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/verify-otp.blade.php",
+      "language": "php",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/application-logo.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/auth-session-status.blade.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/danger-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/dropdown-link.blade.php",
+      "language": "php",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/dropdown.blade.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/input-error.blade.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/input-label.blade.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/modal.blade.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/nav-link.blade.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/primary-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/responsive-nav-link.blade.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/secondary-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/text-input.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/app.blade.php",
+      "language": "php",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/guest.blade.php",
+      "language": "php",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/navigation.blade.php",
+      "language": "php",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/student.blade.php",
+      "language": "php",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/teacher.blade.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/edit.blade.php",
+      "language": "php",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/partials/delete-user-form.blade.php",
+      "language": "php",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/partials/update-password-form.blade.php",
+      "language": "php",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "language": "php",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/exams/do.blade.php",
+      "language": "php",
+      "sizeLines": 505,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/results/index.blade.php",
+      "language": "php",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/results/show.blade.php",
+      "language": "php",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/create.blade.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/edit.blade.php",
+      "language": "php",
+      "sizeLines": 281,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/stats.blade.php",
+      "language": "php",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "language": "php",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/create.blade.php",
+      "language": "php",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/edit.blade.php",
+      "language": "php",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/index.blade.php",
+      "language": "php",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/auth.php",
+      "language": "php",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/console.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/web.php",
+      "language": "php",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/sessions/LbZyh5VID1NdkHbQPzhqCV6cOM4eZu6KCIDvci48",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/sessions/VNHIrnvAjXiUwEZBkjBH8rKGI12m7ldfQ2CizdfE",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/011f7d0648c9147f5a380ce63b7bbafb.php",
+      "language": "php",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/0321145205a1b8489109cae62e6e4841.php",
+      "language": "php",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/041a4e3c1be03849d8561f6ae377d7b1.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/0703e10b6a2ad108eac92daec9b3ea61.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/08f5cba67e86a28bf97a666a78dfef00.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/113757ebdc43759a92d133d25c94e34a.php",
+      "language": "php",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/1522441678667df7910c642d8aa78aaa.php",
+      "language": "php",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/196489aeb536f30c0f76c99c833c3c96.php",
+      "language": "php",
+      "sizeLines": 443,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/1cc70986924be79651346fe6aee949e2.php",
+      "language": "php",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/22ba2738e6354542427d093f71f30ed2.php",
+      "language": "php",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/24d4ff0dd1dd3c18cdf6aa66e4621bec.php",
+      "language": "php",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/255d046ae9242e9dfbeedf0291c449fd.php",
+      "language": "php",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/28ce2e4e61bedfd7a6dc0bfe688a8be4.php",
+      "language": "php",
+      "sizeLines": 329,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/2dd9564d456a2f476f2f4d7b2d6568df.php",
+      "language": "php",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/2fdb8f39e77816cc161931eac22b78fd.php",
+      "language": "php",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/35ef232ad026fa4aa467b65dc7fa5a3c.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/37e01c772cb6d2592af3de4b3f57bd70.php",
+      "language": "php",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/3c12f565ed91e99bb0874b3de09ec541.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/40ba6c67cf4cde2152a16f65b97dbe3e.php",
+      "language": "php",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/4121567c6787c1a0cc0a4072d59b854a.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/41313dc4fb9eb1054a070c175e299b50.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/424838509c2b0e4155f61b58e6a72844.php",
+      "language": "php",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/46cd470ffc64a652dc9393df763428aa.php",
+      "language": "php",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/4a3684491874d88b52ee1d429b694ffc.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/4e51a5adf7b3133dd8663eaf4b2a95ea.php",
+      "language": "php",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/51ee71e99d81878d3630fadb7b6a8ae1.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/533172236af27fdf888f5c1110bd7dbf.php",
+      "language": "php",
+      "sizeLines": 373,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/54916287c1884f651f679a6578764adb.php",
+      "language": "php",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/5d751a5006af3897d75d6b60f8d4a594.php",
+      "language": "php",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/5f83dca18b4c2fff80aef956e895a5ef.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/698e24232e5f7ee15ceac26cda5b0adf.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/6b40df198f9547a0384741d2c2c274b6.php",
+      "language": "php",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/6baa306bdc1c0a39f4c63615ec502f39.php",
+      "language": "php",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/6cf3293cf1868bda10ad4bb212f6134c.php",
+      "language": "php",
+      "sizeLines": 394,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/711fdf38f7ae8d099c9d913efe6b455a.php",
+      "language": "php",
+      "sizeLines": 282,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/794750ef2cbf1ae8e61c87cdc8b62c50.php",
+      "language": "php",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/799bb06a0a10424429e9aece6c3f71bc.php",
+      "language": "php",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/7cd46f75fd653c2323d16437bf44bb7b.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/7d10600e7279260fb3516b36ba521142.php",
+      "language": "php",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/7fae65ab40fcbe1e4de557fa940feb40.php",
+      "language": "php",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/8ce0611f933d03719ec61a70c574209c.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/8ebfedc24acd221b9c2725cd07f3ea3e.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/9318e7f0ad7f6487a450e1992fece396.php",
+      "language": "php",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/94ad6a1c858b6d01a8db24806a6fa2e9.php",
+      "language": "php",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/99e2788c60c4594ca7e00f7f216ce8de.php",
+      "language": "php",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/9afe105539908a9fb2eaa08e4207975d.php",
+      "language": "php",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/9cae30fa63f7ab951a58ff7353e0c917.php",
+      "language": "php",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/a19607443add38b5f056c3b2b0d12306.php",
+      "language": "php",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/a23cead19828330f4620374beb3a38e7.php",
+      "language": "php",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/a2d5950c00d73c0d9deed5959dc94811.php",
+      "language": "php",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/a49d85ad14606eba844293f491d58d01.php",
+      "language": "php",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/a8f5236065aa4aa54807c3f0ac73ae40.php",
+      "language": "php",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/b11097102fcb2530dc4c04b9137be67f.php",
+      "language": "php",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/b46353acef6385ab7cf21adadd276c2d.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/b51a31e3bd7a6d41651e75c5443016d8.php",
+      "language": "php",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/bdfca27468e0fa411ac0a2f96408a3b8.php",
+      "language": "php",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php",
+      "language": "php",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/cc5193565f110e059c08893c2222d53c.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/e9773b5d20d9521a598e53936a407a98.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php",
+      "language": "php",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f770fdf84114360ddd9c682721069c1a.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php",
+      "language": "php",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/fb858329e0dcb506b14a2095393ee987.php",
+      "language": "php",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php",
+      "language": "php",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tailwind.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/AuthenticationTest.php",
+      "language": "php",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/EmailVerificationTest.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordResetTest.php",
+      "language": "php",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "language": "php",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/Auth/RegistrationTest.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Feature/ProfileTest.php",
+      "language": "php",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/TestCase.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/Unit/ExampleTest.php",
+      "language": "php",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 201,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".codegraph/codegraph.db": [],
+    ".env": [],
+    ".env.example": [],
+    ".gitattributes": [],
+    ".understand-anything/.understandignore": [],
+    "ADMIN_GUIDE.md": [],
+    "app/Http/Controllers/Admin/AdminController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/NguoiDung.php"
+    ],
+    "app/Http/Controllers/Admin/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Admin/UserController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/AuthController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/NguoiDung.php"
+    ],
+    "app/Http/Controllers/Controller.php": [],
+    "app/Http/Controllers/Student/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Student/ExamController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Student/ResultController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/ExamController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/QuestionController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Middleware/CheckAdmin.php": [],
+    "app/Http/Middleware/CheckLogin.php": [],
+    "app/Http/Middleware/CheckRole.php": [],
+    "app/Http/Requests/Auth/LoginRequest.php": [],
+    "app/Http/Requests/ProfileUpdateRequest.php": [],
+    "app/Models/BaiLamCuaHS.php": [],
+    "app/Models/BinhLuan.php": [],
+    "app/Models/CauHoiDS_Y.php": [],
+    "app/Models/CauHoiTrongDe.php": [],
+    "app/Models/ChiTietCauTraLoiSo.php": [],
+    "app/Models/ChiTietTraLoiDS.php": [],
+    "app/Models/ChiTietTraLoiTN.php": [],
+    "app/Models/ChuyenDe.php": [],
+    "app/Models/DapAnTLS.php": [],
+    "app/Models/DapAnTN.php": [],
+    "app/Models/DeThi.php": [],
+    "app/Models/NguoiDung.php": [],
+    "app/Models/Question.php": [],
+    "app/Providers/AppServiceProvider.php": [],
+    "artisan": [],
+    "bootstrap/app.php": [],
+    "bootstrap/cache/packages.php": [],
+    "bootstrap/cache/services.php": [],
+    "bootstrap/providers.php": [
+      "app/Providers/AppServiceProvider.php"
+    ],
+    "composer.json": [],
+    "config/database.php": [],
+    "database/factories/UserFactory.php": [],
+    "database/migrations/0001_01_01_000000_create_users_table.php": [],
+    "database/migrations/0001_01_01_000001_create_cache_table.php": [],
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": [],
+    "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php": [],
+    "database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php": [],
+    "database/seeders/AdminSeeder.php": [
+      "app/Models/NguoiDung.php"
+    ],
+    "database/seeders/DatabaseSeeder.php": [],
+    "IMPLEMENTATION_SUMMARY.md": [],
+    "package.json": [],
+    "phpunit.xml": [],
+    "postcss.config.js": [],
+    "public/.htaccess": [],
+    "public/css/auth.css": [],
+    "public/css/exam.css": [],
+    "public/css/glass.css": [],
+    "public/css/student.css": [],
+    "public/css/teacher.css": [],
+    "public/index.php": [],
+    "public/js/exam.js": [],
+    "public/robots.txt": [],
+    "README.md": [],
+    "resources/css/app.css": [],
+    "resources/js/app.js": [
+      "resources/js/bootstrap.js"
+    ],
+    "resources/js/bootstrap.js": [],
+    "resources/views/admin/dashboard.blade.php": [],
+    "resources/views/admin/exams/index.blade.php": [],
+    "resources/views/admin/teachers/pending.blade.php": [],
+    "resources/views/admin/users/detail.blade.php": [],
+    "resources/views/admin/users/index.blade.php": [],
+    "resources/views/auth/confirm-password.blade.php": [],
+    "resources/views/auth/forgot-password.blade.php": [],
+    "resources/views/auth/login.blade.php": [],
+    "resources/views/auth/register.blade.php": [],
+    "resources/views/auth/reset-password.blade.php": [],
+    "resources/views/auth/verify-email.blade.php": [],
+    "resources/views/auth/verify-otp.blade.php": [],
+    "resources/views/components/application-logo.blade.php": [],
+    "resources/views/components/auth-session-status.blade.php": [],
+    "resources/views/components/danger-button.blade.php": [],
+    "resources/views/components/dropdown-link.blade.php": [],
+    "resources/views/components/dropdown.blade.php": [],
+    "resources/views/components/input-error.blade.php": [],
+    "resources/views/components/input-label.blade.php": [],
+    "resources/views/components/modal.blade.php": [],
+    "resources/views/components/nav-link.blade.php": [],
+    "resources/views/components/primary-button.blade.php": [],
+    "resources/views/components/responsive-nav-link.blade.php": [],
+    "resources/views/components/secondary-button.blade.php": [],
+    "resources/views/components/text-input.blade.php": [],
+    "resources/views/layouts/app.blade.php": [],
+    "resources/views/layouts/guest.blade.php": [],
+    "resources/views/layouts/navigation.blade.php": [],
+    "resources/views/layouts/student.blade.php": [],
+    "resources/views/layouts/teacher.blade.php": [],
+    "resources/views/profile/edit.blade.php": [],
+    "resources/views/profile/partials/delete-user-form.blade.php": [],
+    "resources/views/profile/partials/update-password-form.blade.php": [],
+    "resources/views/profile/partials/update-profile-information-form.blade.php": [],
+    "resources/views/student/dashboard.blade.php": [],
+    "resources/views/student/exams/do.blade.php": [],
+    "resources/views/student/exams/index.blade.php": [],
+    "resources/views/student/results/index.blade.php": [],
+    "resources/views/student/results/show.blade.php": [],
+    "resources/views/teacher/dashboard.blade.php": [],
+    "resources/views/teacher/exams/create.blade.php": [],
+    "resources/views/teacher/exams/edit.blade.php": [],
+    "resources/views/teacher/exams/index.blade.php": [],
+    "resources/views/teacher/exams/stats.blade.php": [],
+    "resources/views/teacher/exams/xem-bai-lam.blade.php": [],
+    "resources/views/teacher/questions/create.blade.php": [],
+    "resources/views/teacher/questions/edit.blade.php": [],
+    "resources/views/teacher/questions/index.blade.php": [],
+    "routes/auth.php": [],
+    "routes/console.php": [],
+    "routes/web.php": [
+      "app/Http/Controllers/Admin/AdminController.php",
+      "app/Http/Controllers/Admin/DashboardController.php",
+      "app/Http/Controllers/Admin/UserController.php",
+      "app/Http/Controllers/Auth/AuthController.php",
+      "app/Http/Controllers/Student/DashboardController.php",
+      "app/Http/Controllers/Student/ExamController.php",
+      "app/Http/Controllers/Student/ResultController.php",
+      "app/Http/Controllers/Teacher/DashboardController.php",
+      "app/Http/Controllers/Teacher/ExamController.php",
+      "app/Http/Controllers/Teacher/QuestionController.php"
+    ],
+    "storage/framework/sessions/LbZyh5VID1NdkHbQPzhqCV6cOM4eZu6KCIDvci48": [],
+    "storage/framework/sessions/VNHIrnvAjXiUwEZBkjBH8rKGI12m7ldfQ2CizdfE": [],
+    "storage/framework/views/011f7d0648c9147f5a380ce63b7bbafb.php": [],
+    "storage/framework/views/0321145205a1b8489109cae62e6e4841.php": [],
+    "storage/framework/views/041a4e3c1be03849d8561f6ae377d7b1.php": [],
+    "storage/framework/views/0703e10b6a2ad108eac92daec9b3ea61.php": [],
+    "storage/framework/views/08f5cba67e86a28bf97a666a78dfef00.php": [],
+    "storage/framework/views/113757ebdc43759a92d133d25c94e34a.php": [],
+    "storage/framework/views/1522441678667df7910c642d8aa78aaa.php": [],
+    "storage/framework/views/196489aeb536f30c0f76c99c833c3c96.php": [],
+    "storage/framework/views/1cc70986924be79651346fe6aee949e2.php": [],
+    "storage/framework/views/22ba2738e6354542427d093f71f30ed2.php": [],
+    "storage/framework/views/24d4ff0dd1dd3c18cdf6aa66e4621bec.php": [],
+    "storage/framework/views/255d046ae9242e9dfbeedf0291c449fd.php": [],
+    "storage/framework/views/28ce2e4e61bedfd7a6dc0bfe688a8be4.php": [],
+    "storage/framework/views/2dd9564d456a2f476f2f4d7b2d6568df.php": [],
+    "storage/framework/views/2fdb8f39e77816cc161931eac22b78fd.php": [],
+    "storage/framework/views/35ef232ad026fa4aa467b65dc7fa5a3c.php": [],
+    "storage/framework/views/37e01c772cb6d2592af3de4b3f57bd70.php": [],
+    "storage/framework/views/3c12f565ed91e99bb0874b3de09ec541.php": [],
+    "storage/framework/views/40ba6c67cf4cde2152a16f65b97dbe3e.php": [],
+    "storage/framework/views/4121567c6787c1a0cc0a4072d59b854a.php": [],
+    "storage/framework/views/41313dc4fb9eb1054a070c175e299b50.php": [],
+    "storage/framework/views/424838509c2b0e4155f61b58e6a72844.php": [],
+    "storage/framework/views/46cd470ffc64a652dc9393df763428aa.php": [],
+    "storage/framework/views/4a3684491874d88b52ee1d429b694ffc.php": [],
+    "storage/framework/views/4e51a5adf7b3133dd8663eaf4b2a95ea.php": [],
+    "storage/framework/views/51ee71e99d81878d3630fadb7b6a8ae1.php": [],
+    "storage/framework/views/533172236af27fdf888f5c1110bd7dbf.php": [],
+    "storage/framework/views/54916287c1884f651f679a6578764adb.php": [],
+    "storage/framework/views/5d751a5006af3897d75d6b60f8d4a594.php": [],
+    "storage/framework/views/5f83dca18b4c2fff80aef956e895a5ef.php": [],
+    "storage/framework/views/698e24232e5f7ee15ceac26cda5b0adf.php": [],
+    "storage/framework/views/6b40df198f9547a0384741d2c2c274b6.php": [],
+    "storage/framework/views/6baa306bdc1c0a39f4c63615ec502f39.php": [],
+    "storage/framework/views/6cf3293cf1868bda10ad4bb212f6134c.php": [],
+    "storage/framework/views/711fdf38f7ae8d099c9d913efe6b455a.php": [],
+    "storage/framework/views/794750ef2cbf1ae8e61c87cdc8b62c50.php": [],
+    "storage/framework/views/799bb06a0a10424429e9aece6c3f71bc.php": [],
+    "storage/framework/views/7cd46f75fd653c2323d16437bf44bb7b.php": [],
+    "storage/framework/views/7d10600e7279260fb3516b36ba521142.php": [],
+    "storage/framework/views/7fae65ab40fcbe1e4de557fa940feb40.php": [],
+    "storage/framework/views/8ce0611f933d03719ec61a70c574209c.php": [],
+    "storage/framework/views/8ebfedc24acd221b9c2725cd07f3ea3e.php": [],
+    "storage/framework/views/9318e7f0ad7f6487a450e1992fece396.php": [],
+    "storage/framework/views/94ad6a1c858b6d01a8db24806a6fa2e9.php": [],
+    "storage/framework/views/99e2788c60c4594ca7e00f7f216ce8de.php": [],
+    "storage/framework/views/9afe105539908a9fb2eaa08e4207975d.php": [],
+    "storage/framework/views/9cae30fa63f7ab951a58ff7353e0c917.php": [],
+    "storage/framework/views/a19607443add38b5f056c3b2b0d12306.php": [],
+    "storage/framework/views/a23cead19828330f4620374beb3a38e7.php": [],
+    "storage/framework/views/a2d5950c00d73c0d9deed5959dc94811.php": [],
+    "storage/framework/views/a49d85ad14606eba844293f491d58d01.php": [],
+    "storage/framework/views/a8f5236065aa4aa54807c3f0ac73ae40.php": [],
+    "storage/framework/views/b11097102fcb2530dc4c04b9137be67f.php": [],
+    "storage/framework/views/b46353acef6385ab7cf21adadd276c2d.php": [],
+    "storage/framework/views/b51a31e3bd7a6d41651e75c5443016d8.php": [],
+    "storage/framework/views/bdfca27468e0fa411ac0a2f96408a3b8.php": [],
+    "storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php": [],
+    "storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php": [],
+    "storage/framework/views/cc5193565f110e059c08893c2222d53c.php": [],
+    "storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php": [],
+    "storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php": [],
+    "storage/framework/views/e9773b5d20d9521a598e53936a407a98.php": [],
+    "storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php": [],
+    "storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php": [],
+    "storage/framework/views/f770fdf84114360ddd9c682721069c1a.php": [],
+    "storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php": [],
+    "storage/framework/views/fb858329e0dcb506b14a2095393ee987.php": [],
+    "storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php": [],
+    "tailwind.config.js": [],
+    "tests/Feature/Auth/AuthenticationTest.php": [],
+    "tests/Feature/Auth/EmailVerificationTest.php": [],
+    "tests/Feature/Auth/PasswordConfirmationTest.php": [],
+    "tests/Feature/Auth/PasswordResetTest.php": [],
+    "tests/Feature/Auth/PasswordUpdateTest.php": [],
+    "tests/Feature/Auth/RegistrationTest.php": [],
+    "tests/Feature/ExampleTest.php": [],
+    "tests/Feature/ProfileTest.php": [],
+    "tests/TestCase.php": [],
+    "tests/Unit/ExampleTest.php": [],
+    "vite.config.js": []
+  }
+}

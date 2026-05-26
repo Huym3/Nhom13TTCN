@@ -1,0 +1,4058 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 10,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 8,
+          "endLine": 13,
+          "methods": [
+            "index"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "UserController",
+          "startLine": 8,
+          "endLine": 11,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "Controller",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Controller",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 11,
+          "endLine": 58,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 9,
+          "endLine": 59,
+          "methods": [
+            "index"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "Session::get",
+          "lineNumber": 13
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->count",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->avg",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->max",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->limit(5)\n            ->select('bl.*', 'dt.TenDeThi')->get",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->limit(5)->select",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')->limit",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderBy",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')->join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 32
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->pluck",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 42
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)\n            ->orderBy('NgayTao', 'desc')\n            ->limit(5)->get",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)\n            ->orderBy('NgayTao', 'desc')->limit",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)->orderBy",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')->whereNotIn",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 54
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 215,
+      "nonEmptyLines": 181,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 13,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "start",
+          "startLine": 32,
+          "endLine": 72,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 74,
+          "endLine": 168,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "saveTN",
+          "startLine": 171,
+          "endLine": 179,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "saveDS",
+          "startLine": 182,
+          "endLine": 191,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "saveSo",
+          "startLine": 194,
+          "endLine": 202,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "submit",
+          "startLine": 205,
+          "endLine": 214,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExamController",
+          "startLine": 10,
+          "endLine": 215,
+          "methods": [
+            "index",
+            "start",
+            "show",
+            "saveTN",
+            "saveDS",
+            "saveSo",
+            "submit"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExamController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "Session::get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNotNull('ThoiGianNopBai')->pluck",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')\n        ->whereNotIn('MaDeThi', $daDamIds) // ẩn đề đã làm xong\n        ->orderBy('NgayTao', 'desc')->get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')\n        ->whereNotIn('MaDeThi', $daDamIds)->orderBy",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')->whereNotIn",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 29
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 29
+        },
+        {
+          "caller": "start",
+          "callee": "Session::get",
+          "lineNumber": 34
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNotNull('ThoiGianNopBai')->first",
+          "lineNumber": 37
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 37
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)->where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table",
+          "lineNumber": 37
+        },
+        {
+          "caller": "start",
+          "callee": "redirect()->route('student.results.show', $daLam->MaBaiLam)->with",
+          "lineNumber": 44
+        },
+        {
+          "caller": "start",
+          "callee": "redirect()->route",
+          "lineNumber": 44
+        },
+        {
+          "caller": "start",
+          "callee": "redirect",
+          "lineNumber": 44
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNull('ThoiGianNopBai')->first",
+          "lineNumber": 49
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)->whereNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)->where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 49
+        },
+        {
+          "caller": "start",
+          "callee": "DB::table",
+          "lineNumber": 49
+        },
+        {
+          "caller": "start",
+          "callee": "redirect()->route('student.exams.do', [\n            'id'     => $id,\n            'baiLam' => $dangLam->MaBaiLam,\n        ])->with",
+          "lineNumber": 57
+        },
+        {
+          "caller": "start",
+          "callee": "redirect()->route",
+          "lineNumber": 57
+        },
+        {
+          "caller": "start",
+          "callee": "redirect",
+          "lineNumber": 57
+        },
+        {
+          "caller": "start",
+          "callee": "DB::statement",
+          "lineNumber": 64
+        },
+        {
+          "caller": "start",
+          "callee": "DB::select",
+          "lineNumber": 65
+        },
+        {
+          "caller": "start",
+          "callee": "redirect()->route",
+          "lineNumber": 68
+        },
+        {
+          "caller": "start",
+          "callee": "redirect",
+          "lineNumber": 68
+        },
+        {
+          "caller": "show",
+          "callee": "request",
+          "lineNumber": 76
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->first",
+          "lineNumber": 78
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 78
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 78
+        },
+        {
+          "caller": "show",
+          "callee": "abort",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaBaiLam', $maBaiLam)\n            ->where('MaNguoiDung', Session::get('maNguoiDung'))->first",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaBaiLam', $maBaiLam)->where",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "Session::get",
+          "lineNumber": 83
+        },
+        {
+          "caller": "show",
+          "callee": "abort",
+          "lineNumber": 86
+        },
+        {
+          "caller": "show",
+          "callee": "DB::selectOne",
+          "lineNumber": 89
+        },
+        {
+          "caller": "show",
+          "callee": "max",
+          "lineNumber": 96
+        },
+        {
+          "caller": "show",
+          "callee": "max",
+          "lineNumber": 97
+        },
+        {
+          "caller": "show",
+          "callee": "DB::statement",
+          "lineNumber": 109
+        },
+        {
+          "caller": "show",
+          "callee": "redirect()->route('student.results.show', $maBaiLam)->with",
+          "lineNumber": 110
+        },
+        {
+          "caller": "show",
+          "callee": "redirect()->route",
+          "lineNumber": 110
+        },
+        {
+          "caller": "show",
+          "callee": "redirect",
+          "lineNumber": 110
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')\n            ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')->orderBy",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 115
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')\n                ->where('MaCauHoi', $cau->MaCauHoi)\n                ->orderBy('KyHieu')->get",
+          "lineNumber": 123
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')\n                ->where('MaCauHoi', $cau->MaCauHoi)->orderBy",
+          "lineNumber": 123
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 123
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 123
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')\n            ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')->orderBy",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 129
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y')\n                ->where('MaCauHoi', $cau->MaCauHoi)\n                ->orderBy('KyHieu')->get",
+          "lineNumber": 137
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y')\n                ->where('MaCauHoi', $cau->MaCauHoi)->orderBy",
+          "lineNumber": 137
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y')->where",
+          "lineNumber": 137
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 137
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')\n            ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')->orderBy",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 143
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietTraLoiTN')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+          "lineNumber": 151
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietTraLoiTN')->where",
+          "lineNumber": 151
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 151
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietTraLoiDS')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+          "lineNumber": 155
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietTraLoiDS')->where",
+          "lineNumber": 155
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 155
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietCauTraLoiSo')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+          "lineNumber": 159
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->where",
+          "lineNumber": 159
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 159
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 163
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 163
+        },
+        {
+          "caller": "saveTN",
+          "callee": "DB::statement",
+          "lineNumber": 173
+        },
+        {
+          "caller": "saveTN",
+          "callee": "response()->json",
+          "lineNumber": 178
+        },
+        {
+          "caller": "saveTN",
+          "callee": "response",
+          "lineNumber": 178
+        },
+        {
+          "caller": "saveDS",
+          "callee": "DB::statement",
+          "lineNumber": 184
+        },
+        {
+          "caller": "saveDS",
+          "callee": "response()->json",
+          "lineNumber": 190
+        },
+        {
+          "caller": "saveDS",
+          "callee": "response",
+          "lineNumber": 190
+        },
+        {
+          "caller": "saveSo",
+          "callee": "DB::statement",
+          "lineNumber": 196
+        },
+        {
+          "caller": "saveSo",
+          "callee": "response()->json",
+          "lineNumber": 201
+        },
+        {
+          "caller": "saveSo",
+          "callee": "response",
+          "lineNumber": 201
+        },
+        {
+          "caller": "submit",
+          "callee": "DB::statement",
+          "lineNumber": 210
+        },
+        {
+          "caller": "submit",
+          "callee": "redirect()->route('student.results.show', $maBaiLam)->with",
+          "lineNumber": 212
+        },
+        {
+          "caller": "submit",
+          "callee": "redirect()->route",
+          "lineNumber": 212
+        },
+        {
+          "caller": "submit",
+          "callee": "redirect",
+          "lineNumber": 212
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 12,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "show",
+          "startLine": 33,
+          "endLine": 114,
+          "params": [
+            "$maBaiLam"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ResultController",
+          "startLine": 9,
+          "endLine": 115,
+          "methods": [
+            "index",
+            "show"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ResultController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "Session::get",
+          "lineNumber": 14
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->select(\n                'bl.MaBaiLam', 'bl.TongDiem', 'bl.DiemPhan1',\n                'bl.DiemPhan2', 'bl.DiemPhan3', 'bl.SoCauDung',\n                'bl.SoCauSai', 'bl.ThoiGianNopBai', 'bl.TongThoiGianLamBai',\n                'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi'\n            )->get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')->select",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderBy",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)->whereNotNull",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('BaiLamCuaHS as bl')->join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 29
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 29
+        },
+        {
+          "caller": "show",
+          "callee": "Session::get",
+          "lineNumber": 35
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->where('bl.MaNguoiDung', $maNguoiDung)\n        ->select('bl.*', 'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi')->first",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->where('bl.MaNguoiDung', $maNguoiDung)->select",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)->where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('BaiLamCuaHS as bl')->join",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "abort",
+          "lineNumber": 44
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',\n            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',\n            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'\n        )->get",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')->orderBy",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')->where",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 47
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 50
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on",
+          "lineNumber": 50
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first",
+          "lineNumber": 65
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where",
+          "lineNumber": 65
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 65
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 65
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 66
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 66
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')\n        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh', 'chtd.ThuTu')->get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')->orderBy",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')\n            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')->get",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')->select",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)->orderBy",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })->where",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiDS_Y as y')->leftJoin",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 79
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on('ct.MaY', '=', 'y.MaY')->where",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count",
+          "lineNumber": 89
+        },
+        {
+          "caller": "show",
+          "callee": "collect($cau->cacY)->filter",
+          "lineNumber": 89
+        },
+        {
+          "caller": "show",
+          "callee": "collect",
+          "lineNumber": 89
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value",
+          "lineNumber": 90
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('ThangDiemDS')->where",
+          "lineNumber": 90
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 90
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',\n            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',\n            'da.DapAnSo', 'chtd.ThuTu'\n        )->get",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')->orderBy",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "DB::table",
+          "lineNumber": 94
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 97
+        },
+        {
+          "caller": "show",
+          "callee": "$join->on",
+          "lineNumber": 97
+        },
+        {
+          "caller": "show",
+          "callee": "view",
+          "lineNumber": 111
+        },
+        {
+          "caller": "show",
+          "callee": "compact",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 7,
+          "endLine": 12,
+          "methods": [
+            "index"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardController",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 523,
+      "nonEmptyLines": 445,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 13,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "create",
+          "startLine": 29,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 35,
+          "endLine": 57,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 60,
+          "endLine": 94,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 97,
+          "endLine": 115,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "destroy",
+          "startLine": 118,
+          "endLine": 163,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "addQuestion",
+          "startLine": 165,
+          "endLine": 219,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "removeQuestion",
+          "startLine": 221,
+          "endLine": 235,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "publish",
+          "startLine": 238,
+          "endLine": 261,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "unpublish",
+          "startLine": 264,
+          "endLine": 300,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "stats",
+          "startLine": 303,
+          "endLine": 436,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "xemBaiLam",
+          "startLine": 439,
+          "endLine": 521,
+          "params": [
+            "$id",
+            "$maBaiLam"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExamController",
+          "startLine": 10,
+          "endLine": 523,
+          "methods": [
+            "index",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "destroy",
+            "addQuestion",
+            "removeQuestion",
+            "publish",
+            "unpublish",
+            "stats",
+            "xemBaiLam"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExamController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))\n            ->orderBy('de.NgayTao', 'desc')\n            ->select(\n                'de.*',\n                DB::raw('(SELECT COUNT(*) FROM CauHoiTrongDe WHERE MaDeThi = de.MaDeThi) as SoCauThucTe'),\n                DB::raw('(SELECT COUNT(*) FROM BaiLamCuaHS WHERE MaDeThi = de.MaDeThi) as SoBaiLam')\n            )->get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))\n            ->orderBy('de.NgayTao', 'desc')->select",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))->orderBy",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('DeThi as de')->where",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 15
+        },
+        {
+          "caller": "index",
+          "callee": "Session::get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::raw",
+          "lineNumber": 20
+        },
+        {
+          "caller": "index",
+          "callee": "DB::raw",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 25
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 31
+        },
+        {
+          "caller": "store",
+          "callee": "$request->validate",
+          "lineNumber": 37
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table('DeThi')->insert",
+          "lineNumber": 45
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table",
+          "lineNumber": 45
+        },
+        {
+          "caller": "store",
+          "callee": "Session::get",
+          "lineNumber": 50
+        },
+        {
+          "caller": "store",
+          "callee": "now",
+          "lineNumber": 52
+        },
+        {
+          "caller": "store",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 55
+        },
+        {
+          "caller": "store",
+          "callee": "redirect()->route",
+          "lineNumber": 55
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 55
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 62
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 62
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 62
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 62
+        },
+        {
+          "caller": "edit",
+          "callee": "Session::get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "edit",
+          "callee": "abort",
+          "lineNumber": 66
+        },
+        {
+          "caller": "edit",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 68
+        },
+        {
+          "caller": "edit",
+          "callee": "redirect()->route",
+          "lineNumber": 68
+        },
+        {
+          "caller": "edit",
+          "callee": "redirect",
+          "lineNumber": 68
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.HinhAnh', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')->get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')->select",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')->select",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')->orderBy",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)->orderBy",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiTrongDe as ctd')->join",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 73
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')\n            ->orderBy('q.LoaiCauHoi')\n            ->orderBy('q.NgayTao', 'desc')->get",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')\n            ->orderBy('q.LoaiCauHoi')->orderBy",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')->orderBy",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))->select",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))->whereNotIn",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question as q')->join",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 84
+        },
+        {
+          "caller": "edit",
+          "callee": "Session::get",
+          "lineNumber": 86
+        },
+        {
+          "caller": "edit",
+          "callee": "$cauHoiTrongDe->pluck",
+          "lineNumber": 87
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 93
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 93
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update",
+          "callee": "Session::get",
+          "lineNumber": 100
+        },
+        {
+          "caller": "update",
+          "callee": "abort",
+          "lineNumber": 103
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->update",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update",
+          "callee": "now",
+          "lineNumber": 110
+        },
+        {
+          "caller": "update",
+          "callee": "redirect()->route('teacher.exams.edit', $id)->with",
+          "lineNumber": 113
+        },
+        {
+          "caller": "update",
+          "callee": "redirect()->route",
+          "lineNumber": 113
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 113
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 120
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 120
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 120
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 120
+        },
+        {
+          "caller": "destroy",
+          "callee": "Session::get",
+          "lineNumber": 121
+        },
+        {
+          "caller": "destroy",
+          "callee": "abort",
+          "lineNumber": 124
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count",
+          "lineNumber": 126
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 126
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 126
+        },
+        {
+          "caller": "destroy",
+          "callee": "request",
+          "lineNumber": 129
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->back()\n            ->with('confirm_delete', $id)\n            ->with('so_bai_lam', $soBaiLam)->with",
+          "lineNumber": 130
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->back()\n            ->with('confirm_delete', $id)->with",
+          "lineNumber": 130
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->back()->with",
+          "lineNumber": 130
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->back",
+          "lineNumber": 130
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect",
+          "lineNumber": 130
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck",
+          "lineNumber": 137
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 137
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 137
+        },
+        {
+          "caller": "destroy",
+          "callee": "$maBaiLams->isNotEmpty",
+          "lineNumber": 139
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')\n            ->whereIn('MaBaiLam', $maBaiLams)->pluck",
+          "lineNumber": 141
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn",
+          "lineNumber": 141
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 141
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 143
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn",
+          "lineNumber": 143
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 143
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 146
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiDS')->whereIn",
+          "lineNumber": 146
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 146
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 149
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->whereIn",
+          "lineNumber": 149
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 149
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 152
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BinhLuan')->whereIn",
+          "lineNumber": 152
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 152
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete",
+          "lineNumber": 155
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 155
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 155
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->delete",
+          "lineNumber": 158
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 158
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 158
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->delete",
+          "lineNumber": 159
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 159
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 159
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 161
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->route",
+          "lineNumber": 161
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect",
+          "lineNumber": 161
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "$request->input",
+          "lineNumber": 168
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "$request->input",
+          "lineNumber": 169
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response()->json",
+          "lineNumber": 173
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response",
+          "lineNumber": 173
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->first",
+          "lineNumber": 176
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 176
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 176
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "abort",
+          "lineNumber": 177
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('Question')->where('MaCauHoi', $maCauHoi)->first",
+          "lineNumber": 179
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 179
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 179
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "abort",
+          "lineNumber": 180
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response()->json",
+          "lineNumber": 185
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response",
+          "lineNumber": 185
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n        ->where('MaCauHoi', $maCauHoi)\n        ->where('MaDeThi', $id)->exists",
+          "lineNumber": 188
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n        ->where('MaCauHoi', $maCauHoi)->where",
+          "lineNumber": 188
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 188
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 188
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response()->json",
+          "lineNumber": 194
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response",
+          "lineNumber": 194
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n        ->where('MaDeThi', $id)\n        ->where('Phan', $phan)->max",
+          "lineNumber": 199
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n        ->where('MaDeThi', $id)->where",
+          "lineNumber": 199
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 199
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 199
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->insert",
+          "lineNumber": 204
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 204
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+          "lineNumber": 212
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 212
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 212
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->update",
+          "lineNumber": 213
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 213
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "DB::table",
+          "lineNumber": 213
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "now",
+          "lineNumber": 215
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response()->json",
+          "lineNumber": 218
+        },
+        {
+          "caller": "addQuestion",
+          "callee": "response",
+          "lineNumber": 218
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n            ->where('MaDeThi', $id)\n            ->where('MaCauHoi', $request->maCauHoi)->delete",
+          "lineNumber": 223
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('CauHoiTrongDe')\n            ->where('MaDeThi', $id)->where",
+          "lineNumber": 223
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 223
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table",
+          "lineNumber": 223
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+          "lineNumber": 228
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 228
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table",
+          "lineNumber": 228
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->update",
+          "lineNumber": 229
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 229
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "DB::table",
+          "lineNumber": 229
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "now",
+          "lineNumber": 231
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "back()->with",
+          "lineNumber": 234
+        },
+        {
+          "caller": "removeQuestion",
+          "callee": "back",
+          "lineNumber": 234
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 240
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 240
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 240
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table",
+          "lineNumber": 240
+        },
+        {
+          "caller": "publish",
+          "callee": "Session::get",
+          "lineNumber": 241
+        },
+        {
+          "caller": "publish",
+          "callee": "abort",
+          "lineNumber": 244
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+          "lineNumber": 247
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 247
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table",
+          "lineNumber": 247
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 249
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect()->route",
+          "lineNumber": 249
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect",
+          "lineNumber": 249
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->update",
+          "lineNumber": 253
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 253
+        },
+        {
+          "caller": "publish",
+          "callee": "DB::table",
+          "lineNumber": 253
+        },
+        {
+          "caller": "publish",
+          "callee": "now",
+          "lineNumber": 255
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 258
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect()->route",
+          "lineNumber": 258
+        },
+        {
+          "caller": "publish",
+          "callee": "redirect",
+          "lineNumber": 258
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 266
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 266
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 266
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 266
+        },
+        {
+          "caller": "unpublish",
+          "callee": "Session::get",
+          "lineNumber": 267
+        },
+        {
+          "caller": "unpublish",
+          "callee": "abort",
+          "lineNumber": 270
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count",
+          "lineNumber": 272
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 272
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 272
+        },
+        {
+          "caller": "unpublish",
+          "callee": "request",
+          "lineNumber": 275
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->back()\n            ->with('confirm_unpublish', $id)\n            ->with('so_bai_lam_unpublish', $soBaiLam)->with",
+          "lineNumber": 276
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->back()\n            ->with('confirm_unpublish', $id)->with",
+          "lineNumber": 276
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->back()->with",
+          "lineNumber": 276
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->back",
+          "lineNumber": 276
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect",
+          "lineNumber": 276
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck",
+          "lineNumber": 283
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 283
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 283
+        },
+        {
+          "caller": "unpublish",
+          "callee": "$maBaiLams->isNotEmpty",
+          "lineNumber": 285
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 286
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn",
+          "lineNumber": 286
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 286
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 287
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietTraLoiDS')->whereIn",
+          "lineNumber": 287
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 287
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 288
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->whereIn",
+          "lineNumber": 288
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 288
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete",
+          "lineNumber": 289
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BinhLuan')->whereIn",
+          "lineNumber": 289
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 289
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete",
+          "lineNumber": 290
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 290
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 290
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->update",
+          "lineNumber": 293
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 293
+        },
+        {
+          "caller": "unpublish",
+          "callee": "DB::table",
+          "lineNumber": 293
+        },
+        {
+          "caller": "unpublish",
+          "callee": "now",
+          "lineNumber": 295
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->route('teacher.exams.index')->with",
+          "lineNumber": 298
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect()->route",
+          "lineNumber": 298
+        },
+        {
+          "caller": "unpublish",
+          "callee": "redirect",
+          "lineNumber": 298
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 305
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 305
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 305
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 305
+        },
+        {
+          "caller": "stats",
+          "callee": "Session::get",
+          "lineNumber": 306
+        },
+        {
+          "caller": "stats",
+          "callee": "abort",
+          "lineNumber": 309
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)\n            ->whereNotNull('ThoiGianNopBai')\n            ->selectRaw('\n                COUNT(*) as TongBaiLam,\n                AVG(TongDiem) as DiemTrungBinh,\n                MAX(TongDiem) as DiemCaoNhat,\n                MIN(TongDiem) as DiemThapNhat,\n                AVG(TongThoiGianLamBai) as ThoiGianTB\n            ')->first",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)\n            ->whereNotNull('ThoiGianNopBai')->selectRaw",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)->whereNotNull",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')\n    ->selectRaw(\"\n        CASE\n            WHEN TongDiem < 2   THEN '0 - 2'\n            WHEN TongDiem < 4   THEN '2 - 4'\n            WHEN TongDiem < 5   THEN '4 - 5'\n            WHEN TongDiem < 6.5 THEN '5 - 6.5'\n            WHEN TongDiem < 8   THEN '6.5 - 8'\n            ELSE '8 - 10'\n        END as KhoangDiem,\n        COUNT(*) as SoLuong\n    \")\n    ->groupByRaw(\"KhoangDiem\")->pluck",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')\n    ->selectRaw(\"\n        CASE\n            WHEN TongDiem < 2   THEN '0 - 2'\n            WHEN TongDiem < 4   THEN '2 - 4'\n            WHEN TongDiem < 5   THEN '4 - 5'\n            WHEN TongDiem < 6.5 THEN '5 - 6.5'\n            WHEN TongDiem < 8   THEN '6.5 - 8'\n            ELSE '8 - 10'\n        END as KhoangDiem,\n        COUNT(*) as SoLuong\n    \")->groupByRaw",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')->selectRaw",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)->whereNotNull",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS')->where",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stats",
+          "callee": "collect($tatCaKhoang)->map",
+          "lineNumber": 345
+        },
+        {
+          "caller": "stats",
+          "callee": "collect",
+          "lineNumber": 345
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')\n            ->limit(5)\n            ->select('nd.HoTen', 'bl.MaBaiLam', 'bl.TongDiem', 'bl.SoCauDung', 'bl.TongThoiGianLamBai', 'bl.ThoiGianNopBai')->get",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')\n            ->limit(5)->select",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')->limit",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')->orderBy",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderByDesc",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)->whereNotNull",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')->where",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('BaiLamCuaHS as bl')->join",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 351
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')\n   ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,\n    q.HinhAnh,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(ct.DungSai) as SoDung')->get",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')->selectRaw",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')->groupBy",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')->orderBy",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)->where",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })->where",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')->join",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 363
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')->whereExists",
+          "lineNumber": 366
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on",
+          "lineNumber": 366
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+          "lineNumber": 368
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')->whereColumn",
+          "lineNumber": 368
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))->from",
+          "lineNumber": 368
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select",
+          "lineNumber": 368
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::raw",
+          "lineNumber": 368
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')\n            ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')\n           ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,\n    y.MaY, y.KyHieu, y.DapAnDung,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(CASE WHEN ct.LuaChonCuaHocSinh = y.DapAnDung THEN 1 ELSE 0 END) as SoDung')->get",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')\n            ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')->selectRaw",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')->groupBy",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')->orderBy",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')->orderBy",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)->where",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })->where",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')->join",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 386
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on('ct.MaY', '=', 'y.MaY')->whereExists",
+          "lineNumber": 390
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on",
+          "lineNumber": 390
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+          "lineNumber": 392
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')->whereColumn",
+          "lineNumber": 392
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))->from",
+          "lineNumber": 392
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select",
+          "lineNumber": 392
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::raw",
+          "lineNumber": 392
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')\n   ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,\n    da.DapAnSo, da.SaiSoChapNhan,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(CASE WHEN ABS(CAST(REPLACE(ct.CauTraLoiSo, \",\", \".\") AS DECIMAL(12,4)) - da.DapAnSo) <= da.SaiSoChapNhan THEN 1 ELSE 0 END) as SoDung')->get",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')->selectRaw",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')->groupBy",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')->orderBy",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)->where",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })->where",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table('CauHoiTrongDe as ctd')->join",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::table",
+          "lineNumber": 410
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')->whereExists",
+          "lineNumber": 414
+        },
+        {
+          "caller": "stats",
+          "callee": "$join->on",
+          "lineNumber": 414
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+          "lineNumber": 416
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')->whereColumn",
+          "lineNumber": 416
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select(DB::raw(1))->from",
+          "lineNumber": 416
+        },
+        {
+          "caller": "stats",
+          "callee": "$sub->select",
+          "lineNumber": 416
+        },
+        {
+          "caller": "stats",
+          "callee": "DB::raw",
+          "lineNumber": 416
+        },
+        {
+          "caller": "stats",
+          "callee": "view",
+          "lineNumber": 432
+        },
+        {
+          "caller": "stats",
+          "callee": "compact",
+          "lineNumber": 432
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+          "lineNumber": 441
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DeThi')->where('MaDeThi', $id)->where",
+          "lineNumber": 441
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DeThi')->where",
+          "lineNumber": 441
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 441
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "Session::get",
+          "lineNumber": 442
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "abort",
+          "lineNumber": 444
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->select('bl.*', 'nd.HoTen', 'nd.TenDangNhap')->first",
+          "lineNumber": 446
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n        ->where('bl.MaBaiLam', $maBaiLam)->select",
+          "lineNumber": 446
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')->where",
+          "lineNumber": 446
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('BaiLamCuaHS as bl')->join",
+          "lineNumber": 446
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 446
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "abort",
+          "lineNumber": 451
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',\n            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',\n            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'\n        )->get",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')->orderBy",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')->where",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 454
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 457
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on",
+          "lineNumber": 457
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first",
+          "lineNumber": 472
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where",
+          "lineNumber": 472
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 472
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 472
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get",
+          "lineNumber": 473
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 473
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 473
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')\n        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich', 'chtd.ThuTu')->get",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')->orderBy",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 477
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')\n            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')->get",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')->select",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)->orderBy",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })->where",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiDS_Y as y')->leftJoin",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 486
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on('ct.MaY', '=', 'y.MaY')->where",
+          "lineNumber": 488
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on",
+          "lineNumber": 488
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count",
+          "lineNumber": 496
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "collect($cau->cacY)->filter",
+          "lineNumber": 496
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "collect",
+          "lineNumber": 496
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value",
+          "lineNumber": 497
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('ThangDiemDS')->where",
+          "lineNumber": 497
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 497
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',\n            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',\n            'da.DapAnSo', 'chtd.ThuTu'\n        )->get",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')->select",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')->orderBy",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)->where",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table('CauHoiTrongDe as chtd')->join",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "DB::table",
+          "lineNumber": 501
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+          "lineNumber": 504
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "$join->on",
+          "lineNumber": 504
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "view",
+          "lineNumber": 518
+        },
+        {
+          "caller": "xemBaiLam",
+          "callee": "compact",
+          "lineNumber": 518
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 252,
+      "nonEmptyLines": 213,
+      "functions": [
+        {
+          "name": "index",
+          "startLine": 14,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "create",
+          "startLine": 27,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "store",
+          "startLine": 34,
+          "endLine": 107,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "edit",
+          "startLine": 110,
+          "endLine": 125,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 128,
+          "endLine": 197,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "destroy",
+          "startLine": 200,
+          "endLine": 251,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QuestionController",
+          "startLine": 11,
+          "endLine": 252,
+          "methods": [
+            "index",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "destroy"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuestionController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->orderBy('q.NgayTao', 'desc')\n            ->select('q.*', 'cd.TenChuyenDe')->get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->orderBy('q.NgayTao', 'desc')->select",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))->orderBy",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table('Question as q')->join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "DB::table",
+          "lineNumber": 16
+        },
+        {
+          "caller": "index",
+          "callee": "Session::get",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "view",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "compact",
+          "lineNumber": 23
+        },
+        {
+          "caller": "create",
+          "callee": "DB::table('ChuyenDe')->get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "create",
+          "callee": "DB::table",
+          "lineNumber": 29
+        },
+        {
+          "caller": "create",
+          "callee": "view",
+          "lineNumber": 30
+        },
+        {
+          "caller": "create",
+          "callee": "compact",
+          "lineNumber": 30
+        },
+        {
+          "caller": "store",
+          "callee": "$request->validate",
+          "lineNumber": 36
+        },
+        {
+          "caller": "store",
+          "callee": "$request->hasFile",
+          "lineNumber": 48
+        },
+        {
+          "caller": "store",
+          "callee": "$request->file('anhCauHoi')->store",
+          "lineNumber": 49
+        },
+        {
+          "caller": "store",
+          "callee": "$request->file",
+          "lineNumber": 49
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table('Question')->insertGetId",
+          "lineNumber": 56
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table",
+          "lineNumber": 56
+        },
+        {
+          "caller": "store",
+          "callee": "Session::get",
+          "lineNumber": 63
+        },
+        {
+          "caller": "store",
+          "callee": "now",
+          "lineNumber": 64
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table('DapAnTN')->insert",
+          "lineNumber": 70
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table",
+          "lineNumber": 70
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table('CauHoiDS_Y')->insert",
+          "lineNumber": 82
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table",
+          "lineNumber": 82
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 86
+        },
+        {
+          "caller": "store",
+          "callee": "$request->validate",
+          "lineNumber": 93
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table('DapAnTLS')->insert",
+          "lineNumber": 97
+        },
+        {
+          "caller": "store",
+          "callee": "DB::table",
+          "lineNumber": 97
+        },
+        {
+          "caller": "store",
+          "callee": "redirect()->route('teacher.questions.index')->with",
+          "lineNumber": 105
+        },
+        {
+          "caller": "store",
+          "callee": "redirect()->route",
+          "lineNumber": 105
+        },
+        {
+          "caller": "store",
+          "callee": "redirect",
+          "lineNumber": 105
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question')->where('MaCauHoi', $id)->first",
+          "lineNumber": 112
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 112
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 112
+        },
+        {
+          "caller": "edit",
+          "callee": "abort",
+          "lineNumber": 113
+        },
+        {
+          "caller": "edit",
+          "callee": "Session::get",
+          "lineNumber": 116
+        },
+        {
+          "caller": "edit",
+          "callee": "abort",
+          "lineNumber": 116
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('ChuyenDe')->get",
+          "lineNumber": 118
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 118
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $id)->get",
+          "lineNumber": 119
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 119
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 119
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiDS_Y')->where('MaCauHoi', $id)->get",
+          "lineNumber": 120
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('CauHoiDS_Y')->where",
+          "lineNumber": 120
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 120
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DapAnTLS')->where('MaCauHoi', $id)->first",
+          "lineNumber": 121
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table('DapAnTLS')->where",
+          "lineNumber": 121
+        },
+        {
+          "caller": "edit",
+          "callee": "DB::table",
+          "lineNumber": 121
+        },
+        {
+          "caller": "edit",
+          "callee": "view",
+          "lineNumber": 123
+        },
+        {
+          "caller": "edit",
+          "callee": "compact",
+          "lineNumber": 124
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('Question')->where('MaCauHoi', $id)->first",
+          "lineNumber": 130
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 130
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 130
+        },
+        {
+          "caller": "update",
+          "callee": "Session::get",
+          "lineNumber": 131
+        },
+        {
+          "caller": "update",
+          "callee": "abort",
+          "lineNumber": 131
+        },
+        {
+          "caller": "update",
+          "callee": "$request->hasFile",
+          "lineNumber": 142
+        },
+        {
+          "caller": "update",
+          "callee": "$request->validate",
+          "lineNumber": 143
+        },
+        {
+          "caller": "update",
+          "callee": "Storage::disk('public')->delete",
+          "lineNumber": 147
+        },
+        {
+          "caller": "update",
+          "callee": "Storage::disk",
+          "lineNumber": 147
+        },
+        {
+          "caller": "update",
+          "callee": "$request->file('anhCauHoi')->store",
+          "lineNumber": 150
+        },
+        {
+          "caller": "update",
+          "callee": "$request->file",
+          "lineNumber": 150
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('Question')->where('MaCauHoi', $id)->update",
+          "lineNumber": 153
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 153
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 153
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DapAnTN')\n            ->where('MaCauHoi', $id)\n            ->where('KyHieu', $ky)->update",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DapAnTN')\n            ->where('MaCauHoi', $id)->where",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 158
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('CauHoiDS_Y')\n            ->where('MaCauHoi', $id)\n            ->where('KyHieu', $ky)->update",
+          "lineNumber": 170
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('CauHoiDS_Y')\n            ->where('MaCauHoi', $id)->where",
+          "lineNumber": 170
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('CauHoiDS_Y')->where",
+          "lineNumber": 170
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 170
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 175
+        },
+        {
+          "caller": "update",
+          "callee": "$request->validate",
+          "lineNumber": 183
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DapAnTLS')\n        ->where('MaCauHoi', $id)->update",
+          "lineNumber": 187
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table('DapAnTLS')->where",
+          "lineNumber": 187
+        },
+        {
+          "caller": "update",
+          "callee": "DB::table",
+          "lineNumber": 187
+        },
+        {
+          "caller": "update",
+          "callee": "redirect()->route('teacher.questions.index')->with",
+          "lineNumber": 195
+        },
+        {
+          "caller": "update",
+          "callee": "redirect()->route",
+          "lineNumber": 195
+        },
+        {
+          "caller": "update",
+          "callee": "redirect",
+          "lineNumber": 195
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTN')\n        ->where('MaCauHoi', $id)->pluck",
+          "lineNumber": 203
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 203
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 203
+        },
+        {
+          "caller": "destroy",
+          "callee": "$maDATNs->isNotEmpty",
+          "lineNumber": 208
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')\n            ->whereIn('MaDATN', $maDATNs)->delete",
+          "lineNumber": 209
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->whereIn",
+          "lineNumber": 209
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 209
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiDS_Y')\n        ->where('MaCauHoi', $id)->pluck",
+          "lineNumber": 215
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiDS_Y')->where",
+          "lineNumber": 215
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 215
+        },
+        {
+          "caller": "destroy",
+          "callee": "$maYs->isNotEmpty",
+          "lineNumber": 219
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiDS')\n            ->whereIn('MaY', $maYs)->delete",
+          "lineNumber": 220
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiDS')->whereIn",
+          "lineNumber": 220
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 220
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 226
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietCauTraLoiSo')->where",
+          "lineNumber": 226
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 226
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 229
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('ChiTietTraLoiTN')->where",
+          "lineNumber": 229
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 229
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BinhLuan')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 232
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('BinhLuan')->where",
+          "lineNumber": 232
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 232
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiTrongDe')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 235
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiTrongDe')->where",
+          "lineNumber": 235
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 235
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTN')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 238
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTN')->where",
+          "lineNumber": 238
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 238
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiDS_Y')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 239
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('CauHoiDS_Y')->where",
+          "lineNumber": 239
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 239
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTLS')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 240
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('DapAnTLS')->where",
+          "lineNumber": 240
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 240
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('Question')->where('MaCauHoi', $id)->value",
+          "lineNumber": 243
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 243
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 243
+        },
+        {
+          "caller": "destroy",
+          "callee": "Storage::disk('public')->delete",
+          "lineNumber": 244
+        },
+        {
+          "caller": "destroy",
+          "callee": "Storage::disk",
+          "lineNumber": 244
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('Question')->where('MaCauHoi', $id)->delete",
+          "lineNumber": 247
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table('Question')->where",
+          "lineNumber": 247
+        },
+        {
+          "caller": "destroy",
+          "callee": "DB::table",
+          "lineNumber": 247
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->route('teacher.questions.index')->with",
+          "lineNumber": 249
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect()->route",
+          "lineNumber": 249
+        },
+        {
+          "caller": "destroy",
+          "callee": "redirect",
+          "lineNumber": 249
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "routes/web.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 145,
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

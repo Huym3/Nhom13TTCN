@@ -1,0 +1,354 @@
+{
+  "nodes": [
+    {
+      "id": "file:.codegraph/codegraph.db",
+      "label": "codegraph.db",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:.gitattributes",
+      "label": ".gitattributes",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "label": ".understandignore",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckAdmin.php",
+      "label": "CheckAdmin.php",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckAdmin.php:CheckAdmin",
+      "label": "CheckAdmin",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckLogin.php",
+      "label": "CheckLogin.php",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckLogin.php:CheckLogin",
+      "label": "CheckLogin",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckRole.php",
+      "label": "CheckRole.php",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckRole.php:CheckRole",
+      "label": "CheckRole",
+      "category": "code",
+      "tags": ["middleware"]
+    },
+    {
+      "id": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "label": "LoginRequest.php",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "class:app/Http/Requests/Auth/LoginRequest.php:LoginRequest",
+      "label": "LoginRequest",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "label": "ProfileUpdateRequest.php",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "class:app/Http/Requests/ProfileUpdateRequest.php:ProfileUpdateRequest",
+      "label": "ProfileUpdateRequest",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:app/Models/BaiLamCuaHS.php",
+      "label": "BaiLamCuaHS.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/BaiLamCuaHS.php:BaiLamCuaHS",
+      "label": "BaiLamCuaHS",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/BinhLuan.php",
+      "label": "BinhLuan.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/BinhLuan.php:BinhLuan",
+      "label": "BinhLuan",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/CauHoiDS_Y.php",
+      "label": "CauHoiDS_Y.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/CauHoiDS_Y.php:CauHoiDS_Y",
+      "label": "CauHoiDS_Y",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/CauHoiTrongDe.php",
+      "label": "CauHoiTrongDe.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/CauHoiTrongDe.php:CauHoiTrongDe",
+      "label": "CauHoiTrongDe",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/ChiTietCauTraLoiSo.php",
+      "label": "ChiTietCauTraLoiSo.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/ChiTietCauTraLoiSo.php:ChiTietCauTraLoiSo",
+      "label": "ChiTietCauTraLoiSo",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/ChiTietTraLoiDS.php",
+      "label": "ChiTietTraLoiDS.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/ChiTietTraLoiDS.php:ChiTietTraLoiDS",
+      "label": "ChiTietTraLoiDS",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/ChiTietTraLoiTN.php",
+      "label": "ChiTietTraLoiTN.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/ChiTietTraLoiTN.php:ChiTietTraLoiTN",
+      "label": "ChiTietTraLoiTN",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/ChuyenDe.php",
+      "label": "ChuyenDe.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/ChuyenDe.php:ChuyenDe",
+      "label": "ChuyenDe",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/DapAnTLS.php",
+      "label": "DapAnTLS.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/DapAnTLS.php:DapAnTLS",
+      "label": "DapAnTLS",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/DapAnTN.php",
+      "label": "DapAnTN.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/DapAnTN.php:DapAnTN",
+      "label": "DapAnTN",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/DeThi.php",
+      "label": "DeThi.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/DeThi.php:DeThi",
+      "label": "DeThi",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Models/Question.php",
+      "label": "Question.php",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "class:app/Models/Question.php:Question",
+      "label": "Question",
+      "category": "code",
+      "tags": ["model"]
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "label": "AppServiceProvider.php",
+      "category": "code",
+      "tags": ["provider"]
+    },
+    {
+      "id": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "label": "AppServiceProvider",
+      "category": "code",
+      "tags": ["provider"]
+    },
+    {
+      "id": "file:artisan",
+      "label": "artisan",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "label": "app.php",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:bootstrap/cache/packages.php",
+      "label": "packages.php",
+      "category": "code",
+      "tags": []
+    },
+    {
+      "id": "file:bootstrap/cache/services.php",
+      "label": "services.php",
+      "category": "code",
+      "tags": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "file:app/Http/Middleware/CheckAdmin.php",
+      "to": "class:app/Http/Middleware/CheckAdmin.php:CheckAdmin",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Http/Middleware/CheckLogin.php",
+      "to": "class:app/Http/Middleware/CheckLogin.php:CheckLogin",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Http/Middleware/CheckRole.php",
+      "to": "class:app/Http/Middleware/CheckRole.php:CheckRole",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "to": "class:app/Http/Requests/Auth/LoginRequest.php:LoginRequest",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "to": "class:app/Http/Requests/ProfileUpdateRequest.php:ProfileUpdateRequest",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/BaiLamCuaHS.php",
+      "to": "class:app/Models/BaiLamCuaHS.php:BaiLamCuaHS",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/BinhLuan.php",
+      "to": "class:app/Models/BinhLuan.php:BinhLuan",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/CauHoiDS_Y.php",
+      "to": "class:app/Models/CauHoiDS_Y.php:CauHoiDS_Y",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/CauHoiTrongDe.php",
+      "to": "class:app/Models/CauHoiTrongDe.php:CauHoiTrongDe",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/ChiTietCauTraLoiSo.php",
+      "to": "class:app/Models/ChiTietCauTraLoiSo.php:ChiTietCauTraLoiSo",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/ChiTietTraLoiDS.php",
+      "to": "class:app/Models/ChiTietTraLoiDS.php:ChiTietTraLoiDS",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/ChiTietTraLoiTN.php",
+      "to": "class:app/Models/ChiTietTraLoiTN.php:ChiTietTraLoiTN",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/ChuyenDe.php",
+      "to": "class:app/Models/ChuyenDe.php:ChuyenDe",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/DapAnTLS.php",
+      "to": "class:app/Models/DapAnTLS.php:DapAnTLS",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/DapAnTN.php",
+      "to": "class:app/Models/DapAnTN.php:DapAnTN",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/DeThi.php",
+      "to": "class:app/Models/DeThi.php:DeThi",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Models/Question.php",
+      "to": "class:app/Models/Question.php:Question",
+      "label": "contains"
+    },
+    {
+      "from": "file:app/Providers/AppServiceProvider.php",
+      "to": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "label": "contains"
+    }
+  ]
+}

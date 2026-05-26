@@ -1,0 +1,47 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/css/auth.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 452,
+      "nonEmptyLines": 416,
+      "metrics": {}
+    },
+    {
+      "path": "public/css/exam.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 222,
+      "nonEmptyLines": 192,
+      "metrics": {}
+    },
+    {
+      "path": "public/css/glass.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 586,
+      "nonEmptyLines": 525,
+      "metrics": {}
+    },
+    {
+      "path": "public/css/student.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 436,
+      "nonEmptyLines": 377,
+      "metrics": {}
+    },
+    {
+      "path": "public/css/teacher.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 397,
+      "nonEmptyLines": 355,
+      "metrics": {}
+    }
+  ]
+}

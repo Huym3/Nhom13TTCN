@@ -1,0 +1,398 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Admin/AdminController.php",
+      "type": "file",
+      "name": "AdminController.php",
+      "path": "app/Http/Controllers/Admin/AdminController.php",
+      "category": "controller",
+      "tags": ["php", "laravel", "admin"],
+      "complexity": "medium",
+      "metrics": {
+        "totalLines": 178,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "type": "class",
+      "name": "AdminController",
+      "parent": "file:app/Http/Controllers/Admin/AdminController.php",
+      "category": "controller",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:dashboard",
+      "type": "function",
+      "name": "dashboard",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers",
+      "type": "function",
+      "name": "pendingTeachers",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher",
+      "type": "function",
+      "name": "approveTeacher",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher",
+      "type": "function",
+      "name": "rejectTeacher",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:users",
+      "type": "function",
+      "name": "users",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:blockUser",
+      "type": "function",
+      "name": "blockUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser",
+      "type": "function",
+      "name": "unblockUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser",
+      "type": "function",
+      "name": "deleteUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:userDetail",
+      "type": "function",
+      "name": "userDetail",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/AuthController.php",
+      "type": "file",
+      "name": "AuthController.php",
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "category": "controller",
+      "tags": ["php", "laravel", "auth"],
+      "complexity": "high",
+      "metrics": {
+        "totalLines": 313,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "type": "class",
+      "name": "AuthController",
+      "parent": "file:app/Http/Controllers/Auth/AuthController.php",
+      "category": "controller",
+      "complexity": "high"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showLogin",
+      "type": "function",
+      "name": "showLogin",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:login",
+      "type": "function",
+      "name": "login",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showRegister",
+      "type": "function",
+      "name": "showRegister",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showForgotPassword",
+      "type": "function",
+      "name": "showForgotPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:sendResetLinkEmail",
+      "type": "function",
+      "name": "sendResetLinkEmail",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showVerifyOtp",
+      "type": "function",
+      "name": "showVerifyOtp",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:verifyOtp",
+      "type": "function",
+      "name": "verifyOtp",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "high"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showResetPassword",
+      "type": "function",
+      "name": "showResetPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "medium"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword",
+      "type": "function",
+      "name": "resetPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "high"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:register",
+      "type": "function",
+      "name": "register",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "high"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:logout",
+      "type": "function",
+      "name": "logout",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole",
+      "type": "function",
+      "name": "redirectByRole",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "file:app/Models/NguoiDung.php",
+      "type": "file",
+      "name": "NguoiDung.php",
+      "path": "app/Models/NguoiDung.php",
+      "category": "model",
+      "tags": ["php", "laravel", "model"],
+      "complexity": "low",
+      "metrics": {
+        "totalLines": 58,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Models/NguoiDung.php:NguoiDung",
+      "type": "class",
+      "name": "NguoiDung",
+      "parent": "file:app/Models/NguoiDung.php",
+      "category": "model",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:baiLam",
+      "type": "function",
+      "name": "baiLam",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:questions",
+      "type": "function",
+      "name": "questions",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isStudent",
+      "type": "function",
+      "name": "isStudent",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacher",
+      "type": "function",
+      "name": "isTeacher",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isAdmin",
+      "type": "function",
+      "name": "isAdmin",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacherApproved",
+      "type": "function",
+      "name": "isTeacherApproved",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacherPending",
+      "type": "function",
+      "name": "isTeacherPending",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isActive",
+      "type": "function",
+      "name": "isActive",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isBlocked",
+      "type": "function",
+      "name": "isBlocked",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "low"
+    },
+    {
+      "id": "file:database/seeders/AdminSeeder.php",
+      "type": "file",
+      "name": "AdminSeeder.php",
+      "path": "database/seeders/AdminSeeder.php",
+      "category": "seeder",
+      "tags": ["php", "laravel", "database"],
+      "complexity": "low",
+      "metrics": {
+        "totalLines": 39,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:database/seeders/AdminSeeder.php:AdminSeeder",
+      "type": "class",
+      "name": "AdminSeeder",
+      "parent": "file:database/seeders/AdminSeeder.php",
+      "category": "seeder",
+      "complexity": "low"
+    },
+    {
+      "id": "function:database/seeders/AdminSeeder.php:run",
+      "type": "function",
+      "name": "run",
+      "parent": "class:database/seeders/AdminSeeder.php:AdminSeeder",
+      "category": "logic",
+      "complexity": "low"
+    }
+  ],
+  "edges": [
+    { "from": "file:app/Http/Controllers/Admin/AdminController.php", "to": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:dashboard", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:users", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:blockUser", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Admin/AdminController.php:AdminController", "to": "function:app/Http/Controllers/Admin/AdminController.php:userDetail", "type": "contains" },
+    { "from": "file:app/Http/Controllers/Admin/AdminController.php", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "imports" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:dashboard", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:users", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:blockUser", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Admin/AdminController.php:userDetail", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+
+    { "from": "file:app/Http/Controllers/Auth/AuthController.php", "to": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:showLogin", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:login", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:showRegister", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:showForgotPassword", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:sendResetLinkEmail", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:showVerifyOtp", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:verifyOtp", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:showResetPassword", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:register", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:logout", "type": "contains" },
+    { "from": "class:app/Http/Controllers/Auth/AuthController.php:AuthController", "to": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole", "type": "contains" },
+    { "from": "file:app/Http/Controllers/Auth/AuthController.php", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "imports" },
+    { "from": "function:app/Http/Controllers/Auth/AuthController.php:showLogin", "to": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Auth/AuthController.php:login", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Auth/AuthController.php:login", "to": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+    { "from": "function:app/Http/Controllers/Auth/AuthController.php:register", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" },
+
+    { "from": "file:app/Models/NguoiDung.php", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:baiLam", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:questions", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isStudent", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isTeacher", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isAdmin", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isTeacherApproved", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isTeacherPending", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isActive", "type": "contains" },
+    { "from": "class:app/Models/NguoiDung.php:NguoiDung", "to": "function:app/Models/NguoiDung.php:isBlocked", "type": "contains" },
+
+    { "from": "file:database/seeders/AdminSeeder.php", "to": "class:database/seeders/AdminSeeder.php:AdminSeeder", "type": "contains" },
+    { "from": "class:database/seeders/AdminSeeder.php:AdminSeeder", "to": "function:database/seeders/AdminSeeder.php:run", "type": "contains" },
+    { "from": "file:database/seeders/AdminSeeder.php", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "imports" },
+    { "from": "function:database/seeders/AdminSeeder.php:run", "to": "class:app/Models/NguoiDung.php:NguoiDung", "type": "calls" }
+  ]
+}

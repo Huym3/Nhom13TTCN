@@ -1,0 +1,4317 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "admin"
+      ],
+      "complexity": "simple",
+      "lines": 13
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Admin/UserController.php",
+      "type": "file",
+      "category": "file",
+      "name": "UserController.php",
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "admin"
+      ],
+      "complexity": "simple",
+      "lines": 11
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/UserController.php:UserController",
+      "type": "class",
+      "category": "code",
+      "name": "UserController",
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Controller.php",
+      "type": "file",
+      "category": "file",
+      "name": "Controller.php",
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "tags": [
+        "controller"
+      ],
+      "complexity": "simple",
+      "lines": 8
+    },
+    {
+      "id": "class:app/Http/Controllers/Controller.php:Controller",
+      "type": "class",
+      "category": "code",
+      "name": "Controller",
+      "path": "app/Http/Controllers/Controller.php",
+      "tags": [
+        "controller",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "simple",
+      "lines": 59
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/ExamController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ExamController.php",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "moderate",
+      "lines": 215
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "type": "function",
+      "category": "code",
+      "name": "start",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "type": "function",
+      "category": "code",
+      "name": "show",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "type": "function",
+      "category": "code",
+      "name": "saveTN",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "type": "function",
+      "category": "code",
+      "name": "saveDS",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "type": "function",
+      "category": "code",
+      "name": "saveSo",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "type": "function",
+      "category": "code",
+      "name": "submit",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/ExamController.php:ExamController",
+      "type": "class",
+      "category": "code",
+      "name": "ExamController",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/ResultController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ResultController.php",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "moderate",
+      "lines": 115
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "type": "function",
+      "category": "code",
+      "name": "show",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/ResultController.php:ResultController",
+      "type": "class",
+      "category": "code",
+      "name": "ResultController",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "simple",
+      "lines": 12
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ExamController.php",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "complex",
+      "lines": 523
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:create",
+      "type": "function",
+      "category": "code",
+      "name": "create",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "type": "function",
+      "category": "code",
+      "name": "store",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "type": "function",
+      "category": "code",
+      "name": "edit",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "type": "function",
+      "category": "code",
+      "name": "update",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "type": "function",
+      "category": "code",
+      "name": "destroy",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "type": "function",
+      "category": "code",
+      "name": "addQuestion",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "type": "function",
+      "category": "code",
+      "name": "removeQuestion",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "type": "function",
+      "category": "code",
+      "name": "publish",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "type": "function",
+      "category": "code",
+      "name": "unpublish",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "type": "function",
+      "category": "code",
+      "name": "stats",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "type": "function",
+      "category": "code",
+      "name": "xemBaiLam",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/ExamController.php:ExamController",
+      "type": "class",
+      "category": "code",
+      "name": "ExamController",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "type": "file",
+      "category": "file",
+      "name": "QuestionController.php",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "moderate",
+      "lines": 252
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "type": "function",
+      "category": "code",
+      "name": "create",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "type": "function",
+      "category": "code",
+      "name": "store",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "type": "function",
+      "category": "code",
+      "name": "edit",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "type": "function",
+      "category": "code",
+      "name": "update",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "type": "function",
+      "category": "code",
+      "name": "destroy",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/QuestionController.php:QuestionController",
+      "type": "class",
+      "category": "code",
+      "name": "QuestionController",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:routes/web.php",
+      "type": "file",
+      "category": "file",
+      "name": "web.php",
+      "path": "routes/web.php",
+      "language": "php",
+      "tags": [
+        "route"
+      ],
+      "complexity": "moderate",
+      "lines": 176
+    },
+    {
+      "id": "file://storage/framework/views/6b40df198f9547a0384741d2c2c274b6.php",
+      "label": "6b40df198f9547a0384741d2c2c274b6.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 163,
+        "nonEmptyLines": 150
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/6baa306bdc1c0a39f4c63615ec502f39.php",
+      "label": "6baa306bdc1c0a39f4c63615ec502f39.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 142,
+        "nonEmptyLines": 128
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/6cf3293cf1868bda10ad4bb212f6134c.php",
+      "label": "6cf3293cf1868bda10ad4bb212f6134c.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 395,
+        "nonEmptyLines": 383
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/711fdf38f7ae8d099c9d913efe6b455a.php",
+      "label": "711fdf38f7ae8d099c9d913efe6b455a.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 283,
+        "nonEmptyLines": 254
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/794750ef2cbf1ae8e61c87cdc8b62c50.php",
+      "label": "794750ef2cbf1ae8e61c87cdc8b62c50.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 5,
+        "nonEmptyLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/799bb06a0a10424429e9aece6c3f71bc.php",
+      "label": "799bb06a0a10424429e9aece6c3f71bc.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 39,
+        "nonEmptyLines": 37
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/7cd46f75fd653c2323d16437bf44bb7b.php",
+      "label": "7cd46f75fd653c2323d16437bf44bb7b.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 11,
+        "nonEmptyLines": 11
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/7d10600e7279260fb3516b36ba521142.php",
+      "label": "7d10600e7279260fb3516b36ba521142.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 301,
+        "nonEmptyLines": 276
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/7fae65ab40fcbe1e4de557fa940feb40.php",
+      "label": "7fae65ab40fcbe1e4de557fa940feb40.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 115,
+        "nonEmptyLines": 102
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/8ce0611f933d03719ec61a70c574209c.php",
+      "label": "8ce0611f933d03719ec61a70c574209c.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 6,
+        "nonEmptyLines": 6
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/8ebfedc24acd221b9c2725cd07f3ea3e.php",
+      "label": "8ebfedc24acd221b9c2725cd07f3ea3e.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 80,
+        "nonEmptyLines": 71
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/9318e7f0ad7f6487a450e1992fece396.php",
+      "label": "9318e7f0ad7f6487a450e1992fece396.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 347,
+        "nonEmptyLines": 292
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/94ad6a1c858b6d01a8db24806a6fa2e9.php",
+      "label": "94ad6a1c858b6d01a8db24806a6fa2e9.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 167,
+        "nonEmptyLines": 155
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/99e2788c60c4594ca7e00f7f216ce8de.php",
+      "label": "99e2788c60c4594ca7e00f7f216ce8de.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 110,
+        "nonEmptyLines": 93
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/9afe105539908a9fb2eaa08e4207975d.php",
+      "label": "9afe105539908a9fb2eaa08e4207975d.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 57,
+        "nonEmptyLines": 50
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/9cae30fa63f7ab951a58ff7353e0c917.php",
+      "label": "9cae30fa63f7ab951a58ff7353e0c917.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 5,
+        "nonEmptyLines": 5
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/a19607443add38b5f056c3b2b0d12306.php",
+      "label": "a19607443add38b5f056c3b2b0d12306.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 108,
+        "nonEmptyLines": 98
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/a23cead19828330f4620374beb3a38e7.php",
+      "label": "a23cead19828330f4620374beb3a38e7.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 28,
+        "nonEmptyLines": 21
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/a2d5950c00d73c0d9deed5959dc94811.php",
+      "label": "a2d5950c00d73c0d9deed5959dc94811.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 83,
+        "nonEmptyLines": 72
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/a49d85ad14606eba844293f491d58d01.php",
+      "label": "a49d85ad14606eba844293f491d58d01.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 48,
+        "nonEmptyLines": 38
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/a8f5236065aa4aa54807c3f0ac73ae40.php",
+      "label": "a8f5236065aa4aa54807c3f0ac73ae40.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 98,
+        "nonEmptyLines": 81
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/b11097102fcb2530dc4c04b9137be67f.php",
+      "label": "b11097102fcb2530dc4c04b9137be67f.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 41,
+        "nonEmptyLines": 38
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/b46353acef6385ab7cf21adadd276c2d.php",
+      "label": "b46353acef6385ab7cf21adadd276c2d.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 4,
+        "nonEmptyLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/b51a31e3bd7a6d41651e75c5443016d8.php",
+      "label": "b51a31e3bd7a6d41651e75c5443016d8.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 141,
+        "nonEmptyLines": 128
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file://storage/framework/views/bdfca27468e0fa411ac0a2f96408a3b8.php",
+      "label": "bdfca27468e0fa411ac0a2f96408a3b8.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "language": "php",
+        "generated": true,
+        "totalLines": 5,
+        "nonEmptyLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 65
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/cc5193565f110e059c08893c2222d53c.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 35
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 80
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 79
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/e9773b5d20d9521a598e53936a407a98.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 45
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 158
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/f770fdf84114360ddd9c682721069c1a.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 12
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 508
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/fb858329e0dcb506b14a2095393ee987.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 180
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 47
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:tailwind.config.js",
+      "type": "config",
+      "metadata": {
+        "language": "javascript",
+        "totalLines": 21
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/AuthenticationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 54,
+        "classes": [
+          "AuthenticationTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 58,
+        "classes": [
+          "EmailVerificationTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 44,
+        "classes": [
+          "PasswordConfirmationTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordResetTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 73,
+        "classes": [
+          "PasswordResetTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 51,
+        "classes": [
+          "PasswordUpdateTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/Auth/RegistrationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 31,
+        "classes": [
+          "RegistrationTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/ExampleTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 19,
+        "classes": [
+          "ExampleTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Feature/ProfileTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 99,
+        "classes": [
+          "ProfileTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/TestCase.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 10,
+        "classes": [
+          "TestCase"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/Unit/ExampleTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 16,
+        "classes": [
+          "ExampleTest"
+        ]
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:vite.config.js",
+      "type": "config",
+      "metadata": {
+        "language": "javascript",
+        "totalLines": 11
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Controllers/Admin/AdminController.php",
+      "type": "file",
+      "name": "AdminController.php",
+      "path": "app/Http/Controllers/Admin/AdminController.php",
+      "category": "controller",
+      "tags": [
+        "php",
+        "laravel",
+        "admin"
+      ],
+      "complexity": "moderate",
+      "metrics": {
+        "totalLines": 178,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "type": "class",
+      "name": "AdminController",
+      "parent": "file:app/Http/Controllers/Admin/AdminController.php",
+      "category": "controller",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:dashboard",
+      "type": "function",
+      "name": "dashboard",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers",
+      "type": "function",
+      "name": "pendingTeachers",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher",
+      "type": "function",
+      "name": "approveTeacher",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher",
+      "type": "function",
+      "name": "rejectTeacher",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:users",
+      "type": "function",
+      "name": "users",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:blockUser",
+      "type": "function",
+      "name": "blockUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser",
+      "type": "function",
+      "name": "unblockUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser",
+      "type": "function",
+      "name": "deleteUser",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/AdminController.php:userDetail",
+      "type": "function",
+      "name": "userDetail",
+      "parent": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/AuthController.php",
+      "type": "file",
+      "name": "AuthController.php",
+      "path": "app/Http/Controllers/Auth/AuthController.php",
+      "category": "controller",
+      "tags": [
+        "php",
+        "laravel",
+        "auth"
+      ],
+      "complexity": "complex",
+      "metrics": {
+        "totalLines": 313,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "type": "class",
+      "name": "AuthController",
+      "parent": "file:app/Http/Controllers/Auth/AuthController.php",
+      "category": "controller",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showLogin",
+      "type": "function",
+      "name": "showLogin",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:login",
+      "type": "function",
+      "name": "login",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showRegister",
+      "type": "function",
+      "name": "showRegister",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showForgotPassword",
+      "type": "function",
+      "name": "showForgotPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:sendResetLinkEmail",
+      "type": "function",
+      "name": "sendResetLinkEmail",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showVerifyOtp",
+      "type": "function",
+      "name": "showVerifyOtp",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:verifyOtp",
+      "type": "function",
+      "name": "verifyOtp",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:showResetPassword",
+      "type": "function",
+      "name": "showResetPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword",
+      "type": "function",
+      "name": "resetPassword",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:register",
+      "type": "function",
+      "name": "register",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:logout",
+      "type": "function",
+      "name": "logout",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole",
+      "type": "function",
+      "name": "redirectByRole",
+      "parent": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/Models/NguoiDung.php",
+      "type": "file",
+      "name": "NguoiDung.php",
+      "path": "app/Models/NguoiDung.php",
+      "category": "model",
+      "tags": [
+        "php",
+        "laravel",
+        "model"
+      ],
+      "complexity": "simple",
+      "metrics": {
+        "totalLines": 58,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:app/Models/NguoiDung.php:NguoiDung",
+      "type": "class",
+      "name": "NguoiDung",
+      "parent": "file:app/Models/NguoiDung.php",
+      "category": "model",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:baiLam",
+      "type": "function",
+      "name": "baiLam",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:questions",
+      "type": "function",
+      "name": "questions",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isStudent",
+      "type": "function",
+      "name": "isStudent",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacher",
+      "type": "function",
+      "name": "isTeacher",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isAdmin",
+      "type": "function",
+      "name": "isAdmin",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacherApproved",
+      "type": "function",
+      "name": "isTeacherApproved",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isTeacherPending",
+      "type": "function",
+      "name": "isTeacherPending",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isActive",
+      "type": "function",
+      "name": "isActive",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/Models/NguoiDung.php:isBlocked",
+      "type": "function",
+      "name": "isBlocked",
+      "parent": "class:app/Models/NguoiDung.php:NguoiDung",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:database/seeders/AdminSeeder.php",
+      "type": "file",
+      "name": "AdminSeeder.php",
+      "path": "database/seeders/AdminSeeder.php",
+      "category": "seeder",
+      "tags": [
+        "php",
+        "laravel",
+        "database"
+      ],
+      "complexity": "simple",
+      "metrics": {
+        "totalLines": 39,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "id": "class:database/seeders/AdminSeeder.php:AdminSeeder",
+      "type": "class",
+      "name": "AdminSeeder",
+      "parent": "file:database/seeders/AdminSeeder.php",
+      "category": "seeder",
+      "complexity": "simple"
+    },
+    {
+      "id": "function:database/seeders/AdminSeeder.php:run",
+      "type": "function",
+      "name": "run",
+      "parent": "class:database/seeders/AdminSeeder.php:AdminSeeder",
+      "category": "logic",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.env",
+      "name": ".env",
+      "type": "config",
+      "path": ".env",
+      "metadata": {
+        "language": "config",
+        "fileCategory": "config",
+        "totalLines": 65,
+        "definitionCount": 48
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.env.example",
+      "name": ".env.example",
+      "type": "config",
+      "path": ".env.example",
+      "metadata": {
+        "language": "config",
+        "fileCategory": "config",
+        "totalLines": 54,
+        "definitionCount": 45
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:ADMIN_GUIDE.md",
+      "name": "ADMIN_GUIDE.md",
+      "type": "document",
+      "path": "ADMIN_GUIDE.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 149,
+        "sectionCount": 19
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:IMPLEMENTATION_SUMMARY.md",
+      "name": "IMPLEMENTATION_SUMMARY.md",
+      "type": "document",
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 160,
+        "sectionCount": 27
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "name": "README.md",
+      "type": "document",
+      "path": "README.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 59,
+        "sectionCount": 8
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:composer.json",
+      "name": "composer.json",
+      "type": "config",
+      "path": "composer.json",
+      "metadata": {
+        "language": "json",
+        "fileCategory": "config",
+        "totalLines": 87,
+        "sectionCount": 15
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "name": "package.json",
+      "type": "config",
+      "path": "package.json",
+      "metadata": {
+        "language": "json",
+        "fileCategory": "config",
+        "totalLines": 21,
+        "sectionCount": 5
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:phpunit.xml",
+      "name": "phpunit.xml",
+      "type": "config",
+      "path": "phpunit.xml",
+      "metadata": {
+        "language": "xml",
+        "fileCategory": "config",
+        "totalLines": 36
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/css/auth.css",
+      "category": "markup",
+      "name": "auth.css",
+      "path": "public/css/auth.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 452,
+        "nonEmptyLines": 416
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/css/exam.css",
+      "category": "markup",
+      "name": "exam.css",
+      "path": "public/css/exam.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 222,
+        "nonEmptyLines": 192
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/css/glass.css",
+      "category": "markup",
+      "name": "glass.css",
+      "path": "public/css/glass.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 586,
+        "nonEmptyLines": 525
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/css/student.css",
+      "category": "markup",
+      "name": "student.css",
+      "path": "public/css/student.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 436,
+        "nonEmptyLines": 377
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/css/teacher.css",
+      "category": "markup",
+      "name": "teacher.css",
+      "path": "public/css/teacher.css",
+      "metadata": {
+        "language": "css",
+        "totalLines": 397,
+        "nonEmptyLines": 355
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.codegraph/codegraph.db",
+      "label": "codegraph.db",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.gitattributes",
+      "label": ".gitattributes",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "label": ".understandignore",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckAdmin.php",
+      "label": "CheckAdmin.php",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckAdmin.php:CheckAdmin",
+      "label": "CheckAdmin",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckLogin.php",
+      "label": "CheckLogin.php",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckLogin.php:CheckLogin",
+      "label": "CheckLogin",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Middleware/CheckRole.php",
+      "label": "CheckRole.php",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Middleware/CheckRole.php:CheckRole",
+      "label": "CheckRole",
+      "category": "code",
+      "tags": [
+        "middleware"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "label": "LoginRequest.php",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Requests/Auth/LoginRequest.php:LoginRequest",
+      "label": "LoginRequest",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "label": "ProfileUpdateRequest.php",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Http/Requests/ProfileUpdateRequest.php:ProfileUpdateRequest",
+      "label": "ProfileUpdateRequest",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/BaiLamCuaHS.php",
+      "label": "BaiLamCuaHS.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/BaiLamCuaHS.php:BaiLamCuaHS",
+      "label": "BaiLamCuaHS",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/BinhLuan.php",
+      "label": "BinhLuan.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/BinhLuan.php:BinhLuan",
+      "label": "BinhLuan",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/CauHoiDS_Y.php",
+      "label": "CauHoiDS_Y.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/CauHoiDS_Y.php:CauHoiDS_Y",
+      "label": "CauHoiDS_Y",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/CauHoiTrongDe.php",
+      "label": "CauHoiTrongDe.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/CauHoiTrongDe.php:CauHoiTrongDe",
+      "label": "CauHoiTrongDe",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/ChiTietCauTraLoiSo.php",
+      "label": "ChiTietCauTraLoiSo.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/ChiTietCauTraLoiSo.php:ChiTietCauTraLoiSo",
+      "label": "ChiTietCauTraLoiSo",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/ChiTietTraLoiDS.php",
+      "label": "ChiTietTraLoiDS.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/ChiTietTraLoiDS.php:ChiTietTraLoiDS",
+      "label": "ChiTietTraLoiDS",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/ChiTietTraLoiTN.php",
+      "label": "ChiTietTraLoiTN.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/ChiTietTraLoiTN.php:ChiTietTraLoiTN",
+      "label": "ChiTietTraLoiTN",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/ChuyenDe.php",
+      "label": "ChuyenDe.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/ChuyenDe.php:ChuyenDe",
+      "label": "ChuyenDe",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/DapAnTLS.php",
+      "label": "DapAnTLS.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/DapAnTLS.php:DapAnTLS",
+      "label": "DapAnTLS",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/DapAnTN.php",
+      "label": "DapAnTN.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/DapAnTN.php:DapAnTN",
+      "label": "DapAnTN",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/DeThi.php",
+      "label": "DeThi.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/DeThi.php:DeThi",
+      "label": "DeThi",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Models/Question.php",
+      "label": "Question.php",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Models/Question.php:Question",
+      "label": "Question",
+      "category": "code",
+      "tags": [
+        "model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "label": "AppServiceProvider.php",
+      "category": "code",
+      "tags": [
+        "provider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:app/Providers/AppServiceProvider.php:AppServiceProvider",
+      "label": "AppServiceProvider",
+      "category": "code",
+      "tags": [
+        "provider"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:artisan",
+      "label": "artisan",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "label": "app.php",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:bootstrap/cache/packages.php",
+      "label": "packages.php",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:bootstrap/cache/services.php",
+      "label": "services.php",
+      "category": "code",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:bootstrap/providers.php",
+      "label": "providers.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 7
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:config/database.php",
+      "label": "database.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 45
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/factories/UserFactory.php",
+      "label": "UserFactory",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 45
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "label": "create_users_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 49
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:users",
+      "label": "users",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:password_reset_tokens",
+      "label": "password_reset_tokens",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:sessions",
+      "label": "sessions",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000000_create_users_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "label": "create_cache_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 35
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:cache",
+      "label": "cache",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000001_create_cache_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:cache_locks",
+      "label": "cache_locks",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000001_create_cache_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "label": "create_jobs_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 57
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:jobs",
+      "label": "jobs",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:job_batches",
+      "label": "job_batches",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:failed_jobs",
+      "label": "failed_jobs",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/0001_01_01_000002_create_jobs_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "label": "update_nguoi_dung_table",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 66
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:nguoidung",
+      "label": "nguoidung",
+      "category": "table",
+      "metadata": {
+        "source": "database/migrations/2024_01_01_000000_update_nguoi_dung_table.php"
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/migrations/2026_05_16_000000_drop_ngaycapnhat_from_dethi_table.php",
+      "label": "drop_ngaycapnhat_from_dethi",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 32
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:database/seeders/DatabaseSeeder.php",
+      "label": "DatabaseSeeder",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 28
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:postcss.config.js",
+      "label": "postcss.config.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 6
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/.htaccess",
+      "label": ".htaccess",
+      "category": "file",
+      "metadata": {
+        "language": "unknown",
+        "fileCategory": "code",
+        "totalLines": 25
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/index.php",
+      "label": "index.php",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "code",
+        "totalLines": 20
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/js/exam.js",
+      "label": "exam.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 80
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/robots.txt",
+      "label": "robots.txt",
+      "category": "file",
+      "metadata": {
+        "language": "txt",
+        "fileCategory": "docs",
+        "totalLines": 2
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/css/app.css",
+      "label": "app.css",
+      "category": "file",
+      "metadata": {
+        "language": "css",
+        "fileCategory": "markup",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "label": "app.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 7
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/js/bootstrap.js",
+      "label": "bootstrap.js",
+      "category": "file",
+      "metadata": {
+        "language": "javascript",
+        "fileCategory": "code",
+        "totalLines": 4
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/admin/dashboard.blade.php",
+      "label": "admin/dashboard",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 346
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/admin/exams/index.blade.php",
+      "label": "admin/exams/index",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 214
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/admin/teachers/pending.blade.php",
+      "label": "admin/teachers/pending",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 328
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/admin/users/detail.blade.php",
+      "label": "admin/users/detail",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 387
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/admin/users/index.blade.php",
+      "label": "admin/users/index",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 442
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/confirm-password.blade.php",
+      "label": "auth/confirm-password",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 27
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/forgot-password.blade.php",
+      "label": "auth/forgot-password",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 50
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/login.blade.php",
+      "label": "auth/login",
+      "category": "file",
+      "metadata": {
+        "language": "php",
+        "fileCategory": "markup",
+        "totalLines": 80
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/register.blade.php",
+      "label": "register.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 143
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/reset-password.blade.php",
+      "label": "reset-password.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 89
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/verify-email.blade.php",
+      "label": "verify-email.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 31
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/auth/verify-otp.blade.php",
+      "label": "verify-otp.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 62
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/application-logo.blade.php",
+      "label": "application-logo.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/auth-session-status.blade.php",
+      "label": "auth-session-status.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 7
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/danger-button.blade.php",
+      "label": "danger-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/dropdown-link.blade.php",
+      "label": "dropdown-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 1
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/dropdown.blade.php",
+      "label": "dropdown.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 35
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/input-error.blade.php",
+      "label": "input-error.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 9
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/input-label.blade.php",
+      "label": "input-label.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 5
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/modal.blade.php",
+      "label": "modal.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 78
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/nav-link.blade.php",
+      "label": "nav-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 11
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/primary-button.blade.php",
+      "label": "primary-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/responsive-nav-link.blade.php",
+      "label": "responsive-nav-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 11
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/secondary-button.blade.php",
+      "label": "secondary-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/components/text-input.blade.php",
+      "label": "text-input.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/layouts/app.blade.php",
+      "label": "app.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 36
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/layouts/guest.blade.php",
+      "label": "guest.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 30
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/layouts/navigation.blade.php",
+      "label": "navigation.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 100
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/layouts/student.blade.php",
+      "label": "student.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 41
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/layouts/teacher.blade.php",
+      "label": "teacher.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 45
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/profile/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 29
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "label": "delete-user-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 55
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "label": "update-password-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 48
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-profile-information-form.blade.php",
+      "label": "update-profile-information-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/profile/partials/update-profile-information-form.blade.php",
+        "language": "php",
+        "totalLines": 64,
+        "nonEmptyLines": 54
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/student/dashboard.blade.php",
+      "label": "dashboard.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/dashboard.blade.php",
+        "language": "php",
+        "totalLines": 79,
+        "nonEmptyLines": 74
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/student/exams/do.blade.php",
+      "label": "do.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/exams/do.blade.php",
+        "language": "php",
+        "totalLines": 506,
+        "nonEmptyLines": 467
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/student/exams/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/exams/index.blade.php",
+        "language": "php",
+        "totalLines": 39,
+        "nonEmptyLines": 37
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/student/results/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/results/index.blade.php",
+        "language": "php",
+        "totalLines": 46,
+        "nonEmptyLines": 44
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/student/results/show.blade.php",
+      "label": "show.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/student/results/show.blade.php",
+        "language": "php",
+        "totalLines": 176,
+        "nonEmptyLines": 170
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/dashboard.blade.php",
+      "label": "dashboard.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/dashboard.blade.php",
+        "language": "php",
+        "totalLines": 93,
+        "nonEmptyLines": 88
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/exams/create.blade.php",
+      "label": "create.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/create.blade.php",
+        "language": "php",
+        "totalLines": 69,
+        "nonEmptyLines": 60
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/exams/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/edit.blade.php",
+        "language": "php",
+        "totalLines": 282,
+        "nonEmptyLines": 260
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/exams/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/index.blade.php",
+        "language": "php",
+        "totalLines": 149,
+        "nonEmptyLines": 140
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/exams/stats.blade.php",
+      "label": "stats.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/stats.blade.php",
+        "language": "php",
+        "totalLines": 295,
+        "nonEmptyLines": 283
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "label": "xem-bai-lam.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+        "language": "php",
+        "totalLines": 159,
+        "nonEmptyLines": 154
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/questions/create.blade.php",
+      "label": "create.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/create.blade.php",
+        "language": "php",
+        "totalLines": 157,
+        "nonEmptyLines": 142
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/questions/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/edit.blade.php",
+        "language": "php",
+        "totalLines": 142,
+        "nonEmptyLines": 129
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:resources/views/teacher/questions/index.blade.php",
+      "label": "index.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "path": "resources/views/teacher/questions/index.blade.php",
+        "language": "php",
+        "totalLines": 139,
+        "nonEmptyLines": 130
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:routes/auth.php",
+      "label": "auth.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "path": "routes/auth.php",
+        "language": "php",
+        "totalLines": 59,
+        "nonEmptyLines": 43
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:routes/console.php",
+      "label": "console.php",
+      "type": "file",
+      "category": "code",
+      "metadata": {
+        "path": "routes/console.php",
+        "language": "php",
+        "totalLines": 8,
+        "nonEmptyLines": 6
+      },
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/1522441678667df7910c642d8aa78aaa.php",
+      "type": "file",
+      "category": "code",
+      "name": "1522441678667df7910c642d8aa78aaa.php",
+      "path": "storage/framework/views/1522441678667df7910c642d8aa78aaa.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 94,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/196489aeb536f30c0f76c99c833c3c96.php",
+      "type": "file",
+      "category": "code",
+      "name": "196489aeb536f30c0f76c99c833c3c96.php",
+      "path": "storage/framework/views/196489aeb536f30c0f76c99c833c3c96.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 444,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/1cc70986924be79651346fe6aee949e2.php",
+      "type": "file",
+      "category": "code",
+      "name": "1cc70986924be79651346fe6aee949e2.php",
+      "path": "storage/framework/views/1cc70986924be79651346fe6aee949e2.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 15,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/22ba2738e6354542427d093f71f30ed2.php",
+      "type": "file",
+      "category": "code",
+      "name": "22ba2738e6354542427d093f71f30ed2.php",
+      "path": "storage/framework/views/22ba2738e6354542427d093f71f30ed2.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 157,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/24d4ff0dd1dd3c18cdf6aa66e4621bec.php",
+      "type": "file",
+      "category": "code",
+      "name": "24d4ff0dd1dd3c18cdf6aa66e4621bec.php",
+      "path": "storage/framework/views/24d4ff0dd1dd3c18cdf6aa66e4621bec.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 148,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/255d046ae9242e9dfbeedf0291c449fd.php",
+      "type": "file",
+      "category": "code",
+      "name": "255d046ae9242e9dfbeedf0291c449fd.php",
+      "path": "storage/framework/views/255d046ae9242e9dfbeedf0291c449fd.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 68,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/28ce2e4e61bedfd7a6dc0bfe688a8be4.php",
+      "type": "file",
+      "category": "code",
+      "name": "28ce2e4e61bedfd7a6dc0bfe688a8be4.php",
+      "path": "storage/framework/views/28ce2e4e61bedfd7a6dc0bfe688a8be4.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 330,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/2dd9564d456a2f476f2f4d7b2d6568df.php",
+      "type": "file",
+      "category": "code",
+      "name": "2dd9564d456a2f476f2f4d7b2d6568df.php",
+      "path": "storage/framework/views/2dd9564d456a2f476f2f4d7b2d6568df.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 183,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/2fdb8f39e77816cc161931eac22b78fd.php",
+      "type": "file",
+      "category": "code",
+      "name": "2fdb8f39e77816cc161931eac22b78fd.php",
+      "path": "storage/framework/views/2fdb8f39e77816cc161931eac22b78fd.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 122,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/35ef232ad026fa4aa467b65dc7fa5a3c.php",
+      "type": "file",
+      "category": "code",
+      "name": "35ef232ad026fa4aa467b65dc7fa5a3c.php",
+      "path": "storage/framework/views/35ef232ad026fa4aa467b65dc7fa5a3c.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 79,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/37e01c772cb6d2592af3de4b3f57bd70.php",
+      "type": "file",
+      "category": "code",
+      "name": "37e01c772cb6d2592af3de4b3f57bd70.php",
+      "path": "storage/framework/views/37e01c772cb6d2592af3de4b3f57bd70.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 60,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/3c12f565ed91e99bb0874b3de09ec541.php",
+      "type": "file",
+      "category": "code",
+      "name": "3c12f565ed91e99bb0874b3de09ec541.php",
+      "path": "storage/framework/views/3c12f565ed91e99bb0874b3de09ec541.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 4,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/40ba6c67cf4cde2152a16f65b97dbe3e.php",
+      "type": "file",
+      "category": "code",
+      "name": "40ba6c67cf4cde2152a16f65b97dbe3e.php",
+      "path": "storage/framework/views/40ba6c67cf4cde2152a16f65b97dbe3e.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 5,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/4121567c6787c1a0cc0a4072d59b854a.php",
+      "type": "file",
+      "category": "code",
+      "name": "4121567c6787c1a0cc0a4072d59b854a.php",
+      "path": "storage/framework/views/4121567c6787c1a0cc0a4072d59b854a.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 8,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/41313dc4fb9eb1054a070c175e299b50.php",
+      "type": "file",
+      "category": "code",
+      "name": "41313dc4fb9eb1054a070c175e299b50.php",
+      "path": "storage/framework/views/41313dc4fb9eb1054a070c175e299b50.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 12,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/424838509c2b0e4155f61b58e6a72844.php",
+      "type": "file",
+      "category": "code",
+      "name": "424838509c2b0e4155f61b58e6a72844.php",
+      "path": "storage/framework/views/424838509c2b0e4155f61b58e6a72844.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 94,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/46cd470ffc64a652dc9393df763428aa.php",
+      "type": "file",
+      "category": "code",
+      "name": "46cd470ffc64a652dc9393df763428aa.php",
+      "path": "storage/framework/views/46cd470ffc64a652dc9393df763428aa.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 5,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/4a3684491874d88b52ee1d429b694ffc.php",
+      "type": "file",
+      "category": "code",
+      "name": "4a3684491874d88b52ee1d429b694ffc.php",
+      "path": "storage/framework/views/4a3684491874d88b52ee1d429b694ffc.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 69,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/4e51a5adf7b3133dd8663eaf4b2a95ea.php",
+      "type": "file",
+      "category": "code",
+      "name": "4e51a5adf7b3133dd8663eaf4b2a95ea.php",
+      "path": "storage/framework/views/4e51a5adf7b3133dd8663eaf4b2a95ea.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 61,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/51ee71e99d81878d3630fadb7b6a8ae1.php",
+      "type": "file",
+      "category": "code",
+      "name": "51ee71e99d81878d3630fadb7b6a8ae1.php",
+      "path": "storage/framework/views/51ee71e99d81878d3630fadb7b6a8ae1.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 69,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/533172236af27fdf888f5c1110bd7dbf.php",
+      "type": "file",
+      "category": "code",
+      "name": "533172236af27fdf888f5c1110bd7dbf.php",
+      "path": "storage/framework/views/533172236af27fdf888f5c1110bd7dbf.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 374,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/54916287c1884f651f679a6578764adb.php",
+      "type": "file",
+      "category": "code",
+      "name": "54916287c1884f651f679a6578764adb.php",
+      "path": "storage/framework/views/54916287c1884f651f679a6578764adb.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 178,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/5d751a5006af3897d75d6b60f8d4a594.php",
+      "type": "file",
+      "category": "code",
+      "name": "5d751a5006af3897d75d6b60f8d4a594.php",
+      "path": "storage/framework/views/5d751a5006af3897d75d6b60f8d4a594.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 170,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/5f83dca18b4c2fff80aef956e895a5ef.php",
+      "type": "file",
+      "category": "code",
+      "name": "5f83dca18b4c2fff80aef956e895a5ef.php",
+      "path": "storage/framework/views/5f83dca18b4c2fff80aef956e895a5ef.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 6,
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:storage/framework/views/698e24232e5f7ee15ceac26cda5b0adf.php",
+      "type": "file",
+      "category": "code",
+      "name": "698e24232e5f7ee15ceac26cda5b0adf.php",
+      "path": "storage/framework/views/698e24232e5f7ee15ceac26cda5b0adf.php",
+      "language": "php",
+      "tags": [
+        "generated",
+        "view",
+        "laravel-cache"
+      ],
+      "lines": 12,
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "target": "function:app/Http/Controllers/Admin/DashboardController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "target": "class:app/Http/Controllers/Admin/DashboardController.php:DashboardController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Admin/UserController.php",
+      "target": "class:app/Http/Controllers/Admin/UserController.php:UserController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Admin/UserController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Controller.php",
+      "target": "class:app/Http/Controllers/Controller.php:Controller"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/DashboardController.php",
+      "target": "function:app/Http/Controllers/Student/DashboardController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/DashboardController.php",
+      "target": "class:app/Http/Controllers/Student/DashboardController.php:DashboardController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Student/DashboardController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:start"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:show"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:saveTN"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:saveDS"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:saveSo"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "function:app/Http/Controllers/Student/ExamController.php:submit"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "class:app/Http/Controllers/Student/ExamController.php:ExamController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Student/ExamController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ResultController.php",
+      "target": "function:app/Http/Controllers/Student/ResultController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ResultController.php",
+      "target": "function:app/Http/Controllers/Student/ResultController.php:show"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Student/ResultController.php",
+      "target": "class:app/Http/Controllers/Student/ResultController.php:ResultController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Student/ResultController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "target": "function:app/Http/Controllers/Teacher/DashboardController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "target": "class:app/Http/Controllers/Teacher/DashboardController.php:DashboardController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:create"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:store"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:edit"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:update"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:destroy"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:publish"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:stats"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "class:app/Http/Controllers/Teacher/ExamController.php:ExamController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:index"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:create"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:store"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:edit"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:update"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "class:app/Http/Controllers/Teacher/QuestionController.php:QuestionController"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "target": "file:app/Http/Controllers/Controller.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Admin/AdminController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Admin/DashboardController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Admin/UserController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Auth/AuthController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Student/DashboardController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Student/ExamController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Student/ResultController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Teacher/DashboardController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Teacher/ExamController.php"
+    },
+    {
+      "type": "imports",
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/Teacher/QuestionController.php"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Admin/AdminController.php",
+      "target": "class:app/Http/Controllers/Admin/AdminController.php:AdminController"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:dashboard"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:users"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:blockUser"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Admin/AdminController.php:AdminController",
+      "target": "function:app/Http/Controllers/Admin/AdminController.php:userDetail"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Admin/AdminController.php",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:dashboard",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:pendingTeachers",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:approveTeacher",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:rejectTeacher",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:users",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:blockUser",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:unblockUser",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:deleteUser",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Admin/AdminController.php:userDetail",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "class:app/Http/Controllers/Auth/AuthController.php:AuthController"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:showLogin"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:login"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:showRegister"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:showForgotPassword"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:sendResetLinkEmail"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:showVerifyOtp"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:verifyOtp"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:showResetPassword"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:register"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:logout"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Http/Controllers/Auth/AuthController.php:AuthController",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole"
+    },
+    {
+      "type": "imports",
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Auth/AuthController.php:showLogin",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Auth/AuthController.php:login",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Auth/AuthController.php:login",
+      "target": "function:app/Http/Controllers/Auth/AuthController.php:redirectByRole"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Auth/AuthController.php:resetPassword",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:app/Http/Controllers/Auth/AuthController.php:register",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "contains",
+      "source": "file:app/Models/NguoiDung.php",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:baiLam"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:questions"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isStudent"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isTeacher"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isAdmin"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isTeacherApproved"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isTeacherPending"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isActive"
+    },
+    {
+      "type": "contains",
+      "source": "class:app/Models/NguoiDung.php:NguoiDung",
+      "target": "function:app/Models/NguoiDung.php:isBlocked"
+    },
+    {
+      "type": "contains",
+      "source": "file:database/seeders/AdminSeeder.php",
+      "target": "class:database/seeders/AdminSeeder.php:AdminSeeder"
+    },
+    {
+      "type": "contains",
+      "source": "class:database/seeders/AdminSeeder.php:AdminSeeder",
+      "target": "function:database/seeders/AdminSeeder.php:run"
+    },
+    {
+      "type": "imports",
+      "source": "file:database/seeders/AdminSeeder.php",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "calls",
+      "source": "function:database/seeders/AdminSeeder.php:run",
+      "target": "class:app/Models/NguoiDung.php:NguoiDung"
+    },
+    {
+      "type": "documents",
+      "metadata": {
+        "description": "Serves as a template for the environment configuration"
+      },
+      "source": "config:.env.example",
+      "target": "config:.env"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Http/Middleware/CheckAdmin.php",
+      "target": "class:app/Http/Middleware/CheckAdmin.php:CheckAdmin"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Http/Middleware/CheckLogin.php",
+      "target": "class:app/Http/Middleware/CheckLogin.php:CheckLogin"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Http/Middleware/CheckRole.php",
+      "target": "class:app/Http/Middleware/CheckRole.php:CheckRole"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "target": "class:app/Http/Requests/Auth/LoginRequest.php:LoginRequest"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "target": "class:app/Http/Requests/ProfileUpdateRequest.php:ProfileUpdateRequest"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/BaiLamCuaHS.php",
+      "target": "class:app/Models/BaiLamCuaHS.php:BaiLamCuaHS"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/BinhLuan.php",
+      "target": "class:app/Models/BinhLuan.php:BinhLuan"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/CauHoiDS_Y.php",
+      "target": "class:app/Models/CauHoiDS_Y.php:CauHoiDS_Y"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/CauHoiTrongDe.php",
+      "target": "class:app/Models/CauHoiTrongDe.php:CauHoiTrongDe"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/ChiTietCauTraLoiSo.php",
+      "target": "class:app/Models/ChiTietCauTraLoiSo.php:ChiTietCauTraLoiSo"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/ChiTietTraLoiDS.php",
+      "target": "class:app/Models/ChiTietTraLoiDS.php:ChiTietTraLoiDS"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/ChiTietTraLoiTN.php",
+      "target": "class:app/Models/ChiTietTraLoiTN.php:ChiTietTraLoiTN"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/ChuyenDe.php",
+      "target": "class:app/Models/ChuyenDe.php:ChuyenDe"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/DapAnTLS.php",
+      "target": "class:app/Models/DapAnTLS.php:DapAnTLS"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/DapAnTN.php",
+      "target": "class:app/Models/DapAnTN.php:DapAnTN"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/DeThi.php",
+      "target": "class:app/Models/DeThi.php:DeThi"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Models/Question.php",
+      "target": "class:app/Models/Question.php:Question"
+    },
+    {
+      "label": "contains",
+      "source": "file:app/Providers/AppServiceProvider.php",
+      "target": "class:app/Providers/AppServiceProvider.php:AppServiceProvider"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:users",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:password_reset_tokens",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "target": "table:sessions",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:cache",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "target": "table:cache_locks",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:jobs",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:job_batches",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "target": "table:failed_jobs",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/migrations/2024_01_01_000000_update_nguoi_dung_table.php",
+      "target": "table:nguoidung",
+      "type": "creates"
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "table:users",
+      "type": "populates"
+    },
+    {
+      "source": "file:resources/js/app.js",
+      "target": "file:resources/js/bootstrap.js",
+      "type": "imports"
+    },
+    {
+      "type": "uses",
+      "label": "x-app-layout",
+      "source": "file:resources/views/profile/edit.blade.php",
+      "target": "file:resources/views/layouts/app.blade.php"
+    },
+    {
+      "type": "includes",
+      "label": "@include",
+      "source": "file:resources/views/profile/edit.blade.php",
+      "target": "file:resources/views/profile/partials/update-password-form.blade.php"
+    },
+    {
+      "type": "includes",
+      "label": "@include",
+      "source": "file:resources/views/profile/edit.blade.php",
+      "target": "file:resources/views/profile/partials/delete-user-form.blade.php"
+    },
+    {
+      "type": "includes",
+      "label": "@include",
+      "source": "file:resources/views/layouts/app.blade.php",
+      "target": "file:resources/views/layouts/navigation.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-application-logo",
+      "source": "file:resources/views/layouts/navigation.blade.php",
+      "target": "file:resources/views/components/application-logo.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-nav-link",
+      "source": "file:resources/views/layouts/navigation.blade.php",
+      "target": "file:resources/views/components/nav-link.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-dropdown",
+      "source": "file:resources/views/layouts/navigation.blade.php",
+      "target": "file:resources/views/components/dropdown.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-dropdown-link",
+      "source": "file:resources/views/layouts/navigation.blade.php",
+      "target": "file:resources/views/components/dropdown-link.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-responsive-nav-link",
+      "source": "file:resources/views/layouts/navigation.blade.php",
+      "target": "file:resources/views/components/responsive-nav-link.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-application-logo",
+      "source": "file:resources/views/layouts/guest.blade.php",
+      "target": "file:resources/views/components/application-logo.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-danger-button",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/danger-button.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-modal",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/modal.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-input-label",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/input-label.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-text-input",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/text-input.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-input-error",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/input-error.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-secondary-button",
+      "source": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "target": "file:resources/views/components/secondary-button.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-input-label",
+      "source": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "target": "file:resources/views/components/input-label.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-text-input",
+      "source": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "target": "file:resources/views/components/text-input.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-input-error",
+      "source": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "target": "file:resources/views/components/input-error.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-primary-button",
+      "source": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "target": "file:resources/views/components/primary-button.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-guest-layout",
+      "source": "file:resources/views/auth/verify-email.blade.php",
+      "target": "file:resources/views/layouts/guest.blade.php"
+    },
+    {
+      "type": "uses",
+      "label": "x-primary-button",
+      "source": "file:resources/views/auth/verify-email.blade.php",
+      "target": "file:resources/views/components/primary-button.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/dashboard.blade.php",
+      "target": "file:resources/views/student/exams/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/dashboard.blade.php",
+      "target": "file:resources/views/student/results/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/dashboard.blade.php",
+      "target": "file:resources/views/student/results/show.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/exams/index.blade.php",
+      "target": "file:resources/views/student/exams/do.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/results/index.blade.php",
+      "target": "file:resources/views/student/results/show.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/student/results/show.blade.php",
+      "target": "file:resources/views/student/results/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/dashboard.blade.php",
+      "target": "file:resources/views/teacher/exams/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/dashboard.blade.php",
+      "target": "file:resources/views/teacher/questions/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/exams/index.blade.php",
+      "target": "file:resources/views/teacher/exams/create.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/exams/index.blade.php",
+      "target": "file:resources/views/teacher/exams/edit.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/exams/index.blade.php",
+      "target": "file:resources/views/teacher/exams/stats.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/exams/edit.blade.php",
+      "target": "file:resources/views/teacher/exams/index.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/questions/index.blade.php",
+      "target": "file:resources/views/teacher/questions/create.blade.php"
+    },
+    {
+      "label": "links to",
+      "type": "ui-link",
+      "source": "file:resources/views/teacher/questions/index.blade.php",
+      "target": "file:resources/views/teacher/questions/edit.blade.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Admin/AdminController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:app/Http/Controllers/Admin/AdminController.php",
+      "target": "file:app/Models/NguoiDung.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthController.php",
+      "target": "file:app/Models/NguoiDung.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:bootstrap/providers.php",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    },
+    {
+      "source": "file:database/seeders/AdminSeeder.php",
+      "target": "file:app/Models/NguoiDung.php",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    }
+  ]
+}

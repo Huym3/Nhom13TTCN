@@ -1,0 +1,183 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "resources/views/auth/register.blade.php",
+      "language": "php",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/reset-password.blade.php",
+      "language": "php",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/verify-email.blade.php",
+      "language": "php",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/auth/verify-otp.blade.php",
+      "language": "php",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/application-logo.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/auth-session-status.blade.php",
+      "language": "php",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/danger-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/dropdown-link.blade.php",
+      "language": "php",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/dropdown.blade.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/input-error.blade.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/input-label.blade.php",
+      "language": "php",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/modal.blade.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/nav-link.blade.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/primary-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/responsive-nav-link.blade.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/secondary-button.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/components/text-input.blade.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/app.blade.php",
+      "language": "php",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/guest.blade.php",
+      "language": "php",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/navigation.blade.php",
+      "language": "php",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/student.blade.php",
+      "language": "php",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/layouts/teacher.blade.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/edit.blade.php",
+      "language": "php",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/partials/delete-user-form.blade.php",
+      "language": "php",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/profile/partials/update-password-form.blade.php",
+      "language": "php",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "resources/views/auth/register.blade.php": [],
+    "resources/views/auth/reset-password.blade.php": [],
+    "resources/views/auth/verify-email.blade.php": [],
+    "resources/views/auth/verify-otp.blade.php": [],
+    "resources/views/components/application-logo.blade.php": [],
+    "resources/views/components/auth-session-status.blade.php": [],
+    "resources/views/components/danger-button.blade.php": [],
+    "resources/views/components/dropdown-link.blade.php": [],
+    "resources/views/components/dropdown.blade.php": [],
+    "resources/views/components/input-error.blade.php": [],
+    "resources/views/components/input-label.blade.php": [],
+    "resources/views/components/modal.blade.php": [],
+    "resources/views/components/nav-link.blade.php": [],
+    "resources/views/components/primary-button.blade.php": [],
+    "resources/views/components/responsive-nav-link.blade.php": [],
+    "resources/views/components/secondary-button.blade.php": [],
+    "resources/views/components/text-input.blade.php": [],
+    "resources/views/layouts/app.blade.php": [],
+    "resources/views/layouts/guest.blade.php": [],
+    "resources/views/layouts/navigation.blade.php": [],
+    "resources/views/layouts/student.blade.php": [],
+    "resources/views/layouts/teacher.blade.php": [],
+    "resources/views/profile/edit.blade.php": [],
+    "resources/views/profile/partials/delete-user-form.blade.php": [],
+    "resources/views/profile/partials/update-password-form.blade.php": []
+  },
+  "neighborMap": {}
+}

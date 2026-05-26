@@ -1,0 +1,183 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "language": "php",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/exams/do.blade.php",
+      "language": "php",
+      "sizeLines": 505,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/results/index.blade.php",
+      "language": "php",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/student/results/show.blade.php",
+      "language": "php",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/dashboard.blade.php",
+      "language": "php",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/create.blade.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/edit.blade.php",
+      "language": "php",
+      "sizeLines": 281,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/index.blade.php",
+      "language": "php",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/stats.blade.php",
+      "language": "php",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "language": "php",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/create.blade.php",
+      "language": "php",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/edit.blade.php",
+      "language": "php",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "resources/views/teacher/questions/index.blade.php",
+      "language": "php",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/auth.php",
+      "language": "php",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/console.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/sessions/LbZyh5VID1NdkHbQPzhqCV6cOM4eZu6KCIDvci48",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/sessions/VNHIrnvAjXiUwEZBkjBH8rKGI12m7ldfQ2CizdfE",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/011f7d0648c9147f5a380ce63b7bbafb.php",
+      "language": "php",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/0321145205a1b8489109cae62e6e4841.php",
+      "language": "php",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/041a4e3c1be03849d8561f6ae377d7b1.php",
+      "language": "php",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/0703e10b6a2ad108eac92daec9b3ea61.php",
+      "language": "php",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/08f5cba67e86a28bf97a666a78dfef00.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/framework/views/113757ebdc43759a92d133d25c94e34a.php",
+      "language": "php",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "resources/views/profile/partials/update-profile-information-form.blade.php": [],
+    "resources/views/student/dashboard.blade.php": [],
+    "resources/views/student/exams/do.blade.php": [],
+    "resources/views/student/exams/index.blade.php": [],
+    "resources/views/student/results/index.blade.php": [],
+    "resources/views/student/results/show.blade.php": [],
+    "resources/views/teacher/dashboard.blade.php": [],
+    "resources/views/teacher/exams/create.blade.php": [],
+    "resources/views/teacher/exams/edit.blade.php": [],
+    "resources/views/teacher/exams/index.blade.php": [],
+    "resources/views/teacher/exams/stats.blade.php": [],
+    "resources/views/teacher/exams/xem-bai-lam.blade.php": [],
+    "resources/views/teacher/questions/create.blade.php": [],
+    "resources/views/teacher/questions/edit.blade.php": [],
+    "resources/views/teacher/questions/index.blade.php": [],
+    "routes/auth.php": [],
+    "routes/console.php": [],
+    "storage/framework/sessions/LbZyh5VID1NdkHbQPzhqCV6cOM4eZu6KCIDvci48": [],
+    "storage/framework/sessions/VNHIrnvAjXiUwEZBkjBH8rKGI12m7ldfQ2CizdfE": [],
+    "storage/framework/views/011f7d0648c9147f5a380ce63b7bbafb.php": [],
+    "storage/framework/views/0321145205a1b8489109cae62e6e4841.php": [],
+    "storage/framework/views/041a4e3c1be03849d8561f6ae377d7b1.php": [],
+    "storage/framework/views/0703e10b6a2ad108eac92daec9b3ea61.php": [],
+    "storage/framework/views/08f5cba67e86a28bf97a666a78dfef00.php": [],
+    "storage/framework/views/113757ebdc43759a92d133d25c94e34a.php": []
+  },
+  "neighborMap": {}
+}

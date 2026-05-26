@@ -1,0 +1,1322 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".codegraph/codegraph.db",
+      "language": "db",
+      "fileCategory": "code",
+      "totalLines": 7528,
+      "nonEmptyLines": 7449,
+      "metrics": {}
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 40,
+      "metrics": {}
+    },
+    {
+      "path": "app/Http/Middleware/CheckAdmin.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 18,
+          "endLine": 30,
+          "params": [
+            "$request",
+            "$next"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CheckAdmin",
+          "startLine": 9,
+          "endLine": 31,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CheckAdmin",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "Session::has",
+          "lineNumber": 20
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route('admin.login')->with",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handle",
+          "callee": "Session::get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handle",
+          "callee": "Session::flush",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Middleware/CheckLogin.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 9,
+          "endLine": 16,
+          "params": [
+            "$request",
+            "$next"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CheckLogin",
+          "startLine": 7,
+          "endLine": 17,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CheckLogin",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "Session::has",
+          "lineNumber": 11
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route('login')->with",
+          "lineNumber": 12
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect()->route",
+          "lineNumber": 12
+        },
+        {
+          "caller": "handle",
+          "callee": "redirect",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Middleware/CheckRole.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "handle",
+          "startLine": 8,
+          "endLine": 14,
+          "params": [
+            "$request",
+            "$next",
+            "$role"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CheckRole",
+          "startLine": 6,
+          "endLine": 15,
+          "methods": [
+            "handle"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CheckRole",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handle",
+          "callee": "Session::get",
+          "lineNumber": 10
+        },
+        {
+          "caller": "handle",
+          "callee": "abort",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Requests/Auth/LoginRequest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "authorize",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "rules",
+          "startLine": 28,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "authenticate",
+          "startLine": 41,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "ensureIsNotRateLimited",
+          "startLine": 61,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "throttleKey",
+          "startLine": 82,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LoginRequest",
+          "startLine": 13,
+          "endLine": 86,
+          "methods": [
+            "authorize",
+            "rules",
+            "authenticate",
+            "ensureIsNotRateLimited",
+            "throttleKey"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginRequest",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "authenticate",
+          "callee": "$this->ensureIsNotRateLimited",
+          "lineNumber": 43
+        },
+        {
+          "caller": "authenticate",
+          "callee": "Auth::attempt",
+          "lineNumber": 45
+        },
+        {
+          "caller": "authenticate",
+          "callee": "$this->only",
+          "lineNumber": 45
+        },
+        {
+          "caller": "authenticate",
+          "callee": "$this->boolean",
+          "lineNumber": 45
+        },
+        {
+          "caller": "authenticate",
+          "callee": "RateLimiter::hit",
+          "lineNumber": 46
+        },
+        {
+          "caller": "authenticate",
+          "callee": "$this->throttleKey",
+          "lineNumber": 46
+        },
+        {
+          "caller": "authenticate",
+          "callee": "ValidationException::withMessages",
+          "lineNumber": 48
+        },
+        {
+          "caller": "authenticate",
+          "callee": "trans",
+          "lineNumber": 49
+        },
+        {
+          "caller": "authenticate",
+          "callee": "RateLimiter::clear",
+          "lineNumber": 53
+        },
+        {
+          "caller": "authenticate",
+          "callee": "$this->throttleKey",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "RateLimiter::tooManyAttempts",
+          "lineNumber": 63
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "$this->throttleKey",
+          "lineNumber": 63
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "event",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "RateLimiter::availableIn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "$this->throttleKey",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "ValidationException::withMessages",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "trans",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ensureIsNotRateLimited",
+          "callee": "ceil",
+          "lineNumber": 74
+        },
+        {
+          "caller": "throttleKey",
+          "callee": "Str::transliterate",
+          "lineNumber": 84
+        },
+        {
+          "caller": "throttleKey",
+          "callee": "Str::lower",
+          "lineNumber": 84
+        },
+        {
+          "caller": "throttleKey",
+          "callee": "$this->string",
+          "lineNumber": 84
+        },
+        {
+          "caller": "throttleKey",
+          "callee": "$this->ip",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Http/Requests/ProfileUpdateRequest.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "rules",
+          "startLine": 17,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfileUpdateRequest",
+          "startLine": 10,
+          "endLine": 31,
+          "methods": [
+            "rules"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProfileUpdateRequest",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "rules",
+          "callee": "Rule::unique(User::class)->ignore",
+          "lineNumber": 27
+        },
+        {
+          "caller": "rules",
+          "callee": "Rule::unique",
+          "lineNumber": 27
+        },
+        {
+          "caller": "rules",
+          "callee": "$this->user",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/BaiLamCuaHS.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "deThi",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "hocSinh",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "traLoiTN",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "traLoiDS",
+          "startLine": 25,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "traLoiSo",
+          "startLine": 28,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaiLamCuaHS",
+          "startLine": 4,
+          "endLine": 31,
+          "methods": [
+            "deThi",
+            "hocSinh",
+            "traLoiTN",
+            "traLoiDS",
+            "traLoiSo"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaiLamCuaHS",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "deThi",
+          "callee": "$this->belongsTo",
+          "lineNumber": 17
+        },
+        {
+          "caller": "hocSinh",
+          "callee": "$this->belongsTo",
+          "lineNumber": 20
+        },
+        {
+          "caller": "traLoiTN",
+          "callee": "$this->hasMany",
+          "lineNumber": 23
+        },
+        {
+          "caller": "traLoiDS",
+          "callee": "$this->hasMany",
+          "lineNumber": 26
+        },
+        {
+          "caller": "traLoiSo",
+          "callee": "$this->hasMany",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/BinhLuan.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "nguoiDung",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "replies",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "parent",
+          "startLine": 20,
+          "endLine": 22,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BinhLuan",
+          "startLine": 4,
+          "endLine": 23,
+          "methods": [
+            "nguoiDung",
+            "replies",
+            "parent"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BinhLuan",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "nguoiDung",
+          "callee": "$this->belongsTo",
+          "lineNumber": 15
+        },
+        {
+          "caller": "replies",
+          "callee": "$this->hasMany",
+          "lineNumber": 18
+        },
+        {
+          "caller": "parent",
+          "callee": "$this->belongsTo",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/CauHoiDS_Y.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "question",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CauHoiDS_Y",
+          "startLine": 4,
+          "endLine": 14,
+          "methods": [
+            "question"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CauHoiDS_Y",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "question",
+          "callee": "$this->belongsTo",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/CauHoiTrongDe.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "CauHoiTrongDe",
+          "startLine": 4,
+          "endLine": 9,
+          "methods": [],
+          "properties": [
+            "table",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CauHoiTrongDe",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/ChiTietCauTraLoiSo.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "ChiTietCauTraLoiSo",
+          "startLine": 4,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChiTietCauTraLoiSo",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/ChiTietTraLoiDS.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "y",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChiTietTraLoiDS",
+          "startLine": 4,
+          "endLine": 17,
+          "methods": [
+            "y"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChiTietTraLoiDS",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "y",
+          "callee": "$this->belongsTo",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/ChiTietTraLoiTN.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "dapAn",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "question",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChiTietTraLoiTN",
+          "startLine": 4,
+          "endLine": 17,
+          "methods": [
+            "dapAn",
+            "question"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChiTietTraLoiTN",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dapAn",
+          "callee": "$this->belongsTo",
+          "lineNumber": 12
+        },
+        {
+          "caller": "question",
+          "callee": "$this->belongsTo",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/ChuyenDe.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "questions",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChuyenDe",
+          "startLine": 4,
+          "endLine": 14,
+          "methods": [
+            "questions"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChuyenDe",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "questions",
+          "callee": "$this->hasMany",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/DapAnTLS.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "DapAnTLS",
+          "startLine": 4,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DapAnTLS",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/DapAnTN.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "question",
+          "startLine": 11,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DapAnTN",
+          "startLine": 4,
+          "endLine": 14,
+          "methods": [
+            "question"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DapAnTN",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "question",
+          "callee": "$this->belongsTo",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/DeThi.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "nguoiTao",
+          "startLine": 14,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "questions",
+          "startLine": 17,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "baiLam",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeThi",
+          "startLine": 4,
+          "endLine": 25,
+          "methods": [
+            "nguoiTao",
+            "questions",
+            "baiLam"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DeThi",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "nguoiTao",
+          "callee": "$this->belongsTo",
+          "lineNumber": 15
+        },
+        {
+          "caller": "questions",
+          "callee": "$this->belongsToMany(Question::class, 'CauHoiTrongDe', 'MaDeThi', 'MaCauHoi')\n                    ->withPivot('Phan','ThuTu','DiemCauHoi')\n                    ->orderBy('Phan')->orderBy",
+          "lineNumber": 18
+        },
+        {
+          "caller": "questions",
+          "callee": "$this->belongsToMany(Question::class, 'CauHoiTrongDe', 'MaDeThi', 'MaCauHoi')\n                    ->withPivot('Phan','ThuTu','DiemCauHoi')->orderBy",
+          "lineNumber": 18
+        },
+        {
+          "caller": "questions",
+          "callee": "$this->belongsToMany(Question::class, 'CauHoiTrongDe', 'MaDeThi', 'MaCauHoi')->withPivot",
+          "lineNumber": 18
+        },
+        {
+          "caller": "questions",
+          "callee": "$this->belongsToMany",
+          "lineNumber": 18
+        },
+        {
+          "caller": "baiLam",
+          "callee": "$this->hasMany",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Models/Question.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "chuyenDe",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "nguoiTao",
+          "startLine": 22,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "dapAnTN",
+          "startLine": 26,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "cauHoiDSY",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "dapAnTLS",
+          "startLine": 34,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "deThi",
+          "startLine": 38,
+          "endLine": 41,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Question",
+          "startLine": 4,
+          "endLine": 42,
+          "methods": [
+            "chuyenDe",
+            "nguoiTao",
+            "dapAnTN",
+            "cauHoiDSY",
+            "dapAnTLS",
+            "deThi"
+          ],
+          "properties": [
+            "table",
+            "primaryKey",
+            "timestamps",
+            "fillable"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Question",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "chuyenDe",
+          "callee": "$this->belongsTo",
+          "lineNumber": 20
+        },
+        {
+          "caller": "nguoiTao",
+          "callee": "$this->belongsTo",
+          "lineNumber": 23
+        },
+        {
+          "caller": "dapAnTN",
+          "callee": "$this->hasMany",
+          "lineNumber": 27
+        },
+        {
+          "caller": "cauHoiDSY",
+          "callee": "$this->hasMany",
+          "lineNumber": 31
+        },
+        {
+          "caller": "dapAnTLS",
+          "callee": "$this->hasOne",
+          "lineNumber": 35
+        },
+        {
+          "caller": "deThi",
+          "callee": "$this->belongsToMany(DeThi::class, 'CauHoiTrongDe', 'MaCauHoi', 'MaDeThi')->withPivot",
+          "lineNumber": 39
+        },
+        {
+          "caller": "deThi",
+          "callee": "$this->belongsToMany",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "register",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "boot",
+          "startLine": 21,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppServiceProvider",
+          "startLine": 8,
+          "endLine": 26,
+          "methods": [
+            "register",
+            "boot"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AppServiceProvider",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "boot",
+          "callee": "URL::forceScheme",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "artisan",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": "bootstrap/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/cache/packages.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 51,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "bootstrap/cache/services.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 266,
+      "nonEmptyLines": 266,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

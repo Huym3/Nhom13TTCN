@@ -1,0 +1,4381 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "admin"
+      ],
+      "complexity": "simple",
+      "lines": 13
+    },
+    {
+      "id": "function:app/Http/Controllers/Admin/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Admin/UserController.php",
+      "type": "file",
+      "category": "file",
+      "name": "UserController.php",
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "admin"
+      ],
+      "complexity": "simple",
+      "lines": 11
+    },
+    {
+      "id": "class:app/Http/Controllers/Admin/UserController.php:UserController",
+      "type": "class",
+      "category": "code",
+      "name": "UserController",
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "tags": [
+        "controller",
+        "admin",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Controller.php",
+      "type": "file",
+      "category": "file",
+      "name": "Controller.php",
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "tags": [
+        "controller"
+      ],
+      "complexity": "simple",
+      "lines": 8
+    },
+    {
+      "id": "class:app/Http/Controllers/Controller.php:Controller",
+      "type": "class",
+      "category": "code",
+      "name": "Controller",
+      "path": "app/Http/Controllers/Controller.php",
+      "tags": [
+        "controller",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "simple",
+      "lines": 59
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/ExamController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ExamController.php",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "moderate",
+      "lines": 215
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "type": "function",
+      "category": "code",
+      "name": "start",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "type": "function",
+      "category": "code",
+      "name": "show",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "type": "function",
+      "category": "code",
+      "name": "saveTN",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "type": "function",
+      "category": "code",
+      "name": "saveDS",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "type": "function",
+      "category": "code",
+      "name": "saveSo",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "type": "function",
+      "category": "code",
+      "name": "submit",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/ExamController.php:ExamController",
+      "type": "class",
+      "category": "code",
+      "name": "ExamController",
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Student/ResultController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ResultController.php",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "student"
+      ],
+      "complexity": "moderate",
+      "lines": 115
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "type": "function",
+      "category": "code",
+      "name": "show",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Student/ResultController.php:ResultController",
+      "type": "class",
+      "category": "code",
+      "name": "ResultController",
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "tags": [
+        "controller",
+        "student",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "type": "file",
+      "category": "file",
+      "name": "DashboardController.php",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "simple",
+      "lines": 12
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/DashboardController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/DashboardController.php:DashboardController",
+      "type": "class",
+      "category": "code",
+      "name": "DashboardController",
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "type": "file",
+      "category": "file",
+      "name": "ExamController.php",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "complex",
+      "lines": 523
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:create",
+      "type": "function",
+      "category": "code",
+      "name": "create",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "type": "function",
+      "category": "code",
+      "name": "store",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "type": "function",
+      "category": "code",
+      "name": "edit",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "type": "function",
+      "category": "code",
+      "name": "update",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "type": "function",
+      "category": "code",
+      "name": "destroy",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "type": "function",
+      "category": "code",
+      "name": "addQuestion",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "type": "function",
+      "category": "code",
+      "name": "removeQuestion",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "type": "function",
+      "category": "code",
+      "name": "publish",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "type": "function",
+      "category": "code",
+      "name": "unpublish",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "type": "function",
+      "category": "code",
+      "name": "stats",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "type": "function",
+      "category": "code",
+      "name": "xemBaiLam",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/ExamController.php:ExamController",
+      "type": "class",
+      "category": "code",
+      "name": "ExamController",
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ]
+    },
+    {
+      "id": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "type": "file",
+      "category": "file",
+      "name": "QuestionController.php",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "language": "php",
+      "tags": [
+        "controller",
+        "teacher"
+      ],
+      "complexity": "moderate",
+      "lines": 252
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "type": "function",
+      "category": "code",
+      "name": "index",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "type": "function",
+      "category": "code",
+      "name": "create",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "type": "function",
+      "category": "code",
+      "name": "store",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "type": "function",
+      "category": "code",
+      "name": "edit",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "type": "function",
+      "category": "code",
+      "name": "update",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "type": "function",
+      "category": "code",
+      "name": "destroy",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "function"
+      ]
+    },
+    {
+      "id": "class:app/Http/Controllers/Teacher/QuestionController.php:QuestionController",
+      "type": "class",
+      "category": "code",
+      "name": "QuestionController",
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "tags": [
+        "controller",
+        "teacher",
+        "class"
+      ]
+    },
+    {
+      "id": "file:routes/web.php",
+      "type": "file",
+      "category": "file",
+      "name": "web.php",
+      "path": "routes/web.php",
+      "language": "php",
+      "tags": [
+        "route"
+      ],
+      "complexity": "moderate",
+      "lines": 176
+    }
+  ],
+  "edges": [
+    {
+      "from": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "to": "function:app/Http/Controllers/Admin/DashboardController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "to": "class:app/Http/Controllers/Admin/DashboardController.php:DashboardController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Admin/DashboardController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Admin/UserController.php",
+      "to": "class:app/Http/Controllers/Admin/UserController.php:UserController",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Admin/UserController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Controller.php",
+      "to": "class:app/Http/Controllers/Controller.php:Controller",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/DashboardController.php",
+      "to": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/DashboardController.php",
+      "to": "class:app/Http/Controllers/Student/DashboardController.php:DashboardController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->avg",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->max",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->limit(5)\n            ->select('bl.*', 'dt.TenDeThi')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->limit(5)->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')->limit",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('ThoiGianNopBai')->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)\n            ->orderBy('NgayTao', 'desc')\n            ->limit(5)->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)\n            ->orderBy('NgayTao', 'desc')->limit",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')\n            ->whereNotIn('MaDeThi', $daDamIds)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('DeThi')\n            ->where('TrangThaiDe', 'Published')->whereNotIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/DashboardController.php:index",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/DashboardController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "class:app/Http/Controllers/Student/ExamController.php:ExamController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNotNull('ThoiGianNopBai')->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')\n        ->whereNotIn('MaDeThi', $daDamIds) // ẩn đề đã làm xong\n        ->orderBy('NgayTao', 'desc')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')\n        ->whereNotIn('MaDeThi', $daDamIds)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi')\n        ->where('TrangThaiDe', 'Published')->whereNotIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:index",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNotNull('ThoiGianNopBai')->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:redirect()->route('student.results.show', $daLam->MaBaiLam)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)\n        ->whereNull('ThoiGianNopBai')->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)\n        ->where('MaNguoiDung', $maNguoiDung)->whereNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n        ->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:redirect()->route('student.exams.do', [\n            'id'     => $id,\n            'baiLam' => $dangLam->MaBaiLam,\n        ])->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:DB::select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:start",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:request",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaBaiLam', $maBaiLam)\n            ->where('MaNguoiDung', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaBaiLam', $maBaiLam)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::selectOne",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:max",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:max",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:redirect()->route('student.results.show', $maBaiLam)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')\n            ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'I')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('DapAnTN')\n                ->where('MaCauHoi', $cau->MaCauHoi)\n                ->orderBy('KyHieu')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('DapAnTN')\n                ->where('MaCauHoi', $cau->MaCauHoi)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')\n            ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'II')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y')\n                ->where('MaCauHoi', $cau->MaCauHoi)\n                ->orderBy('KyHieu')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y')\n                ->where('MaCauHoi', $cau->MaCauHoi)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')\n            ->orderBy('chtd.ThuTu')\n            ->select('q.*', 'chtd.ThuTu', 'chtd.DiemCauHoi')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')\n            ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where('chtd.Phan', 'III')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n            ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')\n            ->where('MaBaiLam', $maBaiLam)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:show",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveTN",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveDS",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:saveSo",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "to": "symbol:DB::statement",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "to": "symbol:redirect()->route('student.results.show', $maBaiLam)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ExamController.php:submit",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ExamController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ResultController.php",
+      "to": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ResultController.php",
+      "to": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ResultController.php",
+      "to": "class:app/Http/Controllers/Student/ResultController.php:ResultController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')\n            ->select(\n                'bl.MaBaiLam', 'bl.TongDiem', 'bl.DiemPhan1',\n                'bl.DiemPhan2', 'bl.DiemPhan3', 'bl.SoCauDung',\n                'bl.SoCauSai', 'bl.ThoiGianNopBai', 'bl.TongThoiGianLamBai',\n                'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi'\n            )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderBy('bl.ThoiGianNopBai', 'desc')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n            ->where('bl.MaNguoiDung', $maNguoiDung)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:index",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->where('bl.MaNguoiDung', $maNguoiDung)\n        ->select('bl.*', 'dt.TenDeThi', 'dt.ThoiGian', 'dt.SoCauHoi')->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->where('bl.MaNguoiDung', $maNguoiDung)->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')\n        ->where('bl.MaBaiLam', $maBaiLam)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('DeThi as dt', 'dt.MaDeThi', '=', 'bl.MaDeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',\n            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',\n            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'\n        )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'I')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')\n        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh', 'chtd.ThuTu')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'II')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')\n            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:$join->on('ct.MaY', '=', 'y.MaY')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:collect($cau->cacY)->filter",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:collect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('ThangDiemDS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.GiaiThich', 'q.HinhAnh',\n            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',\n            'da.DapAnSo', 'chtd.ThuTu'\n        )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)\n        ->where('chtd.Phan', 'III')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $baiLam->MaDeThi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Student/ResultController.php:show",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Student/ResultController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "to": "function:app/Http/Controllers/Teacher/DashboardController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "to": "class:app/Http/Controllers/Teacher/DashboardController.php:DashboardController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/DashboardController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:create",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "class:app/Http/Controllers/Teacher/ExamController.php:ExamController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))\n            ->orderBy('de.NgayTao', 'desc')\n            ->select(\n                'de.*',\n                DB::raw('(SELECT COUNT(*) FROM CauHoiTrongDe WHERE MaDeThi = de.MaDeThi) as SoCauThucTe'),\n                DB::raw('(SELECT COUNT(*) FROM BaiLamCuaHS WHERE MaDeThi = de.MaDeThi) as SoBaiLam')\n            )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))\n            ->orderBy('de.NgayTao', 'desc')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi as de')\n            ->where('de.MaNguoiTaoDe', Session::get('maNguoiDung'))->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::table('DeThi as de')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::raw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "symbol:DB::raw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:index",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:create",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "function:$request->validate",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "symbol:DB::table('DeThi')->insert",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:store",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.HinhAnh', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')\n            ->select('ctd.*', 'q.NoiDungCH', 'q.LoaiCauHoi', 'q.DoKho', 'cd.TenChuyenDe')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')\n            ->orderBy('ctd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)\n            ->orderBy('ctd.Phan')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('ctd.MaDeThi', $id)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')\n            ->orderBy('q.LoaiCauHoi')\n            ->orderBy('q.NgayTao', 'desc')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')\n            ->orderBy('q.LoaiCauHoi')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))\n            ->select('q.*', 'cd.TenChuyenDe')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->whereNotIn('q.MaCauHoi', $cauHoiTrongDe->pluck('MaCauHoi'))->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))->whereNotIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table('Question as q')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "function:$cauHoiTrongDe->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:edit",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:redirect()->route('teacher.exams.edit', $id)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:update",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "function:request",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->back()\n            ->with('confirm_delete', $id)\n            ->with('so_bai_lam', $soBaiLam)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->back()\n            ->with('confirm_delete', $id)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->back()->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->back",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "function:$maBaiLams->isNotEmpty",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')\n            ->whereIn('MaBaiLam', $maBaiLams)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BinhLuan')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:destroy",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:$request->input",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:$request->input",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $maCauHoi)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n        ->where('MaCauHoi', $maCauHoi)\n        ->where('MaDeThi', $id)->exists",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n        ->where('MaCauHoi', $maCauHoi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n        ->where('MaDeThi', $id)\n        ->where('Phan', $phan)->max",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n        ->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->insert",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "symbol:response()->json",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:addQuestion",
+      "to": "function:response",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n            ->where('MaDeThi', $id)\n            ->where('MaCauHoi', $request->maCauHoi)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')\n            ->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "symbol:back()->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:removeQuestion",
+      "to": "function:back",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where('MaDeThi', $id)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:publish",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:request",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->back()\n            ->with('confirm_unpublish', $id)\n            ->with('so_bai_lam_unpublish', $soBaiLam)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->back()\n            ->with('confirm_unpublish', $id)->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->back()->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->back",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:$maBaiLams->isNotEmpty",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BinhLuan')->whereIn('MaBaiLam', $maBaiLams)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BinhLuan')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where('MaDeThi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->route('teacher.exams.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:unpublish",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n            ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)\n            ->whereNotNull('ThoiGianNopBai')\n            ->selectRaw('\n                COUNT(*) as TongBaiLam,\n                AVG(TongDiem) as DiemTrungBinh,\n                MAX(TongDiem) as DiemCaoNhat,\n                MIN(TongDiem) as DiemThapNhat,\n                AVG(TongThoiGianLamBai) as ThoiGianTB\n            ')->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)\n            ->whereNotNull('ThoiGianNopBai')->selectRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n            ->where('MaDeThi', $id)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')\n    ->selectRaw(\"\n        CASE\n            WHEN TongDiem < 2   THEN '0 - 2'\n            WHEN TongDiem < 4   THEN '2 - 4'\n            WHEN TongDiem < 5   THEN '4 - 5'\n            WHEN TongDiem < 6.5 THEN '5 - 6.5'\n            WHEN TongDiem < 8   THEN '6.5 - 8'\n            ELSE '8 - 10'\n        END as KhoangDiem,\n        COUNT(*) as SoLuong\n    \")\n    ->groupByRaw(\"KhoangDiem\")->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')\n    ->selectRaw(\"\n        CASE\n            WHEN TongDiem < 2   THEN '0 - 2'\n            WHEN TongDiem < 4   THEN '2 - 4'\n            WHEN TongDiem < 5   THEN '4 - 5'\n            WHEN TongDiem < 6.5 THEN '5 - 6.5'\n            WHEN TongDiem < 8   THEN '6.5 - 8'\n            ELSE '8 - 10'\n        END as KhoangDiem,\n        COUNT(*) as SoLuong\n    \")->groupByRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)\n    ->whereNotNull('ThoiGianNopBai')->selectRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')\n    ->where('MaDeThi', $id)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:collect($tatCaKhoang)->map",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:collect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')\n            ->limit(5)\n            ->select('nd.HoTen', 'bl.MaBaiLam', 'bl.TongDiem', 'bl.SoCauDung', 'bl.TongThoiGianLamBai', 'bl.ThoiGianNopBai')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')\n            ->limit(5)->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')\n            ->orderBy('bl.TongThoiGianLamBai')->limit",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')\n            ->orderByDesc('bl.TongDiem')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)\n            ->whereNotNull('bl.ThoiGianNopBai')->orderByDesc",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n            ->where('bl.MaDeThi', $id)->whereNotNull",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n            ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')\n   ->selectRaw('ctd.ThuTu, LEFT(q.NoiDungCH, 60) as NoiDung,\n    q.HinhAnh,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(ct.DungSai) as SoDung')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'ctd.ThuTu')->selectRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')\n    ->orderBy('ctd.ThuTu')->groupBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'I')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')->whereExists",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')->whereColumn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))->from",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$sub->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::raw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')\n            ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')\n           ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,\n    y.MaY, y.KyHieu, y.DapAnDung,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(CASE WHEN ct.LuaChonCuaHocSinh = y.DapAnDung THEN 1 ELSE 0 END) as SoDung')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')\n            ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'y.MaY', 'y.KyHieu', 'y.DapAnDung')->selectRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')\n            ->orderBy('y.KyHieu')->groupBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')\n            ->orderBy('ctd.ThuTu')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)\n            ->where('ctd.Phan', 'II')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })\n            ->where('ctd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($id) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                    ->whereExists(function($sub) use ($id) {\n                        $sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                            ->where('BaiLamCuaHS.MaDeThi', $id);\n                    });\n            })->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n            ->join('CauHoiDS_Y as y', 'y.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n            ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$join->on('ct.MaY', '=', 'y.MaY')->whereExists",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')\n                            ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                            ->from('BaiLamCuaHS')->whereColumn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))->from",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$sub->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::raw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')\n   ->selectRaw('ctd.ThuTu, q.HinhAnh, LEFT(q.NoiDungCH, 60) as NoiDung,\n    da.DapAnSo, da.SaiSoChapNhan,\n    COUNT(ct.MaBaiLam) as TongTraLoi,\n    SUM(CASE WHEN ABS(CAST(REPLACE(ct.CauTraLoiSo, \",\", \".\") AS DECIMAL(12,4)) - da.DapAnSo) <= da.SaiSoChapNhan THEN 1 ELSE 0 END) as SoDung')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')\n    ->groupBy('ctd.MaCauHoi', 'ctd.ThuTu', 'q.HinhAnh', 'q.NoiDungCH', 'da.DapAnSo', 'da.SaiSoChapNhan')->selectRaw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')\n    ->orderBy('ctd.ThuTu')->groupBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)\n    ->where('ctd.Phan', 'III')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })\n    ->where('ctd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($id) {\n        $join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')\n             ->whereExists(function($sub) use ($id) {\n                 $sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')\n                     ->where('BaiLamCuaHS.MaDeThi', $id);\n             });\n    })->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')\n    ->join('DapAnTLS as da', 'da.MaCauHoi', '=', 'ctd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')\n    ->join('Question as q', 'q.MaCauHoi', '=', 'ctd.MaCauHoi')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table('CauHoiTrongDe as ctd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'ctd.MaCauHoi')->whereExists",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')\n                     ->whereColumn('BaiLamCuaHS.MaBaiLam', 'ct.MaBaiLam')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))\n                     ->from('BaiLamCuaHS')->whereColumn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:$sub->select(DB::raw(1))->from",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:$sub->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "symbol:DB::raw",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:stats",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)\n        ->where('MaNguoiTaoDe', Session::get('maNguoiDung'))->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DeThi')->where('MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DeThi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n        ->where('bl.MaBaiLam', $maBaiLam)\n        ->select('bl.*', 'nd.HoTen', 'nd.TenDangNhap')->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')\n        ->where('bl.MaBaiLam', $maBaiLam)->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')\n        ->join('NguoiDung as nd', 'nd.MaNguoiDung', '=', 'bl.MaNguoiDung')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('BaiLamCuaHS as bl')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',\n            'da.KyHieu as DaChon', 'da.NoiDungDapAn as NoiDungDaChon',\n            'ct.DungSai', 'ct.DiemDatDuoc', 'chtd.ThuTu'\n        )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'I')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')\n        ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTN as da', 'da.MaDATN', '=', 'ct.MaDATN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietTraLoiTN as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where('LaDapAnDung', 1)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $cau->MaCauHoi)->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')\n        ->select('q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich', 'chtd.ThuTu')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'II')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')\n            ->select('y.KyHieu', 'y.DapAnDung', 'ct.LuaChonCuaHocSinh', 'ct.DungSai')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)\n            ->orderBy('y.KyHieu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })\n            ->where('y.MaCauHoi', $cau->MaCauHoi)->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')\n            ->leftJoin('ChiTietTraLoiDS as ct', function($join) use ($maBaiLam) {\n                $join->on('ct.MaY', '=', 'y.MaY')\n                     ->where('ct.MaBaiLam', '=', $maBaiLam);\n            })->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiDS_Y as y')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:$join->on('ct.MaY', '=', 'y.MaY')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:collect($cau->cacY)->filter(fn($y) => $y->DungSai == 1)->count",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:collect($cau->cacY)->filter",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:collect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('ThangDiemDS')->where('SoYDung', $soYDung)->value",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('ThangDiemDS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')\n        ->select(\n            'q.MaCauHoi', 'q.NoiDungCH', 'q.HinhAnh', 'q.GiaiThich',\n            'ct.CauTraLoiSo', 'ct.DungSai', 'ct.DiemDatDuoc',\n            'da.DapAnSo', 'chtd.ThuTu'\n        )->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')\n        ->orderBy('chtd.ThuTu')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)\n        ->where('chtd.Phan', 'III')->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->where('chtd.MaDeThi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })\n        ->leftJoin('DapAnTLS as da', 'da.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')\n        ->leftJoin('ChiTietCauTraLoiSo as ct', function($join) use ($maBaiLam) {\n            $join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')\n                 ->where('ct.MaBaiLam', '=', $maBaiLam);\n        })->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')\n        ->join('Question as q', 'q.MaCauHoi', '=', 'chtd.MaCauHoi')->leftJoin",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table('CauHoiTrongDe as chtd')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "symbol:$join->on('ct.MaCauHoi', '=', 'chtd.MaCauHoi')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:$join->on",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/ExamController.php:xemBaiLam",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "type": "contains"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "class:app/Http/Controllers/Teacher/QuestionController.php:QuestionController",
+      "type": "contains"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->orderBy('q.NgayTao', 'desc')\n            ->select('q.*', 'cd.TenChuyenDe')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))\n            ->orderBy('q.NgayTao', 'desc')->select",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')\n            ->where('q.MaNguoiTao', Session::get('maNguoiDung'))->orderBy",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table('Question as q')\n            ->join('ChuyenDe as cd', 'cd.MaChuyenDe', '=', 'q.MaChuyenDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table('Question as q')->join",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:index",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "to": "symbol:DB::table('ChuyenDe')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:create",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:$request->validate",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:$request->hasFile",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:$request->file('anhCauHoi')->store",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:$request->file",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table('Question')->insertGetId",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:now",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table('DapAnTN')->insert",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table('CauHoiDS_Y')->insert",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:$request->input",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:$request->validate",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table('DapAnTLS')->insert",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:redirect()->route('teacher.questions.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:store",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $id)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('ChuyenDe')->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $id)->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where('MaCauHoi', $id)->get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('DapAnTLS')->where('MaCauHoi', $id)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table('DapAnTLS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "function:view",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:edit",
+      "to": "function:compact",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $id)->first",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:Session::get",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:abort",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:$request->hasFile",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:$request->validate",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:Storage::disk('public')->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:Storage::disk",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:$request->file('anhCauHoi')->store",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:$request->file",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('DapAnTN')\n            ->where('MaCauHoi', $id)\n            ->where('KyHieu', $ky)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('DapAnTN')\n            ->where('MaCauHoi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('CauHoiDS_Y')\n            ->where('MaCauHoi', $id)\n            ->where('KyHieu', $ky)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('CauHoiDS_Y')\n            ->where('MaCauHoi', $id)->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:$request->input",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:$request->validate",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('DapAnTLS')\n        ->where('MaCauHoi', $id)->update",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table('DapAnTLS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:redirect()->route('teacher.questions.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:update",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTN')\n        ->where('MaCauHoi', $id)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "function:$maDATNs->isNotEmpty",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')\n            ->whereIn('MaDATN', $maDATNs)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiDS_Y')\n        ->where('MaCauHoi', $id)->pluck",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "function:$maYs->isNotEmpty",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')\n            ->whereIn('MaY', $maYs)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiDS')->whereIn",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietCauTraLoiSo')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('ChiTietTraLoiTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('BinhLuan')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('BinhLuan')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiTrongDe')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTN')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTN')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('CauHoiDS_Y')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTLS')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('DapAnTLS')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $id)->value",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:Storage::disk('public')->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:Storage::disk",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('Question')->where('MaCauHoi', $id)->delete",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table('Question')->where",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:DB::table",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:redirect()->route('teacher.questions.index')->with",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "symbol:redirect()->route",
+      "type": "calls"
+    },
+    {
+      "from": "function:app/Http/Controllers/Teacher/QuestionController.php:destroy",
+      "to": "function:redirect",
+      "type": "calls"
+    },
+    {
+      "from": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "to": "file:app/Http/Controllers/Controller.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Admin/AdminController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Admin/DashboardController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Admin/UserController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Auth/AuthController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Student/DashboardController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Student/ExamController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Student/ResultController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Teacher/DashboardController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Teacher/ExamController.php",
+      "type": "imports"
+    },
+    {
+      "from": "file:routes/web.php",
+      "to": "file:app/Http/Controllers/Teacher/QuestionController.php",
+      "type": "imports"
+    }
+  ]
+}

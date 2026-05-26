@@ -1,0 +1,388 @@
+{
+  "nodes": [
+    {
+      "id": "resources/views/auth/register.blade.php",
+      "label": "register.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 143
+      }
+    },
+    {
+      "id": "resources/views/auth/reset-password.blade.php",
+      "label": "reset-password.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 89
+      }
+    },
+    {
+      "id": "resources/views/auth/verify-email.blade.php",
+      "label": "verify-email.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 31
+      }
+    },
+    {
+      "id": "resources/views/auth/verify-otp.blade.php",
+      "label": "verify-otp.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 62
+      }
+    },
+    {
+      "id": "resources/views/components/application-logo.blade.php",
+      "label": "application-logo.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/views/components/auth-session-status.blade.php",
+      "label": "auth-session-status.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 7
+      }
+    },
+    {
+      "id": "resources/views/components/danger-button.blade.php",
+      "label": "danger-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/views/components/dropdown-link.blade.php",
+      "label": "dropdown-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 1
+      }
+    },
+    {
+      "id": "resources/views/components/dropdown.blade.php",
+      "label": "dropdown.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 35
+      }
+    },
+    {
+      "id": "resources/views/components/input-error.blade.php",
+      "label": "input-error.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 9
+      }
+    },
+    {
+      "id": "resources/views/components/input-label.blade.php",
+      "label": "input-label.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 5
+      }
+    },
+    {
+      "id": "resources/views/components/modal.blade.php",
+      "label": "modal.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 78
+      }
+    },
+    {
+      "id": "resources/views/components/nav-link.blade.php",
+      "label": "nav-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 11
+      }
+    },
+    {
+      "id": "resources/views/components/primary-button.blade.php",
+      "label": "primary-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/views/components/responsive-nav-link.blade.php",
+      "label": "responsive-nav-link.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 11
+      }
+    },
+    {
+      "id": "resources/views/components/secondary-button.blade.php",
+      "label": "secondary-button.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/views/components/text-input.blade.php",
+      "label": "text-input.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 3
+      }
+    },
+    {
+      "id": "resources/views/layouts/app.blade.php",
+      "label": "app.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 36
+      }
+    },
+    {
+      "id": "resources/views/layouts/guest.blade.php",
+      "label": "guest.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 30
+      }
+    },
+    {
+      "id": "resources/views/layouts/navigation.blade.php",
+      "label": "navigation.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 100
+      }
+    },
+    {
+      "id": "resources/views/layouts/student.blade.php",
+      "label": "student.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 41
+      }
+    },
+    {
+      "id": "resources/views/layouts/teacher.blade.php",
+      "label": "teacher.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 45
+      }
+    },
+    {
+      "id": "resources/views/profile/edit.blade.php",
+      "label": "edit.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 29
+      }
+    },
+    {
+      "id": "resources/views/profile/partials/delete-user-form.blade.php",
+      "label": "delete-user-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 55
+      }
+    },
+    {
+      "id": "resources/views/profile/partials/update-password-form.blade.php",
+      "label": "update-password-form.blade.php",
+      "type": "file",
+      "category": "markup",
+      "metadata": {
+        "language": "php",
+        "totalLines": 48
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "resources/views/profile/edit.blade.php",
+      "to": "resources/views/layouts/app.blade.php",
+      "type": "uses",
+      "label": "x-app-layout"
+    },
+    {
+      "from": "resources/views/profile/edit.blade.php",
+      "to": "resources/views/profile/partials/update-password-form.blade.php",
+      "type": "includes",
+      "label": "@include"
+    },
+    {
+      "from": "resources/views/profile/edit.blade.php",
+      "to": "resources/views/profile/partials/delete-user-form.blade.php",
+      "type": "includes",
+      "label": "@include"
+    },
+    {
+      "from": "resources/views/layouts/app.blade.php",
+      "to": "resources/views/layouts/navigation.blade.php",
+      "type": "includes",
+      "label": "@include"
+    },
+    {
+      "from": "resources/views/layouts/navigation.blade.php",
+      "to": "resources/views/components/application-logo.blade.php",
+      "type": "uses",
+      "label": "x-application-logo"
+    },
+    {
+      "from": "resources/views/layouts/navigation.blade.php",
+      "to": "resources/views/components/nav-link.blade.php",
+      "type": "uses",
+      "label": "x-nav-link"
+    },
+    {
+      "from": "resources/views/layouts/navigation.blade.php",
+      "to": "resources/views/components/dropdown.blade.php",
+      "type": "uses",
+      "label": "x-dropdown"
+    },
+    {
+      "from": "resources/views/layouts/navigation.blade.php",
+      "to": "resources/views/components/dropdown-link.blade.php",
+      "type": "uses",
+      "label": "x-dropdown-link"
+    },
+    {
+      "from": "resources/views/layouts/navigation.blade.php",
+      "to": "resources/views/components/responsive-nav-link.blade.php",
+      "type": "uses",
+      "label": "x-responsive-nav-link"
+    },
+    {
+      "from": "resources/views/layouts/guest.blade.php",
+      "to": "resources/views/components/application-logo.blade.php",
+      "type": "uses",
+      "label": "x-application-logo"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/danger-button.blade.php",
+      "type": "uses",
+      "label": "x-danger-button"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/modal.blade.php",
+      "type": "uses",
+      "label": "x-modal"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/input-label.blade.php",
+      "type": "uses",
+      "label": "x-input-label"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/text-input.blade.php",
+      "type": "uses",
+      "label": "x-text-input"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/input-error.blade.php",
+      "type": "uses",
+      "label": "x-input-error"
+    },
+    {
+      "from": "resources/views/profile/partials/delete-user-form.blade.php",
+      "to": "resources/views/components/secondary-button.blade.php",
+      "type": "uses",
+      "label": "x-secondary-button"
+    },
+    {
+      "from": "resources/views/profile/partials/update-password-form.blade.php",
+      "to": "resources/views/components/input-label.blade.php",
+      "type": "uses",
+      "label": "x-input-label"
+    },
+    {
+      "from": "resources/views/profile/partials/update-password-form.blade.php",
+      "to": "resources/views/components/text-input.blade.php",
+      "type": "uses",
+      "label": "x-text-input"
+    },
+    {
+      "from": "resources/views/profile/partials/update-password-form.blade.php",
+      "to": "resources/views/components/input-error.blade.php",
+      "type": "uses",
+      "label": "x-input-error"
+    },
+    {
+      "from": "resources/views/profile/partials/update-password-form.blade.php",
+      "to": "resources/views/components/primary-button.blade.php",
+      "type": "uses",
+      "label": "x-primary-button"
+    },
+    {
+      "from": "resources/views/auth/verify-email.blade.php",
+      "to": "resources/views/layouts/guest.blade.php",
+      "type": "uses",
+      "label": "x-guest-layout"
+    },
+    {
+      "from": "resources/views/auth/verify-email.blade.php",
+      "to": "resources/views/components/primary-button.blade.php",
+      "type": "uses",
+      "label": "x-primary-button"
+    }
+  ]
+}

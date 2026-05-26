@@ -1,0 +1,322 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 54,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/student/dashboard.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/student/exams/do.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 506,
+      "nonEmptyLines": 467,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/student/exams/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 37,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/student/results/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 44,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/student/results/show.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 170,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/dashboard.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 88,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/exams/create.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 60,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/exams/edit.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 282,
+      "nonEmptyLines": 260,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/exams/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 149,
+      "nonEmptyLines": 140,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/exams/stats.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 283,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/exams/xem-bai-lam.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 154,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/questions/create.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 142,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/questions/edit.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 142,
+      "nonEmptyLines": 129,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "resources/views/teacher/questions/index.blade.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 139,
+      "nonEmptyLines": 130,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "routes/auth.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 43,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "routes/console.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/sessions/LbZyh5VID1NdkHbQPzhqCV6cOM4eZu6KCIDvci48",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "storage/framework/sessions/VNHIrnvAjXiUwEZBkjBH8rKGI12m7ldfQ2CizdfE",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "storage/framework/views/011f7d0648c9147f5a380ce63b7bbafb.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 47,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/views/0321145205a1b8489109cae62e6e4841.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 61,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/views/041a4e3c1be03849d8561f6ae377d7b1.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/views/0703e10b6a2ad108eac92daec9b3ea61.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/views/08f5cba67e86a28bf97a666a78dfef00.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "storage/framework/views/113757ebdc43759a92d133d25c94e34a.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

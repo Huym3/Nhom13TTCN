@@ -1,0 +1,138 @@
+{
+  "projectRoot": "D:/xampp/htdocs/thuctap",
+  "batchFiles": [
+    {
+      "path": "app/Http/Controllers/Admin/DashboardController.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Admin/UserController.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "language": "php",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/DashboardController.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/ExamController.php",
+      "language": "php",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Student/ResultController.php",
+      "language": "php",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/DashboardController.php",
+      "language": "php",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/ExamController.php",
+      "language": "php",
+      "sizeLines": 522,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Http/Controllers/Teacher/QuestionController.php",
+      "language": "php",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "routes/web.php",
+      "language": "php",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/Http/Controllers/Admin/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Admin/UserController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Controller.php": [],
+    "app/Http/Controllers/Student/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Student/ExamController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Student/ResultController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/DashboardController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/ExamController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Teacher/QuestionController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "routes/web.php": [
+      "app/Http/Controllers/Admin/AdminController.php",
+      "app/Http/Controllers/Admin/DashboardController.php",
+      "app/Http/Controllers/Admin/UserController.php",
+      "app/Http/Controllers/Auth/AuthController.php",
+      "app/Http/Controllers/Student/DashboardController.php",
+      "app/Http/Controllers/Student/ExamController.php",
+      "app/Http/Controllers/Student/ResultController.php",
+      "app/Http/Controllers/Teacher/DashboardController.php",
+      "app/Http/Controllers/Teacher/ExamController.php",
+      "app/Http/Controllers/Teacher/QuestionController.php"
+    ]
+  },
+  "neighborMap": {
+    "app/Http/Controllers/Controller.php": [
+      {
+        "path": "app/Http/Controllers/Admin/AdminController.php",
+        "batchIndex": 2,
+        "symbols": [
+          "AdminController"
+        ]
+      },
+      {
+        "path": "app/Http/Controllers/Auth/AuthController.php",
+        "batchIndex": 2,
+        "symbols": [
+          "AuthController"
+        ]
+      }
+    ],
+    "routes/web.php": [
+      {
+        "path": "app/Http/Controllers/Admin/AdminController.php",
+        "batchIndex": 2,
+        "symbols": [
+          "AdminController"
+        ]
+      },
+      {
+        "path": "app/Http/Controllers/Auth/AuthController.php",
+        "batchIndex": 2,
+        "symbols": [
+          "AuthController"
+        ]
+      }
+    ]
+  }
+}

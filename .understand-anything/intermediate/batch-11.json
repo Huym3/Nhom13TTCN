@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "id": "storage/framework/views/c168f6a541ac9ef9d175ed7c00de60bd.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 65
+      }
+    },
+    {
+      "id": "storage/framework/views/c8597a2cffa0e6d5b4bc70e9cae14e62.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 4
+      }
+    },
+    {
+      "id": "storage/framework/views/cc5193565f110e059c08893c2222d53c.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 35
+      }
+    },
+    {
+      "id": "storage/framework/views/cdb15c91315f65c49e19878d1c80c21a.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 80
+      }
+    },
+    {
+      "id": "storage/framework/views/e4f79269288fdda45b7046cd68dcc446.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 79
+      }
+    },
+    {
+      "id": "storage/framework/views/e9773b5d20d9521a598e53936a407a98.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 4
+      }
+    },
+    {
+      "id": "storage/framework/views/f0ba1cca76130b9535833403c309d8e2.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 45
+      }
+    },
+    {
+      "id": "storage/framework/views/f735b7d835ccfce4673b275f2a79854d.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 158
+      }
+    },
+    {
+      "id": "storage/framework/views/f770fdf84114360ddd9c682721069c1a.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 12
+      }
+    },
+    {
+      "id": "storage/framework/views/f7753e7fcff5b71aa29ca6d9e079f075.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 508
+      }
+    },
+    {
+      "id": "storage/framework/views/fb858329e0dcb506b14a2095393ee987.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 180
+      }
+    },
+    {
+      "id": "storage/framework/views/fe5b48a39926d53433948e85d60d25a0.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "view",
+        "totalLines": 47
+      }
+    },
+    {
+      "id": "tailwind.config.js",
+      "type": "config",
+      "metadata": {
+        "language": "javascript",
+        "totalLines": 21
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/AuthenticationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 54,
+        "classes": ["AuthenticationTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/EmailVerificationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 58,
+        "classes": ["EmailVerificationTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 44,
+        "classes": ["PasswordConfirmationTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/PasswordResetTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 73,
+        "classes": ["PasswordResetTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 51,
+        "classes": ["PasswordUpdateTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/Auth/RegistrationTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 31,
+        "classes": ["RegistrationTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/ExampleTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 19,
+        "classes": ["ExampleTest"]
+      }
+    },
+    {
+      "id": "tests/Feature/ProfileTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 99,
+        "classes": ["ProfileTest"]
+      }
+    },
+    {
+      "id": "tests/TestCase.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 10,
+        "classes": ["TestCase"]
+      }
+    },
+    {
+      "id": "tests/Unit/ExampleTest.php",
+      "type": "file",
+      "metadata": {
+        "language": "php",
+        "category": "test",
+        "totalLines": 16,
+        "classes": ["ExampleTest"]
+      }
+    },
+    {
+      "id": "vite.config.js",
+      "type": "config",
+      "metadata": {
+        "language": "javascript",
+        "totalLines": 11
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "target": "tests/Feature/Auth/AuthenticationTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/RegisteredUserController.php",
+      "target": "tests/Feature/Auth/RegistrationTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/PasswordController.php",
+      "target": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/ProfileController.php",
+      "target": "tests/Feature/ProfileTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/VerifyEmailController.php",
+      "target": "tests/Feature/Auth/EmailVerificationTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "target": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/NewPasswordController.php",
+      "target": "tests/Feature/Auth/PasswordResetTest.php",
+      "type": "tested_by"
+    },
+    {
+      "source": "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "target": "tests/Feature/Auth/PasswordResetTest.php",
+      "type": "tested_by"
+    }
+  ]
+}

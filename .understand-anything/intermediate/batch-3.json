@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env",
+      "name": ".env",
+      "type": "config",
+      "path": ".env",
+      "metadata": {
+        "language": "config",
+        "fileCategory": "config",
+        "totalLines": 65,
+        "definitionCount": 48
+      }
+    },
+    {
+      "id": "config:.env.example",
+      "name": ".env.example",
+      "type": "config",
+      "path": ".env.example",
+      "metadata": {
+        "language": "config",
+        "fileCategory": "config",
+        "totalLines": 54,
+        "definitionCount": 45
+      }
+    },
+    {
+      "id": "document:ADMIN_GUIDE.md",
+      "name": "ADMIN_GUIDE.md",
+      "type": "document",
+      "path": "ADMIN_GUIDE.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 149,
+        "sectionCount": 19
+      }
+    },
+    {
+      "id": "document:IMPLEMENTATION_SUMMARY.md",
+      "name": "IMPLEMENTATION_SUMMARY.md",
+      "type": "document",
+      "path": "IMPLEMENTATION_SUMMARY.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 160,
+        "sectionCount": 27
+      }
+    },
+    {
+      "id": "document:README.md",
+      "name": "README.md",
+      "type": "document",
+      "path": "README.md",
+      "metadata": {
+        "language": "markdown",
+        "fileCategory": "docs",
+        "totalLines": 59,
+        "sectionCount": 8
+      }
+    },
+    {
+      "id": "config:composer.json",
+      "name": "composer.json",
+      "type": "config",
+      "path": "composer.json",
+      "metadata": {
+        "language": "json",
+        "fileCategory": "config",
+        "totalLines": 87,
+        "sectionCount": 15
+      }
+    },
+    {
+      "id": "config:package.json",
+      "name": "package.json",
+      "type": "config",
+      "path": "package.json",
+      "metadata": {
+        "language": "json",
+        "fileCategory": "config",
+        "totalLines": 21,
+        "sectionCount": 5
+      }
+    },
+    {
+      "id": "config:phpunit.xml",
+      "name": "phpunit.xml",
+      "type": "config",
+      "path": "phpunit.xml",
+      "metadata": {
+        "language": "xml",
+        "fileCategory": "config",
+        "totalLines": 36
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "config:.env.example",
+      "to": "config:.env",
+      "type": "documents",
+      "metadata": {
+        "description": "Serves as a template for the environment configuration"
+      }
+    },
+    {
+      "from": "document:README.md",
+      "to": "project:thuctap",
+      "type": "documents",
+      "metadata": {
+        "description": "Main project documentation"
+      }
+    },
+    {
+      "from": "document:ADMIN_GUIDE.md",
+      "to": "project:thuctap",
+      "type": "documents",
+      "metadata": {
+        "description": "Guide for system administration"
+      }
+    },
+    {
+      "from": "document:IMPLEMENTATION_SUMMARY.md",
+      "to": "project:thuctap",
+      "type": "documents",
+      "metadata": {
+        "description": "Summary of system implementation and changes"
+      }
+    },
+    {
+      "from": "config:composer.json",
+      "to": "project:thuctap",
+      "type": "configures",
+      "metadata": {
+        "description": "Defines PHP dependencies and project metadata"
+      }
+    },
+    {
+      "from": "config:package.json",
+      "to": "project:thuctap",
+      "type": "configures",
+      "metadata": {
+        "description": "Defines Node.js dependencies and scripts"
+      }
+    },
+    {
+      "from": "config:phpunit.xml",
+      "to": "project:thuctap",
+      "type": "configures",
+      "metadata": {
+        "description": "Configures PHPUnit testing environment"
+      }
+    },
+    {
+      "from": "config:.env",
+      "to": "project:thuctap",
+      "type": "configures",
+      "metadata": {
+        "description": "Provides runtime environment variables"
+      }
+    }
+  ]
+}
